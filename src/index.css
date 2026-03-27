@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 10px;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -15,10 +18,32 @@ body {
   margin: 0;
 }
 
-:root {}
+:root {
+  --color-primary: #7d00ff;
+  --color-secondary: #04ff00;
+  --color-tertiary: #fffb00;
 
-@media (prefers-color-scheme: dark) {
-  :root {}
+  --color-background: #ffffff;
+  
+  --color-text-primary: #000000;
+  --color-text-secondary: #ffffff;
+  --color-text-tertiary: #666666;
 }
 
-#root {}
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #0070f3;
+    --color-secondary: #1c1c1e;
+    --color-background: #000000;
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #999999;
+  }
+} */
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+}
