@@ -22,12 +22,16 @@ body {
   --color-primary: #7d00ff;
   --color-secondary: #04ff00;
   --color-tertiary: #fffb00;
+  --color-quaternary: #FB00FF;
+  --color-pentary: #0004FF;
 
   --color-background: #ffffff;
-  
+
   --color-text-primary: #000000;
   --color-text-secondary: #ffffff;
   --color-text-tertiary: #666666;
+
+  --box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 /* @media (prefers-color-scheme: dark) {

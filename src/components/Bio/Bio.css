@@ -1,0 +1,45 @@
+#bio-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    padding: 50px 0;
+}
+
+#bio-image {
+    width: 400px;
+    border-radius: 30px;
+    object-fit: cover;
+    object-position: 0 30%;
+    aspect-ratio: 3/4;
+    box-shadow: var(--box-shadow);
+}
+
+#bio-stats-and-quote-container {
+    width: 550px;
+}
+
+#bio-stats-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    height: fit-content;
+    margin-bottom: 4rem;
+}
+
+.bio-stat, #bio-quote-container {
+    padding: 2rem;
+    border-radius: 30px;
+    box-shadow: var(--box-shadow);
+}
+
+.bio-stat-text {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+#bio-quote-container {
+    color: white;
+    font-weight: 700;
+}
