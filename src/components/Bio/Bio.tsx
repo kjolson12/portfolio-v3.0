@@ -1,6 +1,8 @@
 import './Bio.css';
 import bioImage from '../../images/bio-image.jpeg';
 
+import BioStat from '../BioStat/BioStat';
+
 export default function Bio() {
     return (
         <div id="bio-container">
@@ -17,22 +19,10 @@ export default function Bio() {
             </div>
             <div id="bio-stats-and-quote-container">
                 <div id="bio-stats-container">
-                    <div className="bio-stat hover-animation">
-                        <h2>5+ Years</h2>
-                        <p className='bio-stat-text'>of Professional Work Experience</p>
-                    </div>
-                    <div className="bio-stat hover-animation">
-                        <h2>6 Client Sites</h2>
-                        <p className='bio-stat-text'>where I led Develpment</p>
-                    </div>
-                    <div className="bio-stat hover-animation">
-                        <h2>~20 Sites</h2>
-                        <p className='bio-stat-text'>Currently Maintained</p>
-                    </div>
-                    <div className="bio-stat hover-animation">
-                        <h2>10,000+ Users</h2>
-                        <p className='bio-stat-text'>Monthly on some sites</p>
-                    </div>
+                    <BioStat stat="5+ Years" text="of Professional Work Experience" />
+                    <BioStat stat="6 Client Sites" text="where I led Development" />
+                    <BioStat stat="~20 Sites" text="Currently Maintained" />
+                    <BioStat stat="10,000+ Users" text="Monthly on Some Sites" />
                 </div>
                 <div id="bio-quote-container" className='hover-animation'>
                     <p className='bio-quote-text'>"Kyle consistently demonstrates a strong ability to complete tasks efficiently while maintaining a high level

@@ -1,0 +1,12 @@
+.bio-stat {
+    background-color: var(--color-tertiary);
+    padding: 2rem;
+    border-radius: 30px;
+    box-shadow: var(--box-shadow);
+}
+
+.bio-stat-text {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
