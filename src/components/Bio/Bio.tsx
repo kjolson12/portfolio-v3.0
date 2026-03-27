@@ -5,30 +5,36 @@ export default function Bio() {
     return (
         <div id="bio-container">
             <div id="bio-image-and-title">
-                <img id="bio-image" src={bioImage} alt="" />
+                <img id="bio-image" className='hover-animation' src={bioImage} alt="" />
                 <h1>Kyle Olson</h1>
                 <h3>Website Developer</h3>
+                <div id="bio-fun-facts" className='hover-animation'>
+                    <p>Programming Language: JavaScript</p>
+                    <p>Education: University of Oregon</p>
+                    <p>Location: Charlotte, NC</p>
+                    <p>Hometown: Brea, CA</p>
+                </div>
             </div>
             <div id="bio-stats-and-quote-container">
                 <div id="bio-stats-container">
-                    <div className="bio-stat" style={{backgroundColor: "#7d00ff"}}>
-                        <h2>5+</h2>
-                        <p className='bio-stat-text'>Years of Professional Work Experience</p>
+                    <div className="bio-stat hover-animation">
+                        <h2>5+ Years</h2>
+                        <p className='bio-stat-text'>of Professional Work Experience</p>
                     </div>
-                    <div className="bio-stat" style={{backgroundColor: "#04ff00"}}>
-                        <h2>6</h2>
-                        <p className='bio-stat-text'>Complete Website Builds Launched</p>
+                    <div className="bio-stat hover-animation">
+                        <h2>6 Client Sites</h2>
+                        <p className='bio-stat-text'>where I led Develpment</p>
                     </div>
-                    <div className="bio-stat" style={{backgroundColor: "#fffb00"}}>
-                        <h2>~20</h2>
-                        <p className='bio-stat-text'>Websites Managed by My Team and I</p>
+                    <div className="bio-stat hover-animation">
+                        <h2>~20 Sites</h2>
+                        <p className='bio-stat-text'>Currently Maintained</p>
                     </div>
-                    <div className="bio-stat" style={{backgroundColor: "#FB00FF"}}>
-                        <h2>10,000+</h2>
-                        <p className='bio-stat-text'>Monthly Active Users on some sites</p>
+                    <div className="bio-stat hover-animation">
+                        <h2>10,000+ Users</h2>
+                        <p className='bio-stat-text'>Monthly on some sites</p>
                     </div>
                 </div>
-                <div id="bio-quote-container" style={{backgroundColor: "#0004FF"}}>
+                <div id="bio-quote-container" className='hover-animation'>
                     <p className='bio-quote-text'>"Kyle consistently demonstrates a strong ability to complete tasks efficiently while maintaining a high level
                     of quality."</p>
                     <p style={{textAlign: 'right'}}>-Management</p>

@@ -6,7 +6,7 @@
 }
 
 #bio-image {
-    width: 400px;
+    width: 410px;
     border-radius: 30px;
     object-fit: cover;
     object-position: 0 30%;
@@ -33,6 +33,16 @@
     box-shadow: var(--box-shadow);
 }
 
+.bio-stat {
+    background-color: var(--color-tertiary);
+}
+
+#bio-fun-facts {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
 .bio-stat-text {
     font-size: 2rem;
     font-weight: 700;
@@ -40,6 +50,12 @@
 }
 
 #bio-quote-container {
-    color: white;
+    background-color: var(--color-primary);
+    color: var(--color-text-secondary);
     font-weight: 700;
+}
+
+.bio-quote-text {
+    font-size: 2rem;
+    margin: 0;
 }

@@ -26,12 +26,12 @@ section {
 }
 
 h1 {
-    font-size: 7rem;
+    font-size: 8rem;
     margin: 0;
 }
 
 h2 {
-    font-size: 5rem;
+    font-size: 6rem;
     margin: 0;
 }
 
@@ -44,4 +44,12 @@ p {
     font-size: 1.5rem;
     line-height: 1.5;
     margin: 0;
+}
+
+.hover-animation {
+    transition: scale 0.3s ease;
+}
+
+.hover-animation:hover {
+    scale: 1.05;
 }

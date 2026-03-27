@@ -14,7 +14,7 @@ export default function Header () {
         </nav>
         <div>
             <button className='button'>
-                Resume
+                Download Resume
                 <i id="resume-download-icon" className="bi bi-download"></i>
             </button>
         </div>

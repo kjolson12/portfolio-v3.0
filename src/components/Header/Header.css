@@ -2,7 +2,8 @@ header {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    position: static;
+    position: sticky;
+    top: 0;
     padding: 1.5rem;
 }
 
