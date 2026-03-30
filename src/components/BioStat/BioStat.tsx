@@ -8,7 +8,7 @@ interface BioStatProps {
 export default function BioStat({ stat, text }: BioStatProps) {
     return (
         <div className="bio-stat hover-animation">
-            <h2>{stat}</h2>
+            <h3>{stat}</h3>
             <p className='bio-stat-text'>{text}</p>
         </div>
     );

@@ -1,21 +1,28 @@
 #bio-container {
     display: flex;
     justify-content: space-between;
-    width: 1000px;
     padding: 50px 0;
 }
 
-#bio-image {
+#bio-image-and-title {
     width: 410px;
+}
+
+#bio-image {
+    width: 100%;
     border-radius: 30px;
     object-fit: cover;
-    object-position: 0 30%;
-    aspect-ratio: 3/4;
+    object-position: 0 22%;
+    aspect-ratio: 1;
     box-shadow: var(--box-shadow);
 }
 
 #bio-stats-and-quote-container {
-    width: 550px;
+    width: 720px;
+}
+
+#bio-stats-and-quote-container h4 {
+    margin-bottom: 2rem;
 }
 
 #bio-stats-container {
@@ -28,7 +35,7 @@
 }
 
 #bio-quote-container {
-    padding: 2rem;
+    padding: 4rem;
     border-radius: 30px;
     box-shadow: var(--box-shadow);
     background-color: var(--color-primary);
@@ -48,4 +55,8 @@
 
 #bio-fun-facts p {
     font-size: 1.8rem;
+}
+
+.fun-fact-category {
+    color: var(--color-text-tertiary);
 }
