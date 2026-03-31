@@ -1,7 +1,6 @@
 #bio-container {
     display: flex;
     justify-content: space-between;
-    padding: 50px 0;
 }
 
 #bio-image-and-title {
