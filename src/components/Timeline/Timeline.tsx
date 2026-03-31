@@ -7,14 +7,17 @@ export default function Timeline() {
                 <p>Jun 2021 - Present</p>
                 <div className='timeline-bubble' id="ssnc-bubble"></div>
             </div>
+            <div className="timeline-line" id="ssnc-line"></div>
             <div className="timeline-item">
                 <p>Dec 2018 - Jan 2021</p>
                 <div className='timeline-bubble' id="ohsu-bubble"></div>
             </div>
+            <div className="timeline-line" id="ohsu-line"></div>
             <div className="timeline-item">
                 <p>Sep 2013 - Jun 2018</p>
                 <div className='timeline-bubble' id="uo-bubble"></div>
             </div>
+            <div className="timeline-line" id="uo-line"></div>
         </div>
     );
 };

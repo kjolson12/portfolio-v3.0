@@ -8,6 +8,14 @@
     justify-content: space-between;
 }
 
+.timeline-line {
+    position: relative;
+    margin: 1rem 0;
+    left: 224px;
+    width: 3px;
+    background-color: var(--color-primary);
+}
+
 .timeline-bubble {
     height: 50px;
     width: 50px;
@@ -22,14 +30,26 @@
     background-size: 60px;
 }
 
+#ssnc-line {
+    height: 100px;
+}
+
 #ohsu-bubble {
     background-image: url('../../images/ohsu-logo.png');
     background-color: white;
     background-size: 24px;
 }
 
+#ohsu-line {
+    height: 40px;
+}
+
 #uo-bubble {
     background-image: url('../../images/uo-logo.webp');
     background-color: #489D46;
     background-size: 37px;
+}
+
+#uo-line {
+    height: 80px;
 }
