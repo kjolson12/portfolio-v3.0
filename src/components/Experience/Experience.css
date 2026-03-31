@@ -1,0 +1,19 @@
+#experience-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+#experience-content-container {
+    flex: 1;
+}
+
+.experience-content {
+    justify-self: center;
+    width: 720px;
+    padding: 4rem;
+    border-radius: 30px;
+    box-shadow: var(--box-shadow);
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+}

@@ -1,0 +1,35 @@
+#timeline-container {
+    width: 250px;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.timeline-bubble {
+    height: 50px;
+    width: 50px;
+    border-radius: 999px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#ssnc-bubble {
+    background-image: url('../../images/ssnc-logo.png');
+    background-color: white;
+    background-size: 60px;
+}
+
+#ohsu-bubble {
+    background-image: url('../../images/ohsu-logo.png');
+    background-color: white;
+    background-size: 24px;
+}
+
+#uo-bubble {
+    background-image: url('../../images/uo-logo.webp');
+    background-color: #489D46;
+    background-size: 37px;
+}

@@ -21,9 +21,14 @@
     color: var(--color-primary);
 }
 
-section {
+section .container {
     width: 1200px;
     margin: 0 auto;
+}
+
+section#experience {
+    background-color: var(--color-quaternary);
+    color: var(--color-text-secondary);
 }
 
 h1 {
@@ -33,7 +38,7 @@ h1 {
 
 h2 {
     font-size: 6rem;
-    margin: 0;
+    margin: 2rem 0;
 }
 
 h3 {
