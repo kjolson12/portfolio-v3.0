@@ -5,11 +5,14 @@
 }
 
 #experience-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
     flex: 1;
+    transition: padding 0.3s ease;
 }
 
 .experience-content {
-    justify-self: center;
     width: 720px;
     padding: 4rem;
     border-radius: 30px;

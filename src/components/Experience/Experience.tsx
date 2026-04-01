@@ -33,10 +33,23 @@ export default function Experience() {
         </div>
     );
 
+    const experienceContentContainerStyle = () => {
+        switch (activeExperience) {
+            case 'SSNC':
+                return {'paddingTop': '0rem'};
+            case 'OHSU':
+                return {'paddingTop': '5rem'};
+            case 'UO':
+                return {'paddingTop': '15rem'};
+            default:
+                return {};
+        }
+    }
+
     return (
         <div id="experience-container">
                 <Timeline setActiveExperience={setActiveExperience} />
-                <div id="experience-content-container">
+                <div id="experience-content-container" style={experienceContentContainerStyle()}>
                     {activeExperience === 'SSNC' && SSNCcontent}
                     {activeExperience === 'OHSU' && OHSUcontent}
                     {activeExperience === 'UO' && UOcontent}

@@ -5,6 +5,7 @@ header {
     position: sticky;
     top: 0;
     padding: 1.5rem;
+    background-color: var(--color-background);
 }
 
 #name-home-link-container {

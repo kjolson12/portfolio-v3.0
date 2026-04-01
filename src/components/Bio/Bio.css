@@ -21,6 +21,9 @@
 }
 
 #bio-stats-and-quote-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 720px;
 }
 
