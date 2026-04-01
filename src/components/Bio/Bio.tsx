@@ -8,13 +8,27 @@ export default function Bio() {
         <div id="bio-container">
             <div id="bio-image-and-title">
                 <img id="bio-image" className='hover-animation' src={bioImage} alt="" />
-                <h1>Kyle Olson</h1>
-                <h4>Website Developer</h4>
+                <div id="bio-title">
+                    <h1>Kyle Olson</h1>
+                    <h4>Website Developer</h4>
+                </div>
                 <div id="bio-fun-facts">
-                    <p><span className="fun-fact-category">programming language:</span> JavaScript</p>
-                    <p><span className="fun-fact-category">education:</span> University of Oregon</p>
-                    <p><span className="fun-fact-category">current location:</span> Charlotte, NC</p>
-                    <p><span className="fun-fact-category">hometown:</span> Brea, CA</p>
+                    <div className="fun-fact">
+                        <p className="fun-fact-category">programming</p>
+                        <p className='fun-fact-value'>JavaScript</p>
+                    </div>
+                    <div className="fun-fact">
+                        <p className="fun-fact-category">education</p>
+                        <p className='fun-fact-value'>University of Oregon</p>
+                    </div>
+                    <div className="fun-fact">
+                        <p className="fun-fact-category">current location</p>
+                        <p className='fun-fact-value'>Charlotte, NC</p>
+                    </div>
+                    <div className="fun-fact">
+                        <p className="fun-fact-category">hometown</p>
+                        <p className='fun-fact-value'>Brea, CA</p>
+                    </div>
                 </div>
             </div>
             <div id="bio-stats-and-quote-container">
