@@ -6,8 +6,8 @@
 
 #experience-item-container {
     display: flex;
-    justify-content: center;
-    align-items: start;
+    flex-direction: column;
+    align-items: center;
     flex: 1;
     transition: padding 0.3s ease;
 }
