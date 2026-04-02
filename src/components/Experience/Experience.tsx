@@ -9,6 +9,20 @@ import duckMascotImg from '../../images/duck-mascot.webp';
 import Timeline from '../Timeline/Timeline';
 import ExperienceItem from '../ExperienceItem/ExperienceItem';
 
+function calculateTimeSinceJune2021(): string {
+    const startDate = new Date(2021, 5); // June 2021 (month is 0-indexed)
+    const currentDate = new Date();
+
+    const years = currentDate.getFullYear() - startDate.getFullYear();
+    const months = currentDate.getMonth() - startDate.getMonth();
+
+    const totalMonths = years * 12 + months;
+    const displayYears = Math.floor(totalMonths / 12);
+    const displayMonths = totalMonths % 12;
+
+    return `${displayYears} Years ${displayMonths} Months`;
+}
+
 const experienceObjects: Record<'SSNC' | 'OHSU' | 'UO', {
     title: string;
     subtitle: string;
@@ -19,7 +33,7 @@ const experienceObjects: Record<'SSNC' | 'OHSU' | 'UO', {
     'SSNC': {
         title: 'Front End Web Developer',
         subtitle: 'SS&C Technologies',
-        dateRange: 'Jun 2021 - Present | 5 Years',
+        dateRange: 'Jun 2021 - Present | ' + calculateTimeSinceJune2021(),
         description: 'Led several complete website development projects as the primary front end engineer for the Creative Services department.',
         image: programmingImg
     },
@@ -33,7 +47,7 @@ const experienceObjects: Record<'SSNC' | 'OHSU' | 'UO', {
     'UO': {
         title: 'University of Oregon',
         subtitle: 'Bachelor of Science in Biology',
-        dateRange: 'Sep 2015 - Jun 2019 | 4 Years',
+        dateRange: 'Sep 2013 - Jun 2018 | 4 Years 9 Months',
         description: 'Graduated with a Bachelor of Science in Biology, with a focus on XXXX and XXXX biology. Completed coursework in conservation biology, neurobiology, and organic chemistry.',
         image: duckMascotImg
     }
@@ -57,16 +71,16 @@ export default function Experience() {
 
     return (
         <div id="experience-container">
-                <Timeline activeExperience={activeExperience} setActiveExperience={setActiveExperience} />
-                <div id="experience-item-container" style={experienceItemContainerStyle()}>
-                    <ExperienceItem
-                        title={experienceObjects[activeExperience].title}
-                        subtitle={experienceObjects[activeExperience].subtitle}
-                        dateRange={experienceObjects[activeExperience].dateRange}
-                        description={experienceObjects[activeExperience].description}
-                        image={experienceObjects[activeExperience].image}
-                    />
-                </div>
+            <Timeline activeExperience={activeExperience} setActiveExperience={setActiveExperience} />
+            <div id="experience-item-container" style={experienceItemContainerStyle()}>
+                <ExperienceItem
+                    title={experienceObjects[activeExperience].title}
+                    subtitle={experienceObjects[activeExperience].subtitle}
+                    dateRange={experienceObjects[activeExperience].dateRange}
+                    description={experienceObjects[activeExperience].description}
+                    image={experienceObjects[activeExperience].image}
+                />
+            </div>
         </div>
     );
 }

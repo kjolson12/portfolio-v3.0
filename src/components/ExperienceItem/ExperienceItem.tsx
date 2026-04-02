@@ -7,7 +7,7 @@ export default function ExperienceItem({ title, subtitle, dateRange, description
             <div className="experience-text">
                 <h3>{title}</h3>
                 <h4>{subtitle}</h4>
-                <p>{dateRange}</p>
+                <p className='experience-date-range'>{dateRange}</p>
                 {description && <p>{description}</p>}
             </div>
         </div>
