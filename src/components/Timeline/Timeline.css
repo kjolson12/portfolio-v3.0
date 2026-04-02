@@ -1,11 +1,22 @@
 #timeline-container {
     width: 250px;
+    cursor: pointer;
 }
 
 .timeline-item {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    transition: all 0.3s ease;
+}
+
+.timeline-item.active {
+    color: var(--color-text-primary);
+    scale: 1.05;
+}
+
+.timeline-item.active .timeline-bubble {
+    border: 3px solid var(--color-text-primary);
 }
 
 .timeline-item p {

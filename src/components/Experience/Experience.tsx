@@ -2,45 +2,54 @@ import { useState } from 'react';
 
 import './Experience.css';
 
+import programmingImg from '../../images/programming.jpg';
+import laboratoryImg from '../../images/laboratory.jpg';
+import duckMascotImg from '../../images/duck-mascot.webp';
+
 import Timeline from '../Timeline/Timeline';
+import ExperienceItem from '../ExperienceItem/ExperienceItem';
+
+const experienceObjects: Record<'SSNC' | 'OHSU' | 'UO', {
+    title: string;
+    subtitle: string;
+    dateRange: string;
+    description?: string;
+    image: string;
+}> = {
+    'SSNC': {
+        title: 'Front End Web Developer',
+        subtitle: 'SS&C Technologies',
+        dateRange: 'Jun 2021 - Present | 5 Years',
+        description: 'Led several complete website development projects as the primary front end engineer for the Creative Services department.',
+        image: programmingImg
+    },
+    'OHSU': {
+        title: 'Laboratory Technician',
+        subtitle: 'Oregon Health & Science University',
+        dateRange: 'Dec 2018 - Jan 2021 | 2 Years 2 Months',
+        description: 'Laboratory Animal Technician at the Oregon National Primate Research Center, responsible for providing husbandry, healthcare, and research support for non-human primates.',
+        image: laboratoryImg
+    },
+    'UO': {
+        title: 'University of Oregon',
+        subtitle: 'Bachelor of Science in Biology',
+        dateRange: 'Sep 2015 - Jun 2019 | 4 Years',
+        description: 'Graduated with a Bachelor of Science in Biology, with a focus on XXXX and XXXX biology. Completed coursework in conservation biology, neurobiology, and organic chemistry.',
+        image: duckMascotImg
+    }
+};
 
 export default function Experience() {
-    const [activeExperience, setActiveExperience] = useState('SSNC');
+    const [activeExperience, setActiveExperience] = useState<'SSNC' | 'OHSU' | 'UO'>('SSNC');
 
-    const SSNCcontent = (
-        <div className='experience-content'>
-            <h3>Front End Web Developer</h3>
-            <h4>SS&C Technologies</h4>
-            <p>Jun 2021 - Present | 5 Years</p>
-            <p>Led several complete website development projects as the primary front end engineer for the Creative Services department.</p>
-        </div>
-    );
-
-    const OHSUcontent = (
-        <div className='experience-content'>
-            <h3>Laboratory Technician</h3>
-            <h4>Oregon Health & Science University</h4>
-            <p>Dec 2018 - Jan 2021 | 2 Years 2 Months</p>
-            <p>Laboratory Animal Technician at the Oregon National Primate Research Center, responsible for providing husbandry, healthcare, and research support for non-human primates.</p>
-        </div>
-    );
-
-    const UOcontent = (
-        <div className='experience-content'>
-            <h3>University of Oregon</h3>
-            <h4>Bachelor of Science in Biology</h4>
-            <p>Sep 2013 - Jun 2018 | 4 Years 8 Months</p>
-        </div>
-    );
-
-    const experienceContentContainerStyle = () => {
+    const experienceItemContainerStyle = () => {
         switch (activeExperience) {
             case 'SSNC':
                 return {'paddingTop': '0rem'};
             case 'OHSU':
-                return {'paddingTop': '5rem'};
+                return {'paddingTop': '10rem'};
             case 'UO':
-                return {'paddingTop': '15rem'};
+                return {'paddingTop': '13rem'};
             default:
                 return {};
         }
@@ -48,11 +57,15 @@ export default function Experience() {
 
     return (
         <div id="experience-container">
-                <Timeline setActiveExperience={setActiveExperience} />
-                <div id="experience-content-container" style={experienceContentContainerStyle()}>
-                    {activeExperience === 'SSNC' && SSNCcontent}
-                    {activeExperience === 'OHSU' && OHSUcontent}
-                    {activeExperience === 'UO' && UOcontent}
+                <Timeline activeExperience={activeExperience} setActiveExperience={setActiveExperience} />
+                <div id="experience-item-container" style={experienceItemContainerStyle()}>
+                    <ExperienceItem
+                        title={experienceObjects[activeExperience].title}
+                        subtitle={experienceObjects[activeExperience].subtitle}
+                        dateRange={experienceObjects[activeExperience].dateRange}
+                        description={experienceObjects[activeExperience].description}
+                        image={experienceObjects[activeExperience].image}
+                    />
                 </div>
         </div>
     );

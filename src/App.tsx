@@ -1,6 +1,7 @@
 import Header from './components/Header/Header';
 import Bio from './components/Bio/Bio';
 import Experience from './components/Experience/Experience';
+import Footer from './components/Footer/Footer';
 
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './App.css';
@@ -23,6 +24,8 @@ function App() {
           <Experience />
         </div>
       </section>
+
+      <Footer />
     </>
   );
 };

@@ -4,19 +4,10 @@
     margin-bottom: 4rem;
 }
 
-#experience-content-container {
+#experience-item-container {
     display: flex;
     justify-content: center;
     align-items: start;
     flex: 1;
     transition: padding 0.3s ease;
-}
-
-.experience-content {
-    width: 720px;
-    padding: 4rem;
-    border-radius: 30px;
-    box-shadow: var(--box-shadow);
-    background-color: var(--color-background);
-    color: var(--color-text-primary);
 }

@@ -1,0 +1,22 @@
+.experience-item {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    width: 800px;
+    padding: 4rem;
+    border-radius: 30px;
+    box-shadow: var(--box-shadow);
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+}
+
+.experience-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.experience-text {
+    
+}
