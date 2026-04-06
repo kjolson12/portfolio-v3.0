@@ -1,4 +1,5 @@
 .experience-item {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 4rem;
@@ -17,12 +18,132 @@
     border-radius: 30px;
 }
 
-.experience-text {
-    
-}
-
 .experience-date-range {
     color: var(--color-text-tertiary);
     font-weight: 500;
     margin-bottom: 2rem;
+}
+
+.arrow-placeholder {
+    position:absolute;
+    bottom:-75px;
+    left:0;
+    right:0;
+}
+
+.top-arrow-placeholder {
+    position:absolute;
+    top:-75px;
+    left:0;
+    right:0;
+}
+
+.arrow, .top-arrow {
+    position:relative;
+    margin:0 auto;
+    width:0px;
+}
+
+.arrow:before, .arrow:after, .top-arrow:before, .top-arrow:after {
+    content:'';
+    background:#fff;
+    top: 30px;
+    width:18px;
+    height:4px;
+    display: block;
+    position: absolute;
+    border-radius: 3px;
+    -webkit-border-radius:3px;
+}
+
+.arrow:before {
+    left: -3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.arrow:after {
+    right:-5px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.top-arrow:before {
+    left: -3px;
+    top: 26px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.top-arrow:after {
+    right:-5px;
+    top: 26px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.arrow-down-animated {
+    margin:0 auto;
+    position:relative;
+    left: 1px;
+    width:60px;
+    height:60px;
+    border:3px solid #ffffff;
+    border-radius:70px;
+    animation: pulse 2s infinite;
+    -webkit-animation:pulse 2s infinite;
+    cursor: pointer;
+}
+
+.arrow-down-animated:after {
+    content:'';
+    position:absolute;
+    top:-5px;
+    left:-5px;
+    width:60px;
+    height:60px;
+    border:2px solid #ffffff;
+    border-radius:70px;
+    animation: ring 2s infinite;
+    -webkit-animation:ring 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		-webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1
+	}
+	
+	10% {
+		-webkit-transform: scale(1.08);
+        transform: scale(1.08);
+        opacity: 1
+	}
+	
+	40% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1
+    }
+	
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1
+    }
+}
+
+@keyframes ring {
+    0% {
+		-webkit-transform: scale(1);
+		transform: scale(1);	
+		opacity: .8
+    }
+
+    100% {
+        -webkit-transform: scale(1.8);
+        transform: scale(1.8);
+        opacity: 0
+    }
 }

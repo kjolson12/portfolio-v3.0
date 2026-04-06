@@ -74,6 +74,8 @@ export default function Experience() {
             <Timeline activeExperience={activeExperience} setActiveExperience={setActiveExperience} />
             <div id="experience-item-container" style={experienceItemContainerStyle()}>
                 <ExperienceItem
+                    activeExperience={activeExperience}
+                    setActiveExperience={setActiveExperience}
                     title={experienceObjects[activeExperience].title}
                     subtitle={experienceObjects[activeExperience].subtitle}
                     dateRange={experienceObjects[activeExperience].dateRange}
