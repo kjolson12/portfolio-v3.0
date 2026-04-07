@@ -26,14 +26,14 @@
 
 .arrow-placeholder {
     position:absolute;
-    bottom:-75px;
+    bottom:-90px;
     left:0;
     right:0;
 }
 
 .top-arrow-placeholder {
     position:absolute;
-    top:-75px;
+    top:-90px;
     left:0;
     right:0;
 }
