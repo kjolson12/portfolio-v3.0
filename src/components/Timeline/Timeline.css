@@ -15,7 +15,7 @@
 
 .timeline-item::after {
     content: '';
-    background-color: var(--color-background);
+    background-color: var(--color-50);
     position: absolute;
     width: 50px;
     height: 100%;
@@ -32,7 +32,7 @@
 }
 
 .timeline-item.active {
-    color: var(--color-text-primary);
+    color: var(--color-text-secondary);
 }
 
 .timeline-item p {
@@ -45,7 +45,7 @@
     margin: 1rem 0;
     left: 224px;
     width: 3px;
-    background-color: var(--color-primary);
+    background-color: var(--color-200);
 }
 
 .timeline-bubble {

@@ -7,8 +7,8 @@
     padding: 4rem;
     border-radius: 30px;
     box-shadow: var(--box-shadow);
-    background-color: var(--color-background);
-    color: var(--color-text-primary);
+    background-color: var(--color-50);
+    color: var(--color-text-secondary);
 }
 
 .experience-img {
@@ -19,7 +19,7 @@
 }
 
 .experience-date-range {
-    color: var(--color-text-tertiary);
+    color: var(--color-600);
     font-weight: 500;
     margin-bottom: 2rem;
 }

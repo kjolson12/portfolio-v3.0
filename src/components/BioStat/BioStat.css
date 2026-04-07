@@ -1,5 +1,6 @@
 .bio-stat {
-    background-color: var(--color-tertiary);
+    background-color: var(--color-50);
+    color: var(--color-text-secondary);
     padding: 2rem;
     border-radius: 30px;
     box-shadow: var(--box-shadow);

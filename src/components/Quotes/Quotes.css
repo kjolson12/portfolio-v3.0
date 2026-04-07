@@ -2,7 +2,7 @@
     padding: 5rem;
     border-radius: 30px;
     box-shadow: var(--box-shadow);
-    background-color: var(--color-primary);
+    background-color: var(--color-100);
     color: var(--color-text-secondary);
 }
 
