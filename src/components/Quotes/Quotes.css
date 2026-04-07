@@ -1,4 +1,8 @@
 #quotes-container {
+    height: 260px;  /* Height needed for longest quote */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 5rem;
     border-radius: 30px;
     box-shadow: var(--box-shadow);
