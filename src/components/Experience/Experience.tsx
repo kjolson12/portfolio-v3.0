@@ -27,27 +27,31 @@ const experienceObjects: Record<'SSNC' | 'OHSU' | 'UO', {
     title: string;
     subtitle: string;
     dateRange: string;
+    duration: string;
     description?: string;
     image: string;
 }> = {
     'SSNC': {
         title: 'Front End Web Developer',
         subtitle: 'SS&C Technologies',
-        dateRange: 'Jun 2021 - Present | ' + calculateTimeSinceJune2021(),
+        dateRange: 'Jun 2021 - Present',
+        duration: calculateTimeSinceJune2021(),
         description: 'Led several complete website development projects as the primary front end engineer for the Creative Services department.',
         image: programmingImg
     },
     'OHSU': {
         title: 'Laboratory Technician',
         subtitle: 'Oregon Health & Science University',
-        dateRange: 'Dec 2018 - Jan 2021 | 2 Years 2 Months',
+        dateRange: 'Dec 2018 - Jan 2021',
+        duration: '2 Years 2 Months',
         description: 'Laboratory Animal Technician at the Oregon National Primate Research Center, responsible for providing husbandry, healthcare, and research support for non-human primates.',
         image: laboratoryImg
     },
     'UO': {
         title: 'University of Oregon',
         subtitle: 'Bachelor of Science in Biology',
-        dateRange: 'Sep 2013 - Jun 2018 | 4 Years 9 Months',
+        dateRange: 'Sep 2013 - Jun 2018',
+        duration: '4 Years 9 Months',
         description: 'Graduated with a Bachelor of Science in Biology, with a focus on XXXX and XXXX biology. Completed coursework in conservation biology, neurobiology, and organic chemistry.',
         image: duckMascotImg
     }
@@ -79,6 +83,7 @@ export default function Experience() {
                     title={experienceObjects[activeExperience].title}
                     subtitle={experienceObjects[activeExperience].subtitle}
                     dateRange={experienceObjects[activeExperience].dateRange}
+                    duration={experienceObjects[activeExperience].duration}
                     description={experienceObjects[activeExperience].description}
                     image={experienceObjects[activeExperience].image}
                 />

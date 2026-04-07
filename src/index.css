@@ -19,6 +19,7 @@ body {
 }
 
 :root {
+  /* Light-Violet Default */
   --color-50:  #F2E6FF;
   --color-100: #DBB8FF;
   --color-200: #CF9FFF;
@@ -40,14 +41,22 @@ body {
   --box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.magenta {
+  --color-50: #FFE6FF;
+  --color-100: #FFB8FF;
+  --color-200: #FF8AFF;
+  --color-300: #FF5CFF;
+  --color-400: #FF2EFF;
+  --color-500: #FF00FF;
+  --color-600: #D100D1;
+  --color-700: #A300A3;
+  --color-800: #750075;
+  --color-900: #470047;
+  --color-950: #1A001A;
+}
+
 /* @media (prefers-color-scheme: dark) {
-  :root {
-    --color-primary: #0070f3;
-    --color-secondary: #1c1c1e;
-    --color-background: #000000;
-    --color-text-primary: #ffffff;
-    --color-text-secondary: #999999;
-  }
+  :root {}
 } */
 
 #root {
