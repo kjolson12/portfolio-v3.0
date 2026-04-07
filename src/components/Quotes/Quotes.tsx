@@ -23,8 +23,19 @@ export default function Quotes() {
 
     return (
         <div id="quotes-container" className='hover-animation'>
-            <p className='quote-text'>"{quotesArray[quoteCount]}"</p>
-            <p className='quote-author'>- Management</p>
+            <div id="quote-text-container">
+                <p className='quote-text'>"{quotesArray[quoteCount]}"</p>
+                <p className='quote-author'>- Management</p>
+            </div>
+            <div id="quote-selectors">
+                {quotesArray.map((_, index) => (
+                    <span
+                        key={index}
+                        className={`quote-selector ${index === quoteCount ? 'active' : ''}`}
+                        onClick={() => setQuoteCount(index)}
+                    />
+                ))}
+            </div>
         </div>
     );
 };

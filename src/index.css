@@ -33,6 +33,8 @@ body {
   --color-950: #0D001A;
 
   --color-background: var(--color-950);
+  --color-highlight: #00FF00; /* Split Complementary Color */
+  --color-highlight-secondary: #FFFF00; /* Split Complementary Color */
 
   --color-text-primary: #fff;
   --color-text-secondary: #000;

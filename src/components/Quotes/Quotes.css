@@ -1,13 +1,16 @@
 #quotes-container {
-    height: 260px;  /* Height needed for longest quote */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     padding: 5rem;
     border-radius: 30px;
     box-shadow: var(--box-shadow);
     background-color: var(--color-100);
     color: var(--color-text-secondary);
+}
+
+#quote-text-container {
+    height: 160px;  /* Height needed for longest quote */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .quote-text {
@@ -23,4 +26,27 @@
     margin-top: 1rem;
     text-align: right;
     font-weight: 500;
+}
+
+#quote-selectors {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.quote-selector {
+    display: inline-block;
+    background-color: var(--color-500);
+    height: 15px;
+    width: 15px;
+    border-radius: 999px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.quote-selector.active {
+    width: 25px;
+    background-color: var(--color-highlight);
+    border: 2px solid var(--color-950);
 }
