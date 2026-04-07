@@ -2,6 +2,7 @@ import './Bio.css';
 import bioImage from '../../images/bio-image.jpeg';
 
 import BioStat from '../BioStat/BioStat';
+import Quotes from '../Quotes/Quotes';
 
 export default function Bio() {
     return (
@@ -40,11 +41,7 @@ export default function Bio() {
                     <BioStat stat="10,000+ Users" text="monthly on some sites" />
                 </div>
                 <h4>What Others Say</h4>
-                <div id="bio-quote-container" className='hover-animation'>
-                    <p className='bio-quote-text'>"Kyle consistently demonstrates a strong ability to complete tasks efficiently while maintaining a high level
-                    of quality."</p>
-                    <p style={{textAlign: 'right'}}>- Management</p>
-                </div>
+                <Quotes />
             </div>
         </div>
     );

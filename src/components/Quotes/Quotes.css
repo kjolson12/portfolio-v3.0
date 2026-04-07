@@ -1,0 +1,22 @@
+#quotes-container {
+    padding: 5rem;
+    border-radius: 30px;
+    box-shadow: var(--box-shadow);
+    background-color: var(--color-primary);
+    color: var(--color-text-secondary);
+}
+
+.quote-text {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0;
+    font-style: italic;
+}
+
+.quote-author {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    text-align: right;
+    font-weight: 500;
+}
