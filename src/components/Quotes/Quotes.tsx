@@ -13,13 +13,28 @@ const quotesArray = [
 export default function Quotes() {
     const [quoteCount, setQuoteCount] = useState(0);
 
+    const handleQuoteClick = (index: number) => {
+        setQuoteCount(index);
+    }
+
+    const startLoadingBar = () => {
+        const loadingBar = document.querySelector('.loading-bar') as HTMLElement;
+        if (loadingBar) {
+            loadingBar.classList.remove('active');
+            void loadingBar.offsetWidth; // Trigger a reflow to restart the animation
+            loadingBar.classList.add('active');
+        }
+    }
+
     useEffect(() => {
         const interval = setInterval(() => {
             setQuoteCount((prevCount) => (prevCount + 1) % quotesArray.length);
+            startLoadingBar();
         }, 7000);
+        startLoadingBar(); // Start the loading bar immediately on component mount
 
         return () => clearInterval(interval); // Cleanup the interval on component unmount
-    }, []);
+    }, [handleQuoteClick]);
 
     return (
         <div id="quotes-container" className='hover-animation'>
@@ -27,12 +42,15 @@ export default function Quotes() {
                 <p className='quote-text'>"{quotesArray[quoteCount]}"</p>
                 <p className='quote-author'>- Management</p>
             </div>
+            <div className='loading-bar-container'>
+                <div className="loading-bar" />
+            </div>
             <div id="quote-selectors">
                 {quotesArray.map((_, index) => (
                     <span
                         key={index}
                         className={`quote-selector ${index === quoteCount ? 'active' : ''}`}
-                        onClick={() => setQuoteCount(index)}
+                        onClick={() => handleQuoteClick(index)}
                     />
                 ))}
             </div>
