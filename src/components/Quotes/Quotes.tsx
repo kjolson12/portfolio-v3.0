@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 import './Quotes.css';
 
@@ -12,19 +12,19 @@ const quotesArray = [
 
 export default function Quotes() {
     const [quoteCount, setQuoteCount] = useState(0);
+    const loadingBarRef = useRef<HTMLDivElement>(null); // Create a ref for the loading bar
 
     const handleQuoteClick = (index: number) => {
         setQuoteCount(index);
     }
 
     const startLoadingBar = () => {
-        const loadingBar = document.querySelector('.loading-bar') as HTMLElement;
-        if (loadingBar) {
-            loadingBar.classList.remove('active');
-            void loadingBar.offsetWidth; // Trigger a reflow to restart the animation
-            loadingBar.classList.add('active');
+        if (loadingBarRef.current) {
+            loadingBarRef.current.classList.remove('active');
+            void loadingBarRef.current.offsetWidth; // Trigger a reflow to restart the animation
+            loadingBarRef.current.classList.add('active');
         }
-    }
+    };
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -43,7 +43,7 @@ export default function Quotes() {
                 <p className='quote-author'>- Management</p>
             </div>
             <div className='loading-bar-container'>
-                <div className="loading-bar" />
+                <div className="loading-bar" ref={loadingBarRef} />
             </div>
             <div id="quote-selectors">
                 {quotesArray.map((_, index) => (
