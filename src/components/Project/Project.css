@@ -1,0 +1,19 @@
+.project-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 4rem;
+    background-color: var(--color-300);
+    color: var(--color-text-secondary);
+    border-radius: 30px;
+    box-shadow: var(--box-shadow);
+}
+
+.project-container img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: top;
+    cursor: pointer;
+    border-radius: 30px;
+}
