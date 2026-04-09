@@ -12,31 +12,36 @@ const projectsObject: Record<'all-starfunds' | 'pearldivercreditcompany' | 'clar
     description: string;
     image: string,
     projectUrl: string;
+    projectTags?: string[];
 }>  = {
     'all-starfunds': {
         title: 'Liberty All-Star Funds',
         description: 'A website for a mutual fund company, built using React and TypeScript.',
         image: allStarFundsImg,
-        projectUrl: 'https://www.all-starfunds.com/'
+        projectUrl: 'https://www.all-starfunds.com/',
+        projectTags: ['PHP', 'JavaScript', 'JQuery', 'SCSS']
     },
     'pearldivercreditcompany': {
         title: 'Pearl Diver Credit Company',
         description: 'A website for a credit company, built using React and TypeScript.',
         image: pearldivercreditcompanyImg,
-        projectUrl: 'https://www.pearldivercreditcompany.com/'
+        projectUrl: 'https://www.pearldivercreditcompany.com/',
+        projectTags: ['PHP', 'JavaScript', 'JQuery', 'SCSS']
     },
     'clarkstoncapital': {
         title: 'Clarkston Capital Partners',
         description: 'A website for a mutual fund company, built using React and TypeScript.',
         image: clarkstoncapitalImg,
-        projectUrl: 'https://www.clarkstoncapital.com/'
-    },
+        projectUrl: 'https://www.clarkstoncapital.com/',
+        projectTags: ['PHP', 'JavaScript', 'JQuery', 'SCSS']
+    },/* 
     'x2etfs': {
         title: 'X-Square Capital',
         description: 'A website for an ETF company, built using React and TypeScript.',
         image: x2etfsImg,
-        projectUrl: 'https://www.x2etfs.com/'
-    }
+        projectUrl: 'https://www.x2etfs.com/',
+        projectTags: ['PHP', 'JavaScript', 'JQuery', 'SCSS']
+    } */
 };
 
 export default function Professional() {
@@ -53,6 +58,7 @@ export default function Professional() {
                         description={project.description}
                         image={project.image}
                         projectUrl={project.projectUrl}
+                        projectTags={project.projectTags}
                     />
                 ))}
             </div>

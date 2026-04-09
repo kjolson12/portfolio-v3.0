@@ -5,15 +5,25 @@ interface ProjectProps {
     description: string;
     image: string;
     projectUrl: string;
+    projectTags?: string[];
 }
 
-export default function Project({ title, description, image, projectUrl }: ProjectProps) {
+export default function Project({ title, description, image, projectUrl, projectTags }: ProjectProps) {
     return (
         <div className='project-container'>
             <img src={image} alt={`screenshot of ${title} website`} onClick={() => window.open(projectUrl, '_blank')} />
-            <h4>{title}</h4>
-            <p>{description}</p>
-            <button className="button button-secondary" onClick={() => window.open(projectUrl, '_blank')}>View Website</button>
+            <div className="project-tags">
+                {projectTags?.map((tag, index) => (
+                    <span key={index} className="project-tag">{tag}</span>
+                ))}
+            </div>
+            <div className="project-text">
+                <h5>{title}</h5>
+                <p>{description}</p>
+            </div>
+            <div className="project-button-container">
+                <button className="button" onClick={() => window.open(projectUrl, '_blank')}>View Website</button>
+            </div>
         </div>
     );
 };

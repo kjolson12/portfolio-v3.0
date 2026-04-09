@@ -13,7 +13,7 @@ export default function Header () {
             <a className="main-nav-link" href="#about">About</a>
         </nav>
         <div>
-            <button className='button'>
+            <button className='button button-secondary'>
                 Download Resume
                 <i id="resume-download-icon" className="bi bi-download"></i>
             </button>
