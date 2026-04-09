@@ -14,7 +14,7 @@ export default function Project({ title, description, image, projectUrl, project
             <img src={image} alt={`screenshot of ${title} website`} onClick={() => window.open(projectUrl, '_blank')} />
             <div className="project-tags">
                 {projectTags?.map((tag, index) => (
-                    <span key={index} className="project-tag">{tag}</span>
+                    <span key={index} className={`project-tag ${tag.toLowerCase()}-tag`}>{tag}</span>
                 ))}
             </div>
             <div className="project-text">

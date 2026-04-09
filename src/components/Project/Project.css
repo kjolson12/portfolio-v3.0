@@ -34,12 +34,57 @@
 
 .project-tag {
     display: inline-block;
-    border: 1px solid var(--color-500);
+    border: 2px solid var(--color-500);
     color: var(--color-text-primary);
-    padding: 0.25rem 0.75rem;
-    border-radius: 3px;
-    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 7px;
+    font-size: 1.2rem;
     font-weight: 600;
+    cursor: pointer;
+}
+
+.php-tag {
+    border-color: #B0B3D6;
+    color: #B0B3D6;
+}
+
+.php-tag:hover {
+    background-color: #B0B3D6;
+    color: var(--color-text-primary);
+}
+
+.javascript-tag {
+    border-color: #f0db4f;
+    color: #f0db4f;
+}
+
+.javascript-tag:hover {
+    background-color: #f0db4f;
+    color: var(--color-text-secondary);
+}
+
+.jquery-tag {
+    border-color: #0B93F4;
+    color: #0B93F4;
+}
+
+.jquery-tag:hover {
+    background-color: #0B93F4;
+    color: var(--color-text-primary);
+}
+
+.sass-tag {
+    border-color: #cd6799;
+    color: #cd6799;
+}
+
+.sass-tag:hover {
+    background-color: #cd6799;
+    color: var(--color-text-primary);
+}
+
+.project-text h5 {
+    margin-bottom: 1rem;
 }
 
 .project-button-container {

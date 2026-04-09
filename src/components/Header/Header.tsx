@@ -1,10 +1,15 @@
 import './Header.css';
 
+const headerLogoStart = "<";
+const headerLogoEnd = "/>";
+
 export default function Header () {
     return (
     <header>
         <div id="name-home-link-container">
-            <a id="name-home-link" href='./'>Kyle Olson</a>
+            <a id="name-home-link" href='./'>
+                <span className='headerLogo'>{headerLogoStart}</span> Kyle Olson <span className='headerLogo'>{headerLogoEnd}</span>
+            </a>
         </div>
         <nav id="main-nav">
             <a className="main-nav-link" href="#experience">Experience</a>

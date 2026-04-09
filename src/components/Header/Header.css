@@ -9,6 +9,10 @@ header {
     z-index: 999;
 }
 
+.headerLogo {
+    color: var(--color-200);
+}
+
 #name-home-link-container {
     padding: 1rem;
     display: flex;
