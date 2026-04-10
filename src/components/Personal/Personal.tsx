@@ -9,6 +9,7 @@ const projectsObject: Record<'smiteUI', {
     description: string;
     image: string,
     projectUrl: string;
+    projectGitHubUrl?: string;
     projectTags?: string[];
 }>  = {
     'smiteUI': {
@@ -16,6 +17,7 @@ const projectsObject: Record<'smiteUI', {
         description: 'Video games are full of user interfaces where intuitivity is critical. I took an opportunity to practice my React and UI design skills by improving the character select screen for one of my favorite games.',
         image: smiteUIImg,
         projectUrl: 'https://www.smite2ui.com/',
+        projectGitHubUrl: 'https://github.com/kjolson12',
         projectTags: ['React', 'JavaScript', 'CSS']
     },
 };
@@ -33,6 +35,7 @@ export default function Personal() {
                         description={project.description}
                         image={project.image}
                         projectUrl={project.projectUrl}
+                        projectGitHubUrl={project.projectGitHubUrl}
                         projectTags={project.projectTags}
                     />
                 ))}

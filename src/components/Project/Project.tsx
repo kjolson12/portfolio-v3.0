@@ -5,10 +5,11 @@ interface ProjectProps {
     description: string;
     image: string;
     projectUrl: string;
+    projectGitHubUrl?: string;
     projectTags?: string[];
 }
 
-export default function Project({ title, description, image, projectUrl, projectTags }: ProjectProps) {
+export default function Project({ title, description, image, projectUrl, projectGitHubUrl, projectTags }: ProjectProps) {
     const id = title.toLowerCase().replace(/\s+/g, '-');
 
     return (
@@ -25,6 +26,7 @@ export default function Project({ title, description, image, projectUrl, project
             </div>
             <div className="project-button-container">
                 <button className="button" onClick={() => window.open(projectUrl, '_blank')}>View Website</button>
+                {projectGitHubUrl && <button className="button button-tertiary" onClick={() => window.open(projectGitHubUrl, '_blank')}>View GitHub</button>}
             </div>
         </div>
     );

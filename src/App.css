@@ -33,6 +33,18 @@
     color: var(--color-text-secondary);
 }
 
+.button-tertiary {
+    background-color: var(--color-highlight);
+    border: 2px solid transparent;
+    color: var(--color-text-secondary);
+}
+
+.button-tertiary:hover {
+    background-color: color-mix(in srgb, var(--color-highlight), transparent 25%);
+    border: 2px solid var(--color-highlight);
+    color: var(--color-text-secondary);
+}
+
 section .container {
     width: 1200px;
     margin: 0 auto;
