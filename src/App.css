@@ -97,12 +97,6 @@ p {
     margin: 0;
 }
 
-.subtitle {
-    text-align: center;
-    font-size: 2rem;
-    margin-top: 2rem;
-}
-
 .hover-animation {
     transition: scale 0.3s ease;
 }

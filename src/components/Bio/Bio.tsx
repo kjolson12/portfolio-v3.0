@@ -35,9 +35,9 @@ export default function Bio() {
             <div id="bio-stats-and-quote-container">
                 <h4>Key Stats</h4>
                 <div id="bio-stats-container">
-                    <BioStat stat="5+ years" text="of professional work experience" />
+                    <BioStat stat="5 years" text="of professional work experience" />
                     <BioStat stat="6 client sites" text="where I led development" />
-                    <BioStat stat="~20 sites" text="currently maintained" />
+                    <BioStat stat="20 sites" text="currently maintained" />
                     <BioStat stat="10,000+ users" text="monthly on some sites" />
                 </div>
                 <h4>What Others Say</h4>

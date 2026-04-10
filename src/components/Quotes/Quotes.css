@@ -7,7 +7,7 @@
 }
 
 #quote-text-container {
-    height: 160px;  /* Height needed for longest quote */
+    height: 120px;  /* Height needed for longest quote */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -19,13 +19,6 @@
     letter-spacing: 1px;
     margin: 0;
     font-style: italic;
-}
-
-.quote-author {
-    font-size: 1.8rem;
-    margin-top: 1rem;
-    text-align: right;
-    font-weight: 600;
 }
 
 #quote-selectors {
@@ -52,9 +45,9 @@
 }
 
 .loading-bar-container {
-    margin-top: 1rem;
+    margin: 1rem auto 0;
     height: 15px;
-    width: 100%;
+    width: 50%;
     background-color: var(--color-300);
     border-radius: 999px;
     border: 2px solid var(--color-950);

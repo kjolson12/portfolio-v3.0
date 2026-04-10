@@ -48,8 +48,6 @@ export default function Professional() {
     return (
         <div id="professional-container">
             <h2>Professional Work</h2>
-            <p className='subtitle'>Here are some websites I built for real world clients while working at SS&C Technologies</p>
-
             <div className='projects-container'>
                 {Object.entries(projectsObject).map(([key, project]) => (
                     <Project
