@@ -88,9 +88,19 @@
     color: #61DBFB;
 }
 
+.react-tag:hover {
+    background-color: #61DBFB;
+    color: var(--color-text-secondary);
+}
+
 .css-tag {
     border-color: #3C99DC;
     color: #3C99DC;
+}
+
+.css-tag:hover {
+    background-color: #3C99DC;
+    color: var(--color-text-primary);
 }
 
 .project-text h5 {
