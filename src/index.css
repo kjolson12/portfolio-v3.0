@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Silkscreen:wght@400;700&display=swap'); */
+
 
 * {
   box-sizing: border-box;
@@ -19,6 +25,10 @@ body {
 }
 
 :root {
+  --font-primary: 'Instrument Sans', sans-serif;
+  --font-secondary: 'Bitcount Grid Double', monospace;
+  --font-tertiary: 'Silkscreen', monospace;
+
   /* Light-Violet Default */
   --color-50:  #F2E6FF;
   --color-100: #DBB8FF;

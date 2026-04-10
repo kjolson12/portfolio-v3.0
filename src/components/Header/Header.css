@@ -22,8 +22,9 @@ header {
 #name-home-link {
     text-decoration: none;
     color: var(--text-primary);
+    font-family: var(--font-secondary);
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 #main-nav {

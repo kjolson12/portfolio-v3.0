@@ -20,7 +20,7 @@ export default function Header () {
         <div>
             <button className='button button-secondary'>
                 Download Resume
-                <i id="resume-download-icon" className="bi bi-download"></i>
+                {/* <i id="resume-download-icon" className="bi bi-download"></i> */}
             </button>
         </div>
     </header>

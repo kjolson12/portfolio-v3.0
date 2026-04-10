@@ -18,6 +18,11 @@
     border-radius: 30px;
 }
 
+.experience-text h4 {
+    font-family: var(--font-primary);
+    font-weight: 700;
+}
+
 .experience-date-range {
     font-weight: 500;
     margin-bottom: 2rem;

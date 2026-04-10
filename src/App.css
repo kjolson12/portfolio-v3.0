@@ -9,8 +9,9 @@
     text-decoration: none;
     display: flex;
     align-items: center;
+    font-family: var(--font-tertiary);
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 400;
     box-shadow: var(--box-shadow);
     cursor: pointer;
     transition: all 0.3s ease;
@@ -46,7 +47,7 @@
 }
 
 section .container {
-    width: 1200px;
+    width: 1250px;
     margin: 0 auto;
     padding: 100px 0;
 }
@@ -68,6 +69,8 @@ h1 {
 h2 {
     font-size: 6rem;
     margin: 0;
+    font-family: var(--font-secondary);
+    font-weight: 400;
 }
 
 h3 {
@@ -78,6 +81,8 @@ h3 {
 h4 {
     font-size: 3rem;
     margin: 0;
+    font-family: var(--font-secondary);
+    font-weight: 300;
 }
 
 h5 {
@@ -93,8 +98,8 @@ p {
 }
 
 .subtitle {
+    text-align: center;
     font-size: 2rem;
-    font-weight: 700;
     margin-top: 2rem;
 }
 
