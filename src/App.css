@@ -93,3 +93,9 @@ p {
 .hover-animation:hover {
     scale: 1.05;
 }
+
+.projects-container {
+    margin: 4rem 0;
+    display: flex;
+    justify-content: space-evenly;
+}
