@@ -12,7 +12,7 @@ const projectsObject: Record<'smiteUI', {
     projectTags?: string[];
 }>  = {
     'smiteUI': {
-        title: 'Smmite 2 UI Concept',
+        title: 'SMITE 2 UI Concept',
         description: 'Video games are full of user interfaces where intuitivity is critical. I took an opportunity to practice my React and UI design skills by improving the character select screen for one of my favorite games.',
         image: smiteUIImg,
         projectUrl: 'https://www.smite2ui.com/',

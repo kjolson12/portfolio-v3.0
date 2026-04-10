@@ -83,6 +83,16 @@
     color: var(--color-text-primary);
 }
 
+.react-tag {
+    border-color: #61DBFB;
+    color: #61DBFB;
+}
+
+.css-tag {
+    border-color: #3C99DC;
+    color: #3C99DC;
+}
+
 .project-text h5 {
     margin-bottom: 1rem;
 }
@@ -91,4 +101,8 @@
     display: flex;
     justify-content: center;
     width: 100%;
+}
+
+#smite-2-ui-concept-img {
+    object-position: left;
 }
