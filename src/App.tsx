@@ -22,6 +22,10 @@ function App() {
     const animationDuration = characterCount * 0.08; // Adjust the multiplier for speed
 
     element.style.setProperty('animation', `typing ${animationDuration}s steps(${characterCount}, end) forwards, blink-caret .75s step-end infinite`);
+
+    setTimeout(() => {
+      element.style.setProperty('border-right', `none`); // Remove the blinking cursor after animation
+    }, animationDuration * 1000); // Convert to milliseconds
   };
 
   return (
