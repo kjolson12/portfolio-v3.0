@@ -53,7 +53,7 @@ section .container {
 }
 
 section#experience {
-    background-color: var(--color-900);
+    background: linear-gradient(135deg, var(--color-600) 0%, var(--color-900) 100%);
     color: var(--color-text-primary);
 }
 
