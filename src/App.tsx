@@ -1,5 +1,4 @@
-import { useOnInView } from "react-intersection-observer";
-
+import TypewriterObserver from './utils/TypewriterObserver';
 import Header from './components/Header/Header';
 import Bio from './components/Bio/Bio';
 import Experience from './components/Experience/Experience';
@@ -11,37 +10,21 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import './App.css';
 
 function App() {
-  const typewriterRef = useOnInView((inView, entry) => {
-    if (inView) {
-      configTypewriterEffect(entry.target as HTMLElement);
-    }
-  });
-
-  const configTypewriterEffect = (element: HTMLElement) => {
-    const characterCount = element.textContent?.length || 0;
-    const animationDuration = characterCount * 0.08; // Adjust the multiplier for speed
-
-    element.style.setProperty('animation', `typing ${animationDuration}s steps(${characterCount}, end) forwards, blink-caret .75s step-end infinite`);
-
-    setTimeout(() => {
-      element.style.setProperty('border-right', `none`); // Remove the blinking cursor after animation
-    }, animationDuration * 1000); // Convert to milliseconds
-  };
-
   return (
     <>
+      <TypewriterObserver />
       <Header />
 
       <section>
         <div className="container">
-          <Bio configTypewriterEffect={configTypewriterEffect} />
+          <Bio />
         </div>
       </section>
 
       <section id="experience">
         <div className="container">
           <div className="typewriter-container">
-            <h2 ref={typewriterRef} className="typewriter">Experience</h2>
+            <h2 className="typewriter">Experience</h2>
           </div>
           <Experience />
         </div>

@@ -7,7 +7,7 @@ export default function Header () {
     return (
     <header>
         <div id="name-home-link-container">
-            <a id="name-home-link" href='./'>
+            <a id="name-home-link" href='./' className='typewriter'>
                 <span className='headerLogo'>{headerLogoStart}</span> Kyle Olson <span className='headerLogo'>{headerLogoEnd}</span>
             </a>
         </div>

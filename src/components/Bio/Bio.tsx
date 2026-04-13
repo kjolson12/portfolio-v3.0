@@ -1,20 +1,9 @@
-import { useOnInView } from "react-intersection-observer";
-
 import BioStat from '../BioStat/BioStat';
 import Quotes from '../Quotes/Quotes';
 
 import './Bio.css';
 
-interface BioProps {
-    configTypewriterEffect: (element: HTMLElement) => void;
-}
-
-export default function Bio({ configTypewriterEffect }: BioProps) {
-    const typewriterRef = useOnInView((inView, entry) => {
-        if (inView) {
-            configTypewriterEffect(entry.target as HTMLElement);
-        }
-    });
+export default function Bio() {
 
     return (
         <div id="bio-container">
@@ -22,7 +11,9 @@ export default function Bio({ configTypewriterEffect }: BioProps) {
                 <div id="bio-image" className='hover-animation'></div>
                 <div id="bio-title">
                     <h1>Kyle Olson</h1>
-                    <h4>Website Developer</h4>
+                    <div className="typewriter-container">
+                        <h4 className='typewriter'>Website Developer</h4>
+                    </div>
                 </div>
                 <div id="bio-fun-facts">
                     <div className="fun-fact">
@@ -45,7 +36,7 @@ export default function Bio({ configTypewriterEffect }: BioProps) {
             </div>
             <div id="bio-stats-and-quote-container">
                 <div className="typewriter-container">
-                    <h4 ref={typewriterRef} className='typewriter'>Key Stats</h4>
+                    <h4 className='typewriter'>Key Stats</h4>
                 </div>
                 <div id="bio-stats-container">
                     <BioStat stat="5 years" text="of professional work experience" />
@@ -54,7 +45,7 @@ export default function Bio({ configTypewriterEffect }: BioProps) {
                     <BioStat stat="10,000+ users" text="monthly on some sites" />
                 </div>
                 <div className="typewriter-container">
-                    <h4 ref={typewriterRef} className='typewriter'>What Others Say</h4>
+                    <h4 className='typewriter'>What Others Say</h4>
                 </div>
                 <Quotes />
             </div>
