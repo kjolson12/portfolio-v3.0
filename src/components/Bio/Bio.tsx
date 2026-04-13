@@ -8,7 +8,7 @@ export default function Bio() {
     return (
         <div id="bio-container">
             <div id="bio-image-and-title">
-                <img id="bio-image" className='hover-animation' src={bioImage} alt="" />
+                <div id="bio-image" className='hover-animation'></div>
                 <div id="bio-title">
                     <h1>Kyle Olson</h1>
                     <h4>Website Developer</h4>

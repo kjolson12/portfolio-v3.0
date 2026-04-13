@@ -12,10 +12,11 @@
 }
 
 #bio-image {
+    background-image: url('../../images/bio-image.jpeg');
+    background-size: 113%;
+    background-position: 0 20%;
     width: 350px;
     border-radius: 999px;
-    object-fit: cover;
-    object-position: 0 22%;
     aspect-ratio: 1;
     box-shadow: var(--box-shadow);
 }
