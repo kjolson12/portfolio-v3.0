@@ -1,10 +1,21 @@
-import './Bio.css';
-import bioImage from '../../images/bio-image.jpeg';
+import { useOnInView } from "react-intersection-observer";
 
 import BioStat from '../BioStat/BioStat';
 import Quotes from '../Quotes/Quotes';
 
-export default function Bio() {
+import './Bio.css';
+
+interface BioProps {
+    configTypewriterEffect: (element: HTMLElement) => void;
+}
+
+export default function Bio({ configTypewriterEffect }: BioProps) {
+    const typewriterRef = useOnInView((inView, entry) => {
+        if (inView) {
+            configTypewriterEffect(entry.target as HTMLElement);
+        }
+    });
+
     return (
         <div id="bio-container">
             <div id="bio-image-and-title">
@@ -33,14 +44,18 @@ export default function Bio() {
                 </div>
             </div>
             <div id="bio-stats-and-quote-container">
-                <h4>Key Stats</h4>
+                <div className="typewriter-container">
+                    <h4 ref={typewriterRef} className='typewriter'>Key Stats</h4>
+                </div>
                 <div id="bio-stats-container">
                     <BioStat stat="5 years" text="of professional work experience" />
                     <BioStat stat="6 client sites" text="where I led development" />
                     <BioStat stat="20 sites" text="currently maintained" />
                     <BioStat stat="10,000+ users" text="monthly on some sites" />
                 </div>
-                <h4>What Others Say</h4>
+                <div className="typewriter-container">
+                    <h4 ref={typewriterRef} className='typewriter'>What Others Say</h4>
+                </div>
                 <Quotes />
             </div>
         </div>

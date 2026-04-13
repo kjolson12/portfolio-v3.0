@@ -110,3 +110,26 @@ p {
     display: flex;
     justify-content: space-evenly;
 }
+
+.typewriter-container {
+    width: fit-content;
+}
+
+.typewriter {
+    overflow: hidden; /* Hides the text as it's typed */
+    border-right: 6px solid var(--color-highlight); /* The cursor */
+    white-space: nowrap; /* Keeps text on one line */
+    width: 0;
+}
+
+  /* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+  /* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--color-highlight); }
+}
