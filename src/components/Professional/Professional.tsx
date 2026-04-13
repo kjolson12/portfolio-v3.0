@@ -47,7 +47,9 @@ const projectsObject: Record<'all-starfunds' | 'pearldivercreditcompany' | 'clar
 export default function Professional() {
     return (
         <div id="professional-container">
-            <h2>Professional Work</h2>
+            <div className="typewriter-container">
+                <h2 className='typewriter'>Professional Work</h2>
+            </div>
             <div className='projects-container'>
                 {Object.entries(projectsObject).map(([key, project]) => (
                     <Project

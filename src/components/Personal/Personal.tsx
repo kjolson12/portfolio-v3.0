@@ -25,7 +25,9 @@ const projectsObject: Record<'smiteUI', {
 export default function Personal() {
     return (
         <div id="personal-container">
-            <h2>Personal Projects</h2>
+            <div className="typewriter-container">
+                <h2 className='typewriter'>Personal Projects</h2>
+            </div>
             <div className='projects-container'>
                 {Object.entries(projectsObject).map(([key, project]) => (
                     <Project
