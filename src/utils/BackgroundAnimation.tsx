@@ -20,7 +20,8 @@ const sketch: Sketch = p5 => {
     }
 
     p5.draw = () => {
-        p5.fill(0, 10);
+        // background color hex to rgb
+        p5.fill(13, 0, 26, 5);
         p5.rect(0, 0, p5.width, p5.height);
     
         if (particles.length < (p5.width / p5.height) * numOfParticles) {
