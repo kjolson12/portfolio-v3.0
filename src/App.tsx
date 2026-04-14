@@ -1,3 +1,4 @@
+import BackgroundAnimation from './utils/BackgroundAnimation';
 import TypewriterObserver from './utils/TypewriterObserver';
 import Header from './components/Header/Header';
 import Bio from './components/Bio/Bio';
@@ -12,6 +13,7 @@ import './App.css';
 function App() {
   return (
     <>
+      <BackgroundAnimation />
       <TypewriterObserver />
       <Header />
 
