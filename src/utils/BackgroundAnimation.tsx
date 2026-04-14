@@ -6,7 +6,7 @@ const backgroundColor = '#0D001A';
 const sketch: Sketch = p5 => {
     let particles: Particle[] = [];
     let fontSize = 8;
-    let numOfParticles = 10;
+    let numOfParticles = 15;
 
     p5.setup = () => {
         p5.createCanvas(p5.windowWidth, p5.windowHeight);
