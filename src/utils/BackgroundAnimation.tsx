@@ -1,8 +1,12 @@
 import { P5Canvas, type P5CanvasInstance, type Sketch, type SketchProps } from "@p5-wrapper/react";
+import p5 from "p5";
+
+const backgroundColor = '#0D001A';
 
 const sketch: Sketch = p5 => {
     let particles: Particle[] = [];
     let fontSize = 8;
+    let numOfParticles = 2;
 
     p5.setup = () => {
         p5.createCanvas(p5.windowWidth, p5.windowHeight);
@@ -10,20 +14,20 @@ const sketch: Sketch = p5 => {
         p5.textFont('monospace');
         p5.textSize(fontSize);
     
-        p5.colorMode(p5.RGB, 1, 100, 100, 100);
+        p5.colorMode(p5.RGB, 255, 255, 255, 100);
     
-        p5.background('#0D001A');
+        p5.background(backgroundColor);
     }
 
     p5.draw = () => {
         p5.fill(0, 10);
         p5.rect(0, 0, p5.width, p5.height);
     
-        if (particles.length < (p5.width / p5.height) * 100) {
+        if (particles.length < (p5.width / p5.height) * numOfParticles) {
             let p = new Particle(p5);
             particles.push(p);
         }
-        
+
         particles.forEach(p => {
             p.draw();
             p.update();
@@ -50,8 +54,7 @@ const sketch: Sketch = p5 => {
     
         reset() {
             this.pos.set(Math.floor(this.p5.random(this.p5.width) / fontSize) * fontSize, -36);
-            this.speed = this.p5.random(0.375, 1.1);
-    		// this.depth = random(64, 255);
+            this.speed = this.p5.random(0.1, 0.4);
         }
     
         update() {
@@ -64,7 +67,7 @@ const sketch: Sketch = p5 => {
         draw() {
             let point = this.p5.round(this.p5.random(0x3041, 0x3094));
             let char = String.fromCodePoint(point);
-            this.p5.fill(0, 100, 0, this.p5.map(this.speed, 0.375, 1.1, 40, 100));
+            this.p5.fill(0, 255, 0, this.p5.map(this.speed, 0.1, 0.4, 40, 100));
             this.p5.text(char, this.pos.x, this.p5.floor(this.pos.y / fontSize) * fontSize);
         }
     }
