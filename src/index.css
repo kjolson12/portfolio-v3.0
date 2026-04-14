@@ -78,3 +78,13 @@ body {
   background-color: var(--color-background);
   color: var(--color-text-primary);
 }
+
+header, section, footer {
+  position: relative;
+  z-index: 1;
+}
+
+canvas-container, canvas {
+  position: fixed;
+  z-index: 0;
+}

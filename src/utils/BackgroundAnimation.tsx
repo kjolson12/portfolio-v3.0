@@ -2,7 +2,7 @@ import { P5Canvas, type P5CanvasInstance, type Sketch, type SketchProps } from "
 
 const sketch: Sketch = p5 => {
     let particles: Particle[] = [];
-    let fontSize = 12;
+    let fontSize = 8;
 
     p5.setup = () => {
         p5.createCanvas(p5.windowWidth, p5.windowHeight);
@@ -12,7 +12,7 @@ const sketch: Sketch = p5 => {
     
         p5.colorMode(p5.RGB, 1, 100, 100, 100);
     
-        p5.background(0);
+        p5.background('#0D001A');
     }
 
     p5.draw = () => {
@@ -23,8 +23,7 @@ const sketch: Sketch = p5 => {
             let p = new Particle(p5);
             particles.push(p);
         }
-    
-    	// fill(0, 255, 0);
+        
         particles.forEach(p => {
             p.draw();
             p.update();
