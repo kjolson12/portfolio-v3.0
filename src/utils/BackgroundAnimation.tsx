@@ -17,6 +17,8 @@ const sketch: Sketch = p5 => {
         p5.colorMode(p5.RGB, 255, 255, 255, 100);
     
         p5.background(backgroundColor);
+
+        p5.frameRate(30);
     }
 
     p5.draw = () => {
@@ -55,7 +57,7 @@ const sketch: Sketch = p5 => {
     
         reset() {
             this.pos.set(Math.floor(this.p5.random(this.p5.width) / fontSize) * fontSize, -36);
-            this.speed = this.p5.random(0.1, 0.4);
+            this.speed = this.p5.random(0.2, 0.8);
         }
     
         update() {
@@ -68,7 +70,7 @@ const sketch: Sketch = p5 => {
         draw() {
             let point = this.p5.round(this.p5.random(0x3041, 0x3094));
             let char = String.fromCodePoint(point);
-            this.p5.fill(0, 75, 0, this.p5.map(this.speed, 0.1, 0.4, 40, 100));
+            this.p5.fill(0, 255, 0, this.p5.map(this.speed, 0.2, 0.8, 0, 40));
             this.p5.text(char, this.pos.x, this.p5.floor(this.pos.y / fontSize) * fontSize);
         }
     }
