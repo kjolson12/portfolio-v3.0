@@ -5,7 +5,7 @@ const backgroundColor = '#0D001A';
 
 const sketch: Sketch = p5 => {
     let particles: Particle[] = [];
-    let fontSize = 8;
+    let fontSize = 12;
     let numOfParticles = 15;
 
     p5.setup = () => {
