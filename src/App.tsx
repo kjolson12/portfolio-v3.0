@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import Bio from './components/Bio/Bio';
 import Experience from './components/Experience/Experience';
 import Professional from './components/Professional/Professional';
+import About from './components/About/About';
 import Personal from './components/Personal/Personal';
 import Footer from './components/Footer/Footer';
 
@@ -35,6 +36,12 @@ function App() {
       <section id="professional">
         <div className="container">
           <Professional />
+        </div>
+      </section>
+
+      <section id="about">
+        <div className="container">
+          <About />
         </div>
       </section>
 
