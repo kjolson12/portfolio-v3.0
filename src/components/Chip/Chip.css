@@ -1,6 +1,12 @@
 .chip-container {
     --chip-color: var(--color-500);
     --chip-shadow-color: var(--color-300);
+
+    height: 500px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 8px);
+    grid-template-rows: repeat(auto-fill, 8px);
 }
 
 .chip {
@@ -57,7 +63,6 @@
 }
 
 .chip-node {
-    position: absolute;
     width: 8px;
     height: 8px;
     background-color: transparent;

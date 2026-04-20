@@ -9,12 +9,8 @@ export default function About () {
                 <h2 className="typewriter">About</h2>
             </div>
             <div id="chips-container">
-                <div className="chip-container">
-                    <Chip title={'online'} />
-                </div>
-                <div className="chip-container">
-                    <Chip title={'offline'} />
-                </div>
+                <Chip title={'online'} />
+                <Chip title={'offline'} />
             </div>
         </div>
     );
