@@ -9,7 +9,7 @@ export default function Chip ({ title }: ChipProps) {
     const nodeArray = [];
 
     const generateNodeStyle = (index: number, title: string | undefined) => {
-        const unit = 17;
+        const unit = 14;
         let multiplier = 1;
 
         if (title === 'online') {
