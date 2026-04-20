@@ -4,48 +4,58 @@ import './About.css';
 
 const onlineSkillsObject = {
     'javascript': {
+        location: [20, 10],
         title: 'JavaScript',
         description: 'I have experience with JavaScript, and I am proficient in using it for both frontend and backend development.'
     },
     'html': {
+        location: [50, 10],
         title: 'HTML',
         description: 'I have experience with HTML, and I am proficient in using it to create structured and semantic web pages.'
     },
-    'css': {
-        title: 'CSS',
-        description: 'I have experience with CSS, and I am proficient in using it to create visually appealing and responsive web designs.'
-    },
-    'react': {
-        title: 'React',
-        description: 'I have experience with React, and I am proficient in using it to build dynamic and interactive user interfaces.'
-    },
     'github': {
+        location: [25, 48],
         title: 'GitHub',
         description: 'I have experience with GitHub, and I am proficient in using it for version control and collaboration on software projects.'
     },
+    'react': {
+        location: [45, 48],
+        title: 'React',
+        description: 'I have experience with React, and I am proficient in using it to build dynamic and interactive user interfaces.'
+    },
+    'css': {
+        location: [12, 30],
+        title: 'CSS',
+        description: 'I have experience with CSS, and I am proficient in using it to create visually appealing and responsive web designs.'
+    }
 }
 
 const offlineSkillsObject = {
-    'cooking': {
-        title: 'Cooking',
-        description: 'I have experience with cooking, and I enjoy experimenting with different recipes and cuisines to create delicious meals.'
-    },
-    'espresso': {
-        title: 'Espresso',
-        description: 'I have experience with making espresso, and I am proficient in using an espresso machine to create rich and flavorful coffee beverages.'
-    },
-    'guitar': {
-        title: 'Guitar',
-        description: 'I have experience with playing the guitar, and I enjoy learning new songs and techniques to improve my skills.'
-    },
     'weightlifting': {
+        location: [15, 10],
         title: 'Weightlifting',
         description: 'I have experience with weightlifting, and I am proficient in using various exercises and techniques to build strength and muscle.'
     },
+    'espresso': {
+        location: [45, 10],
+        title: 'Espresso',
+        description: 'I have experience with making espresso, and I am proficient in using an espresso machine to create rich and flavorful coffee beverages.'
+    },
     'videogames': {
+        location: [15, 48],
         title: 'Videogames',
         description: 'I have experience with playing videogames, and I enjoy exploring different genres and platforms to find new and exciting gaming experiences.'
     },
+    'cooking': {
+        location: [45, 48],
+        title: 'Cooking',
+        description: 'I have experience with cooking, and I enjoy experimenting with different recipes and cuisines to create delicious meals.'
+    },
+    'guitar': {
+        location: [55, 30],
+        title: 'Guitar',
+        description: 'I have experience with playing the guitar, and I enjoy learning new songs and techniques to improve my skills.'
+    }
 }
 
 export default function About () {

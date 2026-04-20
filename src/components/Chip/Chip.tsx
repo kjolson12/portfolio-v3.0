@@ -4,7 +4,7 @@ import './Chip.css';
 
 interface ChipProps {
     title?: string;
-    skillsObject?: { [key: string]: { title: string, description: string} };
+    skillsObject?: { [key: string]: { title: string, description: string, location: Array<number>} };
 };
 
 export default function Chip ({ title, skillsObject }: ChipProps) {
@@ -33,12 +33,10 @@ export default function Chip ({ title, skillsObject }: ChipProps) {
             <div id={`${title}-chip`} className="chip">
                 <span className="chip-title">{title}</span>
             </div>
-            {/* {skillsObject && Object.keys(skillsObject).map((skillKey, index) => {
+            {skillsObject && Object.keys(skillsObject).map((skillKey, index) => {
                 const skill = skillsObject[skillKey];
-                return <Skill key={`${title}-skill-${index}`} title={skill.title} description={skill.description} location={[index + 1, 1]} />
-            })} */}
-            <Skill title={skillsObject ? skillsObject[Object.keys(skillsObject)[0]].title : ''} description={skillsObject ? skillsObject[Object.keys(skillsObject)[0]].description : ''} location={[1, 1]} />
-            <Skill title={skillsObject ? skillsObject[Object.keys(skillsObject)[1]].title : ''} description={skillsObject ? skillsObject[Object.keys(skillsObject)[1]].description : ''} location={[1, 10]} />
+                return <Skill key={`${title}-skill-${index}`} title={skill.title} description={skill.description} location={skill.location} />
+            })}
         </div>
     );
 };
