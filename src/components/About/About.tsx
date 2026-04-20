@@ -14,8 +14,8 @@ const onlineSkillsObject = {
         description: 'I have experience with HTML, and I am proficient in using it to create structured and semantic web pages.'
     },
     'github': {
-        location: [25, 48],
-        title: 'GitHub',
+        location: [20, 45],
+        title: 'GitHub Copilot',
         description: 'I have experience with GitHub, and I am proficient in using it for version control and collaboration on software projects.'
     },
     'react': {
@@ -32,7 +32,7 @@ const onlineSkillsObject = {
 
 const offlineSkillsObject = {
     'weightlifting': {
-        location: [15, 10],
+        location: [12, 10],
         title: 'Weightlifting',
         description: 'I have experience with weightlifting, and I am proficient in using various exercises and techniques to build strength and muscle.'
     },
