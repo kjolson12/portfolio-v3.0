@@ -4,6 +4,12 @@
 }
 
 .chip {
+    /* at 1250px container, 625px chip-container width, 8x8px grid squares, halfway (39) minus half the width of the chip is 32 */
+    grid-column-start: 32;
+
+    /* at 500px chip-container height, 8x8px grid squares, halfway (31.25) minus half the width of the chip is 24.25 */
+    grid-row-start: 24;
+
     display: grid;
     position: relative;
     grid-template-rows: 1fr 1fr 1fr;

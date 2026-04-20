@@ -1,6 +1,11 @@
 #chips-container {
-    height: 500px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+}
+
+.chip-container {
+    height: 500px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 8px);
+    grid-template-rows: repeat(auto-fill, 8px);
 }
