@@ -8,7 +8,7 @@ export default function Chip ({ title }: ChipProps) {
     const numofNodes = 16;
     const nodeArray = [];
 
-    const generateNodeStyle = (index: number, title: string | undefined) => {
+    const generateNodeStyle = (index: number) => {
         if (index < 4) {
             return { gridRowStart: `23`, gridColumnStart: `${34 + (index * 3)}` };
         } else if (index < 8) {
@@ -21,7 +21,7 @@ export default function Chip ({ title }: ChipProps) {
     }
     
     for (let i = 0; i < numofNodes; i++) {
-        nodeArray.push(<div className={`chip-node chip-node-${i}`} key={`${title}chip-node-${i}`} style={generateNodeStyle(i, title)}></div>);
+        nodeArray.push(<div className={`chip-node chip-node-${i}`} key={`${title}chip-node-${i}`} style={generateNodeStyle(i)}></div>);
     }
 
     return (
