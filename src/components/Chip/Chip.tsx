@@ -1,3 +1,4 @@
+import React from 'react';
 import Skill from '../Skill/Skill';
 import Circuit from '../Circuit/Circuit';
 
@@ -42,7 +43,6 @@ export default function Chip ({ title, skillsObject }: ChipProps) {
         if (!skillObject.circuitMap) return null;
 
         return skillObject.circuitMap.map((circuit, index) => {
-            // we get here
             return <Circuit key={`$${skillObject.title}-circuit-${index}`} coordinate={circuit.coordinate} rotation={circuit.rotation} />
         });
     }
@@ -55,8 +55,12 @@ export default function Chip ({ title, skillsObject }: ChipProps) {
             </div>
             {skillsObject && Object.keys(skillsObject).map((skillKey, index) => {
                 const skill = skillsObject[skillKey];
-                generateCircuit(skill);
-                return <Skill key={`${title}-skill-${index}`} title={skill.title} description={skill.description} location={skill.location} />
+                return (
+                    <React.Fragment key={`${title}-skill-${index}`}>
+                        {generateCircuit(skill)}
+                        <Skill title={skill.title} description={skill.description} location={skill.location} />
+                    </React.Fragment>
+                );
             })}
         </div>
     );
