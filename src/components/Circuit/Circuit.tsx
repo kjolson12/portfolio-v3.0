@@ -6,8 +6,6 @@ interface CircuitProps {
 };
 
 export default function Circuit ({ coordinate, rotation }: CircuitProps) {
-    console.log('rendering circuit with coordinate:', coordinate, 'and rotation:', rotation);
-
     const style = {
         gridColumnStart: `${coordinate[0]}`,
         gridRowStart: `${coordinate[1]}`,

@@ -3,6 +3,16 @@ import Skill from '../Skill/Skill';
 import Circuit from '../Circuit/Circuit';
 
 import './Chip.css';
+import { skillCircuitMap } from '../../assets/circuit-map.js';
+
+declare module '../../assets/circuit-map.js' {
+    export const skillCircuitMap: {
+        [key: string]: Array<{
+            coordinate: Array<number>;
+            rotation: number;
+        }>;
+    };
+}
 
 interface ChipProps {
     title?: string;
@@ -39,11 +49,11 @@ export default function Chip ({ title, skillsObject }: ChipProps) {
         nodeArray.push(<div className={`chip-node chip-node-${i}`} key={`${title}chip-node-${i}`} style={generateNodeStyle(i)}></div>);
     }
 
-    const generateCircuit = (skillObject: { title: string; description?: string; location?: Array<number>; circuitMap?: Array<{ coordinate: Array<number>, rotation: number }>; }) => {
-        if (!skillObject.circuitMap) return null;
+    const generateCircuit = (skillCircuitArray: { [key: string]: Array<{ coordinate: Array<number>, rotation: number }> }, skillKey: string) => {
+        if (!skillCircuitArray[skillKey]) return null;
 
-        return skillObject.circuitMap.map((circuit, index) => {
-            return <Circuit key={`$${skillObject.title}-circuit-${index}`} coordinate={circuit.coordinate} rotation={circuit.rotation} />
+        return skillCircuitArray[skillKey].map((circuit, index) => {
+            return <Circuit key={`$${skillKey}-circuit-${index}`} coordinate={circuit.coordinate} rotation={circuit.rotation} />
         });
     }
 
@@ -57,7 +67,7 @@ export default function Chip ({ title, skillsObject }: ChipProps) {
                 const skill = skillsObject[skillKey];
                 return (
                     <React.Fragment key={`${title}-skill-${index}`}>
-                        {generateCircuit(skill)}
+                        {generateCircuit(skillCircuitMap, skillKey)}
                         <Skill title={skill.title} description={skill.description} location={skill.location} />
                     </React.Fragment>
                 );
