@@ -3,15 +3,15 @@ import Skill from '../Skill/Skill';
 import Circuit from '../Circuit/Circuit';
 
 import './Chip.css';
-import { skillCircuitMap } from '../../assets/circuit-map.js';
+import { skillCircuitMap } from '../../assets/circuit-map.ts';
 
-declare module '../../assets/circuit-map.js' {
-    export const skillCircuitMap: {
+declare module '../../assets/circuit-map.ts' {
+    interface CircuitMap {
         [key: string]: Array<{
             coordinate: Array<number>;
             rotation: number;
         }>;
-    };
+    }
 }
 
 interface ChipProps {
