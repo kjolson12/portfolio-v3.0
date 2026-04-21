@@ -6,7 +6,42 @@ const onlineSkillsObject = {
     'javascript': {
         location: [20, 10],
         title: 'JavaScript',
-        description: 'I have experience with JavaScript, and I am proficient in using it for both frontend and backend development.'
+        description: 'I have experience with JavaScript, and I am proficient in using it for both frontend and backend development.',
+        circuitMap: [
+            {
+                coordinate: [34, 23],
+                rotation: 0
+            },
+            {
+                coordinate: [34, 22],
+                rotation: 0
+            },{
+                coordinate: [34, 21],
+                rotation: 0
+            },
+            {
+                coordinate: [34, 20],
+                rotation: 0
+            },
+            {
+                coordinate: [34, 19],
+                rotation: 0
+            },{
+                coordinate: [34, 18],
+                rotation: 0
+            },
+            {
+                coordinate: [34, 17],
+                rotation: 0
+            },
+            {
+                coordinate: [34, 16],
+                rotation: 0
+            },{
+                coordinate: [34, 15],
+                rotation: 0
+            }
+        ]
     },
     'html': {
         location: [50, 10],

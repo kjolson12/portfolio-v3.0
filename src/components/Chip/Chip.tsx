@@ -1,10 +1,21 @@
 import Skill from '../Skill/Skill';
+import Circuit from '../Circuit/Circuit';
 
 import './Chip.css';
 
 interface ChipProps {
     title?: string;
-    skillsObject?: { [key: string]: { title: string, description: string, location: Array<number>} };
+    skillsObject?: {
+        [key: string]: {
+            title: string,
+            description: string,
+            location: Array<number>,
+            circuitMap?: Array<{
+                coordinate: Array<number>,
+                rotation: number
+            }>
+        }
+    };
 };
 
 export default function Chip ({ title, skillsObject }: ChipProps) {
@@ -27,6 +38,15 @@ export default function Chip ({ title, skillsObject }: ChipProps) {
         nodeArray.push(<div className={`chip-node chip-node-${i}`} key={`${title}chip-node-${i}`} style={generateNodeStyle(i)}></div>);
     }
 
+    const generateCircuit = (skillObject: { title: string; description?: string; location?: Array<number>; circuitMap?: Array<{ coordinate: Array<number>, rotation: number }>; }) => {
+        if (!skillObject.circuitMap) return null;
+
+        return skillObject.circuitMap.map((circuit, index) => {
+            // we get here
+            return <Circuit key={`$${skillObject.title}-circuit-${index}`} coordinate={circuit.coordinate} rotation={circuit.rotation} />
+        });
+    }
+
     return (
         <div className="chip-container">
             {nodeArray}
@@ -35,6 +55,7 @@ export default function Chip ({ title, skillsObject }: ChipProps) {
             </div>
             {skillsObject && Object.keys(skillsObject).map((skillKey, index) => {
                 const skill = skillsObject[skillKey];
+                generateCircuit(skill);
                 return <Skill key={`${title}-skill-${index}`} title={skill.title} description={skill.description} location={skill.location} />
             })}
         </div>
