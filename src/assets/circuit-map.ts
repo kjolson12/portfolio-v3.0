@@ -1,32 +1,41 @@
 export const skillCircuitMap = {
     javascript: [
             {
-                coordinate: [34, 22],
+                type: 'diagonal',
+                coordinate: [33, 22],
                 rotation: 0
             },{
-                coordinate: [34, 21],
+                type: 'elbow',
+                coordinate: [32, 21],
                 rotation: 0
             },
             {
-                coordinate: [34, 20],
+                type: 'straight',
+                coordinate: [32, 20],
                 rotation: 0
             },
             {
-                coordinate: [34, 19],
+                type: 'straight',
+                coordinate: [32, 19],
                 rotation: 0
             },{
-                coordinate: [34, 18],
+                type: 'straight',
+                coordinate: [32, 18],
                 rotation: 0
             },
             {
-                coordinate: [34, 17],
+                type: 'straight',
+                coordinate: [32, 17],
                 rotation: 0
             },
             {
-                coordinate: [34, 16],
+                type: 'straight',
+                coordinate: [32, 16],
                 rotation: 0
-            },{
-                coordinate: [34, 15],
+            },
+            {
+                type: 'straight',
+                coordinate: [32, 15],
                 rotation: 0
             }
     ],

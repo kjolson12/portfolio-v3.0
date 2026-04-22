@@ -22,6 +22,7 @@ interface ChipProps {
             description: string,
             location: Array<number>,
             circuitMap?: Array<{
+                type: string,
                 coordinate: Array<number>,
                 rotation: number
             }>
@@ -53,7 +54,7 @@ export default function Chip ({ title, skillsObject }: ChipProps) {
         if (!skillCircuitArray[skillKey]) return null;
 
         return skillCircuitArray[skillKey].map((circuit, index) => {
-            return <Circuit key={`$${skillKey}-circuit-${index}`} coordinate={circuit.coordinate} rotation={circuit.rotation} />
+            return <Circuit key={`$${skillKey}-circuit-${index}`} type={circuit.type} coordinate={circuit.coordinate} rotation={circuit.rotation} />
         });
     }
 
