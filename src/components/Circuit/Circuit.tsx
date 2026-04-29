@@ -1,7 +1,7 @@
 import './Circuit.css';
 
 interface CircuitProps {
-    type: string;
+    version: string;
     coordinate: Array<number>;
     rotation: number;
 };
@@ -28,7 +28,7 @@ const diagonalCircuit = (
     <line x1="0" y1="0" x2="100" y2="100" stroke={strokeColor} strokeWidth={strokeWidth} />
 );
 
-export default function Circuit({ type, coordinate, rotation }: CircuitProps) {
+export default function Circuit({ version, coordinate, rotation }: CircuitProps) {
     const style = {
         gridColumnStart: `${coordinate[0]}`,
         gridRowStart: `${coordinate[1]}`,
@@ -36,7 +36,7 @@ export default function Circuit({ type, coordinate, rotation }: CircuitProps) {
     };
 
     const renderCircuit = () => {
-        switch (type) {
+        switch (version) {
             case 'straight':
                 return straightCircuit;
             case 'elbow':

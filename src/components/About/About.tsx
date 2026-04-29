@@ -1,32 +1,42 @@
 import Chip from '../Chip/Chip';
 
 import './About.css';
+import javascriptLogo from '../../images/javascript-logo.png';
+import htmlLogo from '../../images/html-logo.png';
+import cssLogo from '../../images/css-logo.png';
+import reactLogo from '../../images/react-logo.png';
+import githubCopilotLogo from '../../images/github-copilot-logo.png';
 
 const onlineSkillsObject = {
     'javascript': {
         location: [20, 10],
         title: 'JavaScript',
         description: 'I have experience with JavaScript, and I am proficient in using it for both frontend and backend development.',
+        img: javascriptLogo
     },
     'html': {
-        location: [50, 10],
+        location: [52, 15],
         title: 'HTML',
-        description: 'I have experience with HTML, and I am proficient in using it to create structured and semantic web pages.'
+        description: 'I have experience with HTML, and I am proficient in using it to create structured and semantic web pages.',
+        img: htmlLogo
     },
     'github': {
-        location: [20, 45],
+        location: [22, 48],
         title: 'GitHub Copilot',
-        description: 'I have experience with GitHub, and I am proficient in using it for version control and collaboration on software projects.'
+        description: 'I have experience with GitHub, and I am proficient in using it for version control and collaboration on software projects.',
+        img: githubCopilotLogo
     },
     'react': {
-        location: [45, 48],
+        location: [53, 35],
         title: 'React',
-        description: 'I have experience with React, and I am proficient in using it to build dynamic and interactive user interfaces.'
+        description: 'I have experience with React, and I am proficient in using it to build dynamic and interactive user interfaces.',
+        img: reactLogo
     },
     'css': {
-        location: [12, 30],
+        location: [10, 30],
         title: 'CSS',
-        description: 'I have experience with CSS, and I am proficient in using it to create visually appealing and responsive web designs.'
+        description: 'I have experience with CSS, and I am proficient in using it to create visually appealing and responsive web designs.',
+        img: cssLogo
     }
 }
 

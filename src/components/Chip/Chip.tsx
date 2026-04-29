@@ -10,6 +10,7 @@ declare module '../../assets/circuit-map.ts' {
         [key: string]: Array<{
             coordinate: Array<number>;
             rotation: number;
+            version: string;
         }>;
     }
 }
@@ -21,11 +22,7 @@ interface ChipProps {
             title: string,
             description: string,
             location: Array<number>,
-            circuitMap?: Array<{
-                type: string,
-                coordinate: Array<number>,
-                rotation: number
-            }>
+            img: string,
         }
     };
 };
@@ -50,11 +47,11 @@ export default function Chip ({ title, skillsObject }: ChipProps) {
         nodeArray.push(<div className={`chip-node chip-node-${i}`} key={`${title}chip-node-${i}`} style={generateNodeStyle(i)}></div>);
     }
 
-    const generateCircuit = (skillCircuitArray: { [key: string]: Array<{ coordinate: Array<number>, rotation: number }> }, skillKey: string) => {
-        if (!skillCircuitArray[skillKey]) return null;
+    const generateCircuit = (skillCircuitArray: { [key: string]: Array<{ coordinate: Array<number>, rotation: number , version: string}> }, skillKey: string) => {
+        if (skillCircuitArray[skillKey].length === 0) return null;
 
         return skillCircuitArray[skillKey].map((circuit, index) => {
-            return <Circuit key={`$${skillKey}-circuit-${index}`} type={circuit.type} coordinate={circuit.coordinate} rotation={circuit.rotation} />
+            return <Circuit key={`$${skillKey}-circuit-${index}`} version={circuit.version} coordinate={circuit.coordinate} rotation={circuit.rotation} />
         });
     }
 
@@ -69,7 +66,7 @@ export default function Chip ({ title, skillsObject }: ChipProps) {
                 return (
                     <React.Fragment key={`${title}-skill-${index}`}>
                         {generateCircuit(skillCircuitMap, skillKey)}
-                        <Skill title={skill.title} description={skill.description} location={skill.location} />
+                        <Skill title={skill.title} description={skill.description} location={skill.location} img={skill.img} />
                     </React.Fragment>
                 );
             })}

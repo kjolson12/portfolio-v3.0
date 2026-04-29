@@ -5,9 +5,10 @@ interface SkillProps {
     title: string;
     description: string;
     location: Array<number>;
+    img: string;
 };
 
-export default function Skill({ title, description, location }: SkillProps) {
+export default function Skill({ title, description, location, img }: SkillProps) {
     const titleRef = useRef<HTMLHeadingElement>(null); // Ref for the skill-title element
     const [containerWidth, setContainerWidth] = useState(1); // State to store the calculated width
     const [calculatedHeight, setCalculatedHeight] = useState(1); // State to store the calculated height
@@ -36,7 +37,13 @@ export default function Skill({ title, description, location }: SkillProps) {
 
     return (
         <div className="skill-container" style={style}>
-            <h5 className="skill-title" ref={titleRef}>{title}</h5>
+            <div className="skill-title-and-img">
+                <img className="skill-img" src={img} alt="" />
+                <h5 className="skill-title" ref={titleRef}>{title}</h5>
+            </div>
+            <div className="skill-description">
+                <p>{description}</p>
+            </div>
         </div>
     );
 };
