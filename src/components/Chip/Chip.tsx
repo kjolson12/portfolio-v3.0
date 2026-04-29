@@ -47,10 +47,10 @@ export default function Chip ({ title, skillsObject }: ChipProps) {
         nodeArray.push(<div className={`chip-node chip-node-${i}`} key={`${title}chip-node-${i}`} style={generateNodeStyle(i)}></div>);
     }
 
-    const generateCircuit = (skillCircuitArray: { [key: string]: Array<{ coordinate: Array<number>, rotation: number , version: string}> }, skillKey: string) => {
-        if (skillCircuitArray[skillKey].length === 0) return null;
+    const generateCircuit = (skillCircuitMap: { [key: string]: Array<{ coordinate: Array<number>, rotation: number , version: string}> }, skillKey: string) => {
+        if (skillCircuitMap[skillKey].length === 0) return null;
 
-        return skillCircuitArray[skillKey].map((circuit, index) => {
+        return skillCircuitMap[skillKey].map((circuit, index) => {
             return <Circuit key={`$${skillKey}-circuit-${index}`} version={circuit.version} coordinate={circuit.coordinate} rotation={circuit.rotation} />
         });
     }
