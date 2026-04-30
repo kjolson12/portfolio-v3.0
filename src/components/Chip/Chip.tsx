@@ -16,7 +16,7 @@ declare module '../../assets/circuit-map.ts' {
 }
 
 interface ChipProps {
-    title?: string;
+    title?: keyof typeof activeNodes;
     skillsObject?: {
         [key: string]: {
             title: string,
@@ -26,6 +26,11 @@ interface ChipProps {
         }
     };
 };
+
+const activeNodes = {
+    'online': [0],
+    'offline': [1],
+}
 
 export default function Chip ({ title, skillsObject }: ChipProps) {
     const numofNodes = 16;
@@ -44,6 +49,9 @@ export default function Chip ({ title, skillsObject }: ChipProps) {
     }
     
     for (let i = 0; i < numofNodes; i++) {
+        if (activeNodes[title!].includes(i)) {
+            nodeArray.push(<div className={`chip-node chip-node-${i} active`} key={`${title}chip-node-${i}`} style={generateNodeStyle(i)}></div>);
+        }
         nodeArray.push(<div className={`chip-node chip-node-${i}`} key={`${title}chip-node-${i}`} style={generateNodeStyle(i)}></div>);
     }
 
