@@ -51,8 +51,9 @@ export default function Chip ({ title, skillsObject }: ChipProps) {
     for (let i = 0; i < numofNodes; i++) {
         if (activeNodes[title!].includes(i)) {
             nodeArray.push(<div className={`chip-node chip-node-${i} active`} key={`${title}chip-node-${i}`} style={generateNodeStyle(i)}></div>);
+        } else {
+            nodeArray.push(<div className={`chip-node chip-node-${i}`} key={`${title}chip-node-${i}`} style={generateNodeStyle(i)}></div>);
         }
-        nodeArray.push(<div className={`chip-node chip-node-${i}`} key={`${title}chip-node-${i}`} style={generateNodeStyle(i)}></div>);
     }
 
     const generateCircuit = (skillCircuitMap: { [key: string]: Array<{ coordinate: Array<number>, rotation: number , version: string}> }, skillKey: string) => {
