@@ -86,19 +86,14 @@ export const skillCircuitMap = {
             rotation: 90
         },
         {
-            version: 'elbow',
-            coordinate: [47, 26],
-            rotation: 270
-        },
-        {
-            version: 'elbow2',
-            coordinate: [48, 25],
+            version: 'diagonal',
+            coordinate: [47, 25],
             rotation: 90
         },
         {
-            version: 'straight',
+            version: 'elbow2',
             coordinate: [48, 24],
-            rotation: 0
+            rotation: 90
         },
         {
             version: 'elbow2',
