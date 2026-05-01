@@ -14,7 +14,7 @@ export default function Header () {
         <nav id="main-nav">
             <a className="main-nav-link" href="#experience">Experience</a>
             <a className="main-nav-link" href="#professional">Professional Work</a>
-            <a className="main-nav-link" href="#about">About</a>
+            <a className="main-nav-link" href="#skills">Skills</a>
             <a className="main-nav-link" href="#personal">Personal Projects</a>
         </nav>
         <div>

@@ -27,6 +27,12 @@ const curveCircuit = (
 const diagonalCircuit = (
     <line x1="0" y1="0" x2="100" y2="100" stroke={strokeColor} strokeWidth={strokeWidth} />
 );
+const elbow2Circuit = (
+    <>
+        <line x1="0" y1="50" x2="54" y2="50" stroke={strokeColor} strokeWidth={strokeWidth} />
+        <line x1="46" y1="46" x2="100" y2="100" stroke={strokeColor} strokeWidth={strokeWidth} />
+    </>
+);
 
 export default function Circuit({ version, coordinate, rotation }: CircuitProps) {
     const style = {
@@ -45,6 +51,8 @@ export default function Circuit({ version, coordinate, rotation }: CircuitProps)
                 return curveCircuit;
             case 'diagonal':
                 return diagonalCircuit;
+            case 'elbow2':
+                return elbow2Circuit;
             default:
                 return null;
         }

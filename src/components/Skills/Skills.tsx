@@ -1,6 +1,6 @@
 import Chip from '../Chip/Chip';
 
-import './About.css';
+import './Skills.css';
 import javascriptLogo from '../../images/javascript.png';
 import htmlLogo from '../../images/html.png';
 import cssLogo from '../../images/css.png';
@@ -54,36 +54,36 @@ const offlineSkillsObject = {
         img: weightliftingLogo
     },
     'espresso': {
-        location: [45, 10],
+        location: [49, 14],
         title: 'Espresso',
         description: 'I have experience with making espresso, and I am proficient in using an espresso machine to create rich and flavorful coffee beverages.',
         img: espressoLogo
     },
     'videogames': {
-        location: [15, 48],
-        title: 'Videogames',
+        location: [18, 48],
+        title: 'Video Games',
         description: 'I have experience with playing videogames, and I enjoy exploring different genres and platforms to find new and exciting gaming experiences.',
         img: videogamesLogo
     },
     'cooking': {
-        location: [45, 48],
+        location: [52, 40],
         title: 'Cooking',
         description: 'I have experience with cooking, and I enjoy experimenting with different recipes and cuisines to create delicious meals.',
         img: cookingLogo
     },
     'guitar': {
-        location: [55, 30],
+        location: [7, 30],
         title: 'Guitar',
         description: 'I have experience with playing the guitar, and I enjoy learning new songs and techniques to improve my skills.',
         img: guitarLogo
     }
 }
 
-export default function About () {
+export default function Skills () {
     return (
-        <div id="about-container">
+        <div id="skills-container">
             <div className="typewriter-container">
-                <h2 className="typewriter">About</h2>
+                <h2 className="typewriter">Skills</h2>
             </div>
             <div id="chips-container">
                 <Chip title={'online'} skillsObject={onlineSkillsObject} />

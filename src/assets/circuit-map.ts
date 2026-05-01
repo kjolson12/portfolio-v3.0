@@ -39,7 +39,93 @@ export const skillCircuitMap = {
                 rotation: 0
             }
     ],
-    html: [],
+    html: [
+        {
+            version: 'elbow',
+            coordinate: [44, 22],
+            rotation: 90
+        },
+        {
+            version: 'straight',
+            coordinate: [45, 22],
+            rotation: 90
+        },
+        {
+            version: 'straight',
+            coordinate: [46, 22],
+            rotation: 90
+        },
+        {
+            version: 'straight',
+            coordinate: [47, 22],
+            rotation: 90
+        },
+        {
+            version: 'elbow',
+            coordinate: [48, 22],
+            rotation: 270
+        },
+        {
+            version: 'diagonal',
+            coordinate: [49, 21],
+            rotation: 90
+        },
+        {
+            version: 'diagonal',
+            coordinate: [50, 20],
+            rotation: 90
+        },
+        {
+            version: 'diagonal',
+            coordinate: [51, 19],
+            rotation: 90
+        },
+        {
+            version: 'diagonal',
+            coordinate: [52, 18],
+            rotation: 90
+        },
+        {
+            version: 'elbow',
+            coordinate: [47, 26],
+            rotation: 270
+        },
+        {
+            version: 'elbow2',
+            coordinate: [48, 25],
+            rotation: 90
+        },
+        {
+            version: 'straight',
+            coordinate: [48, 24],
+            rotation: 0
+        },
+        {
+            version: 'elbow2',
+            coordinate: [48, 23],
+            rotation: 270
+        },
+        {
+            version: 'diagonal',
+            coordinate: [49, 22],
+            rotation: 90
+        },
+        {
+            version: 'diagonal',
+            coordinate: [50, 21],
+            rotation: 90
+        },
+        {
+            version: 'diagonal',
+            coordinate: [51, 20],
+            rotation: 90
+        },
+        {
+            version: 'diagonal',
+            coordinate: [52, 19],
+            rotation: 90
+        },
+    ],
     css: [],
     react: [],
     github: [],

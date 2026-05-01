@@ -4,7 +4,7 @@ import Header from './components/Header/Header';
 import Bio from './components/Bio/Bio';
 import Experience from './components/Experience/Experience';
 import Professional from './components/Professional/Professional';
-import About from './components/About/About';
+import Skills from './components/Skills/Skills';
 import Personal from './components/Personal/Personal';
 import Footer from './components/Footer/Footer';
 
@@ -39,9 +39,9 @@ function App() {
         </div>
       </section>
 
-      <section id="about">
+      <section id="skills">
         <div className="container">
-          <About />
+          <Skills />
         </div>
       </section>
 
