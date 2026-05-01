@@ -1,11 +1,17 @@
 import Chip from '../Chip/Chip';
 
 import './About.css';
-import javascriptLogo from '../../images/javascript-logo.png';
-import htmlLogo from '../../images/html-logo.png';
-import cssLogo from '../../images/css-logo.png';
-import reactLogo from '../../images/react-logo.png';
-import githubCopilotLogo from '../../images/github-copilot-logo.png';
+import javascriptLogo from '../../images/javascript.png';
+import htmlLogo from '../../images/html.png';
+import cssLogo from '../../images/css.png';
+import reactLogo from '../../images/react.png';
+import githubCopilotLogo from '../../images/github.png';
+
+import guitarLogo from '../../images/guitar.png';
+import espressoLogo from '../../images/espresso.png';
+import videogamesLogo from '../../images/controller.png';
+import cookingLogo from '../../images/cooking.png';
+import weightliftingLogo from '../../images/dumbell.png';
 
 const onlineSkillsObject = {
     'javascript': {
@@ -44,27 +50,32 @@ const offlineSkillsObject = {
     'weightlifting': {
         location: [12, 10],
         title: 'Weightlifting',
-        description: 'I have experience with weightlifting, and I am proficient in using various exercises and techniques to build strength and muscle.'
+        description: 'I have experience with weightlifting, and I am proficient in using various exercises and techniques to build strength and muscle.',
+        img: weightliftingLogo
     },
     'espresso': {
         location: [45, 10],
         title: 'Espresso',
-        description: 'I have experience with making espresso, and I am proficient in using an espresso machine to create rich and flavorful coffee beverages.'
+        description: 'I have experience with making espresso, and I am proficient in using an espresso machine to create rich and flavorful coffee beverages.',
+        img: espressoLogo
     },
     'videogames': {
         location: [15, 48],
         title: 'Videogames',
-        description: 'I have experience with playing videogames, and I enjoy exploring different genres and platforms to find new and exciting gaming experiences.'
+        description: 'I have experience with playing videogames, and I enjoy exploring different genres and platforms to find new and exciting gaming experiences.',
+        img: videogamesLogo
     },
     'cooking': {
         location: [45, 48],
         title: 'Cooking',
-        description: 'I have experience with cooking, and I enjoy experimenting with different recipes and cuisines to create delicious meals.'
+        description: 'I have experience with cooking, and I enjoy experimenting with different recipes and cuisines to create delicious meals.',
+        img: cookingLogo
     },
     'guitar': {
         location: [55, 30],
         title: 'Guitar',
-        description: 'I have experience with playing the guitar, and I enjoy learning new songs and techniques to improve my skills.'
+        description: 'I have experience with playing the guitar, and I enjoy learning new songs and techniques to improve my skills.',
+        img: guitarLogo
     }
 }
 
