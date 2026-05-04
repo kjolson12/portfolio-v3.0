@@ -6,9 +6,3 @@
     width: 100%;
     overflow: visible;
 }
-
-.circuit {
-    height: 100%;
-    width: 2px;
-    background-color: var(--color-highlight);
-}

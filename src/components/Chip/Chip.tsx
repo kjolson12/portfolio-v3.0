@@ -28,7 +28,7 @@ interface ChipProps {
 };
 
 const activeNodes = {
-    'online': [0, 3, 4],
+    'online': [0, 3, 4, 9, 10, 13],
     'offline': [1],
 }
 
