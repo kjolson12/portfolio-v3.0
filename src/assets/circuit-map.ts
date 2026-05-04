@@ -1,364 +1,364 @@
 export const skillCircuitMap = {
     javascript: [
-            {
-                version: 'straight',
-                coordinate: [34, 22],
-                rotation: 0
-            },{
-                version: 'straight',
-                coordinate: [34, 21],
-                rotation: 0
-            },
-            {
-                version: 'elbow',
-                coordinate: [34, 20],
-                rotation: 180
-            },
-            {
-                version: 'diagonal',
-                coordinate: [33, 19],
-                rotation: 0
-            },{
-                version: 'diagonal',
-                coordinate: [32, 18],
-                rotation: 0
-            },
-            {
-                version: 'diagonal',
-                coordinate: [31, 17],
-                rotation: 0
-            },
-            {
-                version: 'elbow',
-                coordinate: [30, 16],
-                rotation: 0
-            },
-            {
-                version: 'straight',
-                coordinate: [30, 15],
-                rotation: 0
-            }
+        {
+            version: 'straight',
+            coordinate: [25, 13],
+            rotation: 0
+        },{
+            version: 'straight',
+            coordinate: [25, 12],
+            rotation: 0
+        },
+        {
+            version: 'elbow',
+            coordinate: [25, 11],
+            rotation: 180
+        },
+        {
+            version: 'diagonal',
+            coordinate: [24, 10],
+            rotation: 0
+        },{
+            version: 'diagonal',
+            coordinate: [23, 9],
+            rotation: 0
+        },
+        {
+            version: 'diagonal',
+            coordinate: [22, 8],
+            rotation: 0
+        },
+        {
+            version: 'elbow',
+            coordinate: [21, 7],
+            rotation: 0
+        },
+        {
+            version: 'straight',
+            coordinate: [21, 6],
+            rotation: 0
+        }
     ],
     html: [
         {
             version: 'elbow',
-            coordinate: [44, 22],
+            coordinate: [35, 13],
             rotation: 90
         },
         {
             version: 'straight',
-            coordinate: [45, 22],
+            coordinate: [36, 13],
             rotation: 90
         },
         {
             version: 'straight',
-            coordinate: [46, 22],
+            coordinate: [37, 13],
             rotation: 90
         },
         {
             version: 'straight',
-            coordinate: [47, 22],
+            coordinate: [38, 13],
             rotation: 90
         },
         {
             version: 'elbow',
-            coordinate: [48, 22],
+            coordinate: [39, 13],
             rotation: 270
         },
         {
             version: 'diagonal',
-            coordinate: [49, 21],
+            coordinate: [40, 12],
             rotation: 90
         },
         {
             version: 'diagonal',
-            coordinate: [50, 20],
+            coordinate: [41, 11],
             rotation: 90
         },
         {
             version: 'diagonal',
-            coordinate: [51, 19],
+            coordinate: [42, 10],
             rotation: 90
         },
         {
             version: 'diagonal',
-            coordinate: [52, 18],
+            coordinate: [43, 9],
             rotation: 90
         },
         {
             version: 'diagonal',
-            coordinate: [47, 25],
+            coordinate: [38, 16],
             rotation: 90
         },
         {
             version: 'elbow2',
-            coordinate: [48, 24],
+            coordinate: [39, 15],
             rotation: 90
         },
         {
             version: 'elbow2',
-            coordinate: [48, 23],
+            coordinate: [39, 14],
             rotation: 270
         },
         {
             version: 'diagonal',
-            coordinate: [49, 22],
+            coordinate: [40, 13],
             rotation: 90
         },
         {
             version: 'diagonal',
-            coordinate: [50, 21],
+            coordinate: [41, 12],
             rotation: 90
         },
         {
             version: 'diagonal',
-            coordinate: [51, 20],
+            coordinate: [42, 11],
             rotation: 90
         },
         {
             version: 'diagonal',
-            coordinate: [52, 19],
+            coordinate: [43, 10],
             rotation: 90
         },
     ],
     css: [
         {
             version: 'straight',
-            coordinate: [30, 29],
+            coordinate: [21, 20],
             rotation: 90
         },
         {
             version: 'straight',
-            coordinate: [29, 29],
+            coordinate: [20, 20],
             rotation: 90
         },
         {
             version: 'straight',
-            coordinate: [28, 29],
+            coordinate: [19, 20],
             rotation: 90
         },
         {
             version: 'elbow2',
-            coordinate: [27, 29],
+            coordinate: [18, 20],
             rotation: 180
         },
         {
             version: 'elbow2',
-            coordinate: [26, 28],
+            coordinate: [17, 19],
             rotation: 0
         },
         {
             version: 'straight',
-            coordinate: [25, 28],
+            coordinate: [16, 19],
             rotation: 90
         },
         {
             version: 'straight',
-            coordinate: [24, 28],
+            coordinate: [15, 19],
             rotation: 90
         },
         {
             version: 'straight',
-            coordinate: [23, 28],
+            coordinate: [14, 19],
             rotation: 90
         },
         {
             version: 'straight',
-            coordinate: [22, 28],
+            coordinate: [13, 19],
             rotation: 90
         },
         {
             version: 'straight',
-            coordinate: [21, 28],
+            coordinate: [12, 19],
             rotation: 90
         },
         {
             version: 'straight',
-            coordinate: [20, 28],
+            coordinate: [11, 19],
             rotation: 90
         },
         {
             version: 'straight',
-            coordinate: [19, 28],
+            coordinate: [10, 19],
             rotation: 90
         },
         {
             version: 'straight',
-            coordinate: [18, 28],
+            coordinate: [9, 19],
             rotation: 90
         },
         {
             version: 'straight',
-            coordinate: [17, 28],
+            coordinate: [8, 19],
             rotation: 90
         },
         {
             version: 'elbow',
-            coordinate: [16, 28],
+            coordinate: [7, 19],
             rotation: 90
         },
         {
             version: 'elbow2',
-            coordinate: [15, 29],
+            coordinate: [6, 20],
             rotation: 270
         },
     ],
     react: [
         {
             version: 'straight',
-            coordinate: [47, 35],
+            coordinate: [38, 26],
             rotation: 90
         },
         {
             version: 'straight',
-            coordinate: [48, 35],
+            coordinate: [39, 26],
             rotation: 90
         },
         {
             version: 'elbow',
-            coordinate: [49, 35],
+            coordinate: [40, 26],
             rotation: 270
         },
         {
             version: 'diagonal',
-            coordinate: [50, 34],
+            coordinate: [41, 25],
             rotation: 90
         },
         {
             version: 'elbow',
-            coordinate: [51, 33],
+            coordinate: [42, 24],
             rotation: 90
         },
         {
             version: 'straight',
-            coordinate: [52, 33],
+            coordinate: [43, 24],
             rotation: 90
         },
         {
             version: 'straight',
-            coordinate: [53, 33],
+            coordinate: [44, 24],
             rotation: 90
         },
         {
             version: 'straight',
-            coordinate: [54, 33],
+            coordinate: [45, 24],
             rotation: 90
         },
         {
             version: 'straight',
-            coordinate: [55, 33],
+            coordinate: [46, 24],
             rotation: 90
         },
         {
             version: 'straight',
-            coordinate: [56, 33],
+            coordinate: [47, 24],
             rotation: 90
         },
         {
             version: 'straight',
-            coordinate: [57, 33],
+            coordinate: [48, 24],
             rotation: 90
         },
         {
             version: 'elbow2',
-            coordinate: [58, 33],
+            coordinate: [49, 24],
             rotation: 0
         },
         {
             version: 'elbow',
-            coordinate: [59, 34],
+            coordinate: [50, 25],
             rotation: 180
         },
     ],
     github: [
         {
             version: 'straight',
-            coordinate: [37, 39],
+            coordinate: [28, 30],
             rotation: 0
         },
         {
             version: 'straight',
-            coordinate: [37, 40],
+            coordinate: [28, 31],
             rotation: 0
         },
         {
             version: 'straight',
-            coordinate: [37, 41],
+            coordinate: [28, 32],
             rotation: 0
         },
         {
             version: 'straight',
-            coordinate: [37, 42],
+            coordinate: [28, 33],
             rotation: 0
         },
         {
             version: 'straight',
-            coordinate: [37, 43],
+            coordinate: [28, 34],
             rotation: 0
         },
         {
             version: 'elbow2',
-            coordinate: [37, 44],
+            coordinate: [28, 35],
             rotation: 90
         },
         {
             version: 'diagonal',
-            coordinate: [36, 45],
+            coordinate: [27, 36],
             rotation: 90
         },
         {
             version: 'elbow2',
-            coordinate: [35, 46],
+            coordinate: [26, 37],
             rotation: 270
         },
         {
             version: 'straight',
-            coordinate: [35, 47],
+            coordinate: [26, 38],
             rotation: 0
         },
         {
             version: 'straight',
-            coordinate: [40, 39],
+            coordinate: [31, 30],
             rotation: 0
         },
         {
             version: 'straight',
-            coordinate: [40, 40],
+            coordinate: [31, 31],
             rotation: 0
         },
         {
             version: 'straight',
-            coordinate: [40, 41],
+            coordinate: [31, 32],
             rotation: 0
         },
         {
             version: 'straight',
-            coordinate: [40, 42],
+            coordinate: [31, 33],
             rotation: 0
         },
         {
             version: 'straight',
-            coordinate: [40, 43],
+            coordinate: [31, 34],
             rotation: 0
         },
         {
             version: 'elbow',
-            coordinate: [40, 44],
+            coordinate: [31, 35],
             rotation: 0
         },
         {
             version: 'diagonal',
-            coordinate: [41, 45],
+            coordinate: [32, 36],
             rotation: 0
         },
         {
             version: 'elbow',
-            coordinate: [42, 46],
+            coordinate: [33, 37],
             rotation: 180
         },
         {
             version: 'straight',
-            coordinate: [42, 47],
+            coordinate: [33, 38],
             rotation: 180
         },
     ],

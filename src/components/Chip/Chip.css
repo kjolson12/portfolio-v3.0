@@ -2,19 +2,16 @@
     --chip-color: var(--color-500);
     --chip-shadow-color: var(--color-300);
 
-    height: 500px;
-    width: 100%;
+    height: 352px;
+    width: 488px;
     display: grid;
     grid-template-columns: repeat(auto-fill, 8px);
     grid-template-rows: repeat(auto-fill, 8px);
 }
 
 .chip {
-    /* at 1250px container, 625px chip-container width, 8x8px grid squares, halfway (39) minus half the width of the chip is 32 */
-    grid-column-start: 32;
-
-    /* at 500px chip-container height, 8x8px grid squares, halfway (31.25) minus half the width of the chip is 24.25 */
-    grid-row-start: 24;
+    grid-column-start: 23;
+    grid-row-start: 15;
 
     display: grid;
     position: relative;

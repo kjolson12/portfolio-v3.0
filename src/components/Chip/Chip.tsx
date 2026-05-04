@@ -38,13 +38,13 @@ export default function Chip ({ title, skillsObject }: ChipProps) {
 
     const generateNodeStyle = (index: number) => {
         if (index < 4) {
-            return { gridRowStart: `23`, gridColumnStart: `${34 + (index * 3)}` };
+            return { gridRowStart: `14`, gridColumnStart: `${25 + (index * 3)}` };
         } else if (index < 8) {
-            return { gridColumnStart: `46`, gridRowStart: `${26 + ((index - 4) * 3)}` };
+            return { gridColumnStart: `37`, gridRowStart: `${17 + ((index - 4) * 3)}` };
         } else if (index < 12) {
-            return { gridRowStart: `38`, gridColumnStart: `${34 + ((index - 8) * 3)}` };
+            return { gridRowStart: `29`, gridColumnStart: `${25 + ((index - 8) * 3)}` };
         } else if (index < 16) {
-            return { gridColumnStart: `31`, gridRowStart: `${26 + ((index - 12) * 3)}` };
+            return { gridColumnStart: `22`, gridRowStart: `${17 + ((index - 12) * 3)}` };
         }
     }
     

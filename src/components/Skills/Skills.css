@@ -1,3 +1,14 @@
 #chips-container {
     display: flex;
+    justify-content: space-around;
+}
+
+.chip-board {
+    padding: 40px;
+    border-radius: 30px;
+    background:
+        linear-gradient(0deg, #2F4F30 95%, #609F62),
+        linear-gradient(90deg, #2F4F30 95%, #609F62),
+        linear-gradient(180deg, #2F4F30 95%, #609F62),
+        linear-gradient(270deg, #2F4F30 95%, #609F62);
 }
