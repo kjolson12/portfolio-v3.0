@@ -60,6 +60,7 @@
 }
 
 .chip-node {
+    z-index: 1;
     width: 8px;
     height: 8px;
     background-color: transparent;
@@ -69,7 +70,6 @@
 
 .chip-node.active {
     background-color: var(--color-highlight);
-    z-index: 1;
 }
 
 @keyframes glow {
