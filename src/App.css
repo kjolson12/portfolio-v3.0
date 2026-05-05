@@ -106,7 +106,7 @@ p {
 }
 
 .projects-container {
-    margin: 4rem 0;
+    margin-top: 4rem;
     display: flex;
     justify-content: space-evenly;
 }
