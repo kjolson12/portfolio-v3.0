@@ -7,6 +7,7 @@
     border-radius: 5px;
     background-color: var(--color-900);
     z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
 }
 
 .skill-title-and-img {
