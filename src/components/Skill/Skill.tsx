@@ -9,41 +9,62 @@ interface SkillProps {
 };
 
 export default function Skill({ title, description, location, img }: SkillProps) {
-    const titleRef = useRef<HTMLHeadingElement>(null); // Ref for the skill-title element
+    const skillContainerRef = useRef<HTMLHeadingElement>(null); // Ref for the skill-title element
+    const descriptionContainerRef = useRef<HTMLDivElement>(null); // Ref for the skill-description element
+
     const [containerWidth, setContainerWidth] = useState(1); // State to store the calculated width
-    const [calculatedHeight, setCalculatedHeight] = useState(1); // State to store the calculated height
+    const [containerHeight, setContainerHeight] = useState(1); // State to store the calculated height
+
+    const [expanded, setExpanded] = useState(false);
 
     useEffect(() => {
-        if (titleRef.current) {
+        if (skillContainerRef.current) {
+            let neededDescriptionWidth = 0;
+            let neededDescriptionHeight = 0;
+
+            if(descriptionContainerRef.current) {
+                neededDescriptionWidth = descriptionContainerRef.current.offsetWidth;
+                neededDescriptionHeight = descriptionContainerRef.current.offsetHeight;
+            }
+
             // Measure the width of the skill-title element
-            const titleWidth = titleRef.current.offsetWidth;
-            const titleHeight = titleRef.current.offsetHeight;
+            const neededWidth = skillContainerRef.current.offsetWidth + neededDescriptionWidth; // Add description width if it exists
+            const neededHeight = skillContainerRef.current.offsetHeight + neededDescriptionHeight; // Add description height if it exists
 
             // Calculate the grid column and row span based on the title width and height
-            const calculatedWidth = Math.ceil(titleWidth / 8); // Assuming each grid column is 8px wide, adjust as needed
-            const calculatedHeight = Math.ceil(titleHeight / 8); // Assuming each grid row is 8px tall, adjust as needed
+            const calculatedWidth = Math.ceil(neededWidth / 8); // Assuming each grid column is 8px wide, adjust as needed
+            const calculatedHeight = Math.ceil(neededHeight / 8); // Assuming each grid row is 8px tall, adjust as needed
             setContainerWidth(calculatedWidth);
-            setCalculatedHeight(calculatedHeight);
+            setContainerHeight(calculatedHeight);
         }
-    }, [title]);
+    }, [title, expanded]);
 
     const style = {
         gridColumnStart: location[0],
         gridColumnEnd: location[0] + containerWidth,
 
         gridRowStart: location[1],
-        gridRowEnd: location[1] + calculatedHeight,
+        gridRowEnd: location[1] + containerHeight,
     };
 
+    const descriptionMarkup = (
+        <div className="skill-description" ref={descriptionContainerRef}>
+            <p>{description}</p>
+        </div>
+    );
+
     return (
-        <div className="skill-container" style={style}>
-            <div className="skill-title-and-img">
+        <div
+            className="skill-container"
+            style={style}
+            onMouseEnter={() => setExpanded(true)}
+            onMouseLeave={() => setExpanded(false)}
+        >
+            <div className="skill-title-and-img" ref={skillContainerRef}>
                 <img className="skill-img" src={img} alt="" />
-                <h5 className="skill-title" ref={titleRef}>{title}</h5>
+                <h5 className="skill-title">{title}</h5>
             </div>
-            <div className="skill-description">
-                <p>{description}</p>
-            </div>
+            {expanded && descriptionMarkup}
         </div>
     );
 };

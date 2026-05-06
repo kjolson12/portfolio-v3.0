@@ -1,13 +1,14 @@
 .skill-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    height: fit-content;
-    width: fit-content;
     border: 2px solid var(--color-highlight);
     border-radius: 5px;
     background-color: var(--color-900);
     z-index: 1;
     box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
+
+    transition: all 0.3s ease;
 }
 
 .skill-title-and-img {
@@ -28,8 +29,4 @@
 .skill-img {
     height: 30px;
     width: auto;
-}
-
-.skill-description {
-    display: none;
 }
