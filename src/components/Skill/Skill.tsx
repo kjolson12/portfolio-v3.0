@@ -31,20 +31,23 @@ export default function Skill({ title, description, location, img }: SkillProps)
             const neededWidth = skillContainerRef.current.offsetWidth + neededDescriptionWidth; // Add description width if it exists
             const neededHeight = skillContainerRef.current.offsetHeight + neededDescriptionHeight; // Add description height if it exists
 
-            // Calculate the grid column and row span based on the title width and height
-            const calculatedWidth = Math.ceil(neededWidth / 8); // Assuming each grid column is 8px wide, adjust as needed
-            const calculatedHeight = Math.ceil(neededHeight / 8); // Assuming each grid row is 8px tall, adjust as needed
-            setContainerWidth(calculatedWidth);
-            setContainerHeight(calculatedHeight);
+            setContainerWidth(neededWidth);
+            setContainerHeight(neededHeight);
         }
     }, [title, expanded]);
 
+    const expandedZIndex = expanded ? 2 : 1; // Set z-index based on expanded state
+    const expandedPadding = expanded ? '10px' : '0'; // Add padding when expanded
+
     const style = {
         gridColumnStart: location[0],
-        gridColumnEnd: location[0] + containerWidth,
+        width: containerWidth,
 
         gridRowStart: location[1],
-        gridRowEnd: location[1] + containerHeight,
+        height: containerHeight,
+
+        zIndex: expandedZIndex,
+        padding: expandedPadding,
     };
 
     const descriptionMarkup = (
@@ -54,13 +57,13 @@ export default function Skill({ title, description, location, img }: SkillProps)
     );
 
     return (
-        <div
-            className="skill-container"
-            style={style}
-            onMouseEnter={() => setExpanded(true)}
-            onMouseLeave={() => setExpanded(false)}
-        >
-            <div className="skill-title-and-img" ref={skillContainerRef}>
+        <div className="skill-container" style={style}>
+            <div
+                className="skill-title-and-img"
+                ref={skillContainerRef}
+                onMouseEnter={() => setExpanded(true)}
+                onMouseLeave={() => setExpanded(false)}
+            >
                 <img className="skill-img" src={img} alt="" />
                 <h5 className="skill-title">{title}</h5>
             </div>
