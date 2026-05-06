@@ -7,8 +7,18 @@
     background-color: var(--color-900);
     z-index: 1;
     box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
-
     transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.skill-container.active {
+    z-index: 2;
+    padding: 1rem;
+    transform: scale(1.2);
+}
+
+.skill-container.active .skill-description {
+    display: inline-block;
 }
 
 .skill-title-and-img {
@@ -17,6 +27,7 @@
     gap: 0.5rem;
     width: max-content;
     padding: 0.5rem;
+    cursor: pointer;
 }
 
 .skill-title {
@@ -29,4 +40,9 @@
 .skill-img {
     height: 30px;
     width: auto;
+}
+
+.skill-description {
+    display: none;
+    width: 200px;
 }

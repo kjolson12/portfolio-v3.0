@@ -21,23 +21,26 @@ export default function Skill({ title, description, location, img }: SkillProps)
         if (skillContainerRef.current) {
             let neededDescriptionWidth = 0;
             let neededDescriptionHeight = 0;
+            
+            let neededWidth = 0;
+            let neededHeight = 0;
 
             if (descriptionContainerRef.current) {
                 neededDescriptionWidth = descriptionContainerRef.current.offsetWidth;
                 neededDescriptionHeight = descriptionContainerRef.current.offsetHeight;
             }
 
-            // Measure the width of the skill-title element
-            const neededWidth = skillContainerRef.current.offsetWidth + neededDescriptionWidth; // Add description width if it exists
-            const neededHeight = skillContainerRef.current.offsetHeight + neededDescriptionHeight; // Add description height if it exists
+            if (skillContainerRef.current.offsetWidth > neededDescriptionWidth) {
+                neededWidth = skillContainerRef.current.offsetWidth;
+            } else {
+                neededWidth = neededDescriptionWidth;
+            }
+            neededHeight = skillContainerRef.current.offsetHeight + neededDescriptionHeight;
 
             setContainerWidth(neededWidth);
             setContainerHeight(neededHeight);
         }
     }, [title, expanded]);
-
-    const expandedZIndex = expanded ? 2 : 1; // Set z-index based on expanded state
-    const expandedPadding = expanded ? '10px' : '0'; // Add padding when expanded
 
     const style = {
         gridColumnStart: location[0],
@@ -45,19 +48,10 @@ export default function Skill({ title, description, location, img }: SkillProps)
 
         gridRowStart: location[1],
         height: containerHeight,
-
-        zIndex: expandedZIndex,
-        padding: expandedPadding,
     };
 
-    const descriptionMarkup = (
-        <div className="skill-description" ref={descriptionContainerRef}>
-            <p>{description}</p>
-        </div>
-    );
-
     return (
-        <div className="skill-container" style={style}>
+        <div className={`skill-container ${expanded ? 'active' : ''}`} style={style}>
             <div
                 className="skill-title-and-img"
                 ref={skillContainerRef}
@@ -67,7 +61,9 @@ export default function Skill({ title, description, location, img }: SkillProps)
                 <img className="skill-img" src={img} alt="" />
                 <h5 className="skill-title">{title}</h5>
             </div>
-            {expanded && descriptionMarkup}
+            <div className="skill-description" ref={descriptionContainerRef}>
+                <p>{description}</p>
+            </div>
         </div>
     );
 };
