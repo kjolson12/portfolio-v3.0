@@ -22,7 +22,7 @@ export default function Skill({ title, description, location, img }: SkillProps)
             let neededDescriptionWidth = 0;
             let neededDescriptionHeight = 0;
 
-            if(descriptionContainerRef.current) {
+            if (descriptionContainerRef.current) {
                 neededDescriptionWidth = descriptionContainerRef.current.offsetWidth;
                 neededDescriptionHeight = descriptionContainerRef.current.offsetHeight;
             }
