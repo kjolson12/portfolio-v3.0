@@ -5,12 +5,11 @@ export default function ActiveSectionObserver({ setActiveSection }: { setActiveS
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 setActiveSection(entry.target.id);
-                console.log(entry.target.id); // Debug log to verify the active section
             }
         });
     }, { threshold: 0.5 });
 
-    const sectionIds = ['bio', 'experience', 'professional', 'skills', 'personal'];
+    const sectionIds = ['experience', 'professional', 'skills', 'personal'];
 
     useEffect(() => {
         sectionIds.forEach(id => {

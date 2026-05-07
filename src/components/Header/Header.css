@@ -34,24 +34,16 @@ header {
 }
 
 .main-nav-link {
-    position: relative;
     text-decoration: none;
     color: var(--color-text-primary);
     font-size: 1.6rem;
     font-weight: 500;
 }
 
-.main-nav-link.active::after, #name-home-link.active::after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    background-color: var(--color-500);
-}
-
-#name-home-link.active::after {
-    position: relative;
+.main-nav-link.active {
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: var(--color-500);
 }
 
 .main-nav-link:hover {

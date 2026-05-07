@@ -7,7 +7,7 @@ export default function Header ({ activeSection }: { activeSection: string }) {
     return (
     <header>
         <div id="name-home-link-container">
-            <a id="name-home-link" href='#bio' className={`typewriter ${activeSection === 'bio' ? 'active' : ''}`}>
+            <a id="name-home-link" href='#bio' className="typewriter">
                 <span className='headerLogo'>{headerLogoStart}</span> Kyle Olson <span className='headerLogo'>{headerLogoEnd}</span>
             </a>
         </div>
