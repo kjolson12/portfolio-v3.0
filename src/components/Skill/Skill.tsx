@@ -18,28 +18,30 @@ export default function Skill({ title, description, location, img }: SkillProps)
     const [expanded, setExpanded] = useState(false);
 
     useEffect(() => {
-        if (skillContainerRef.current) {
-            let neededDescriptionWidth = 0;
-            let neededDescriptionHeight = 0;
-            
-            let neededWidth = 0;
-            let neededHeight = 0;
+        document.fonts.ready.then(() => {
+            if (skillContainerRef.current) {
+                let neededDescriptionWidth = 0;
+                let neededDescriptionHeight = 0;
 
-            if (descriptionContainerRef.current) {
-                neededDescriptionWidth = descriptionContainerRef.current.offsetWidth;
-                neededDescriptionHeight = descriptionContainerRef.current.offsetHeight;
+                let neededWidth = 0;
+                let neededHeight = 0;
+
+                if (descriptionContainerRef.current) {
+                    neededDescriptionWidth = descriptionContainerRef.current.offsetWidth;
+                    neededDescriptionHeight = descriptionContainerRef.current.offsetHeight;
+                }
+
+                if (skillContainerRef.current.offsetWidth > neededDescriptionWidth) {
+                    neededWidth = skillContainerRef.current.offsetWidth;
+                } else {
+                    neededWidth = neededDescriptionWidth;
+                }
+                neededHeight = skillContainerRef.current.offsetHeight + neededDescriptionHeight;
+
+                setContainerWidth(neededWidth);
+                setContainerHeight(neededHeight);
             }
-
-            if (skillContainerRef.current.offsetWidth > neededDescriptionWidth) {
-                neededWidth = skillContainerRef.current.offsetWidth;
-            } else {
-                neededWidth = neededDescriptionWidth;
-            }
-            neededHeight = skillContainerRef.current.offsetHeight + neededDescriptionHeight;
-
-            setContainerWidth(neededWidth);
-            setContainerHeight(neededHeight);
-        }
+        });
     }, [title, expanded]);
 
     const style = {
@@ -49,7 +51,7 @@ export default function Skill({ title, description, location, img }: SkillProps)
         gridRowStart: location[1],
         height: containerHeight,
     };
-    
+
     const renderTitle = () => {
         if (title === 'GitHub Copilot') {
             let tempTitle = [];
