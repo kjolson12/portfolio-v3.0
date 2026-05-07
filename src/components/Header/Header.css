@@ -20,6 +20,8 @@ header {
 }
 
 #name-home-link {
+    overflow: visible;
+    position: relative;
     text-decoration: none;
     color: var(--text-primary);
     font-family: var(--font-secondary);
@@ -34,10 +36,20 @@ header {
 }
 
 .main-nav-link {
+    position: relative;
     text-decoration: none;
     color: var(--color-text-primary);
     font-size: 1.6rem;
     font-weight: 500;
+}
+
+.main-nav-link.active::after, #name-home-link.active::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-500);
 }
 
 .main-nav-link:hover {

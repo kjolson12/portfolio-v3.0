@@ -1,5 +1,8 @@
+import { useState } from 'react';
+
 import BackgroundAnimation from './utils/BackgroundAnimation';
 import TypewriterObserver from './utils/TypewriterObserver';
+import ActiveSectionObserver from './utils/ActiveSectionObserver';
 import Header from './components/Header/Header';
 import Bio from './components/Bio/Bio';
 import Experience from './components/Experience/Experience';
@@ -12,13 +15,17 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import './App.css';
 
 function App() {
+  const [activeSection, setActiveSection] = useState<string>('bio');
+
   return (
     <>
       <BackgroundAnimation />
       <TypewriterObserver />
-      <Header />
+      <ActiveSectionObserver setActiveSection={setActiveSection} />
+      
+      <Header activeSection={activeSection} />
 
-      <section>
+      <section id="bio">
         <div className="container">
           <Bio />
         </div>
