@@ -49,9 +49,41 @@ export default function Skill({ title, description, location, img }: SkillProps)
         gridRowStart: location[1],
         height: containerHeight,
     };
+    
+    const renderTitle = () => {
+        if (title === 'GitHub Copilot') {
+            let tempTitle = [];
+
+            for (let i = 0; i < title.length; i++) {
+                const style = {
+                    animationDelay: `${i * 0.1}s`,
+                    color: `hsl(${(i * 360) / title.length}, 100%, 50%)`,
+                };
+
+                tempTitle.push(
+                    <span
+                        key={`${i}-${title[i]}`}
+                        style={style}
+                    >
+                        {title[i]}
+                    </span>
+                );
+            }
+
+            return tempTitle;
+        } else {
+            return title;
+        }
+    }
+
+    const renderID = () => {
+        let tempID = title.toLowerCase().split(' ').join('-');
+
+        return tempID;
+    }
 
     return (
-        <div className={`skill-container ${expanded ? 'active' : ''}`} style={style}>
+        <div id={`${renderID()}-skill`} className={`skill-container ${expanded ? 'active' : ''}`} style={style}>
             <div
                 className="skill-title-and-img"
                 ref={skillContainerRef}
@@ -59,7 +91,7 @@ export default function Skill({ title, description, location, img }: SkillProps)
                 onMouseLeave={() => setExpanded(false)}
             >
                 <img className="skill-img" src={img} alt="" />
-                <h5 className="skill-title">{title}</h5>
+                <h5 className="skill-title">{renderTitle()}</h5>
             </div>
             <div className="skill-description" ref={descriptionContainerRef}>
                 <p>{description}</p>

@@ -46,3 +46,24 @@
     display: none;
     width: 200px;
 }
+
+.skill-title span {
+    min-width: 10px;
+    display: inline-block;
+    animation: wave 2s ease-in-out infinite;
+}
+
+.skill-container.active .skill-title span {
+    animation: none;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(2px);
+        color: var(--color-text-primary);
+    }
+    50% {
+        transform: translateY(-2px);
+        color: revert-layer;
+    }
+}
