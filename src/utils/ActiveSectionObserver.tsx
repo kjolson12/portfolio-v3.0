@@ -9,7 +9,7 @@ export default function ActiveSectionObserver({ setActiveSection }: { setActiveS
         });
     }, { threshold: 0.5 });
 
-    const sectionIds = ['experience', 'professional', 'skills', 'personal'];
+    const sectionIds = ['bio', 'experience', 'professional', 'skills', 'personal'];
 
     useEffect(() => {
         sectionIds.forEach(id => {
