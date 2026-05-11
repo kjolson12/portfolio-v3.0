@@ -79,7 +79,7 @@ const offlineSkillsObject = {
     }
 }
 
-export default function Skills () {
+export default function Skills ({ activeSection }: { activeSection: string }) {
     return (
         <div id="skills-container">
             <div className="typewriter-container">
@@ -87,10 +87,10 @@ export default function Skills () {
             </div>
             <div id="chips-container">
                 <div className="chip-board">
-                    <Chip title={'online'} skillsObject={onlineSkillsObject} />
+                    <Chip title={'online'} skillsObject={onlineSkillsObject} activeSection={activeSection} />
                 </div>
                 <div className="chip-board">
-                    <Chip title={'offline'} skillsObject={offlineSkillsObject} />
+                    <Chip title={'offline'} skillsObject={offlineSkillsObject} activeSection={activeSection} />
                 </div>
             </div>
         </div>

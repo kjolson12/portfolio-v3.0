@@ -22,7 +22,7 @@ function App() {
       <BackgroundAnimation />
       <TypewriterObserver />
       <ActiveSectionObserver setActiveSection={setActiveSection} />
-      
+
       <Header activeSection={activeSection} />
 
       <section id="bio">
@@ -48,7 +48,7 @@ function App() {
 
       <section id="skills">
         <div className="container">
-          <Skills />
+          <Skills activeSection={activeSection} />
         </div>
       </section>
 

@@ -6,9 +6,10 @@ interface SkillProps {
     description: string;
     location: Array<number>;
     img: string;
+    activeSection?: string;
 };
 
-export default function Skill({ title, description, location, img }: SkillProps) {
+export default function Skill({ title, description, location, img, activeSection }: SkillProps) {
     const skillContainerRef = useRef<HTMLHeadingElement>(null); // Ref for the skill-title element
     const descriptionContainerRef = useRef<HTMLDivElement>(null); // Ref for the skill-description element
 
@@ -42,7 +43,7 @@ export default function Skill({ title, description, location, img }: SkillProps)
                 setContainerHeight(neededHeight);
             }
         });
-    }, [title, expanded]);
+    }, [expanded, activeSection]);  // added activeSection to help ensure that the width and height are recalculated when the section becomes active
 
     const style = {
         gridColumnStart: location[0],

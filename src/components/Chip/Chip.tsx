@@ -25,6 +25,7 @@ interface ChipProps {
             img: string,
         }
     };
+    activeSection?: string;
 };
 
 const activeNodes = {
@@ -32,7 +33,7 @@ const activeNodes = {
     'offline': [1, 2 , 5, 8, 11, 12],
 }
 
-export default function Chip ({ title, skillsObject }: ChipProps) {
+export default function Chip ({ title, skillsObject, activeSection }: ChipProps) {
     const numofNodes = 16;
     const nodeArray = [];
 
@@ -75,7 +76,7 @@ export default function Chip ({ title, skillsObject }: ChipProps) {
                 return (
                     <React.Fragment key={`${title}-skill-${index}`}>
                         {generateCircuit(skillCircuitMap, skillKey)}
-                        <Skill title={skill.title} description={skill.description} location={skill.location} img={skill.img} />
+                        <Skill title={skill.title} description={skill.description} location={skill.location} img={skill.img} activeSection={activeSection} />
                     </React.Fragment>
                 );
             })}
