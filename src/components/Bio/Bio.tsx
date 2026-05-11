@@ -39,10 +39,10 @@ export default function Bio() {
                     <h4 className='typewriter'>Key Stats</h4>
                 </div>
                 <div id="bio-stats-container">
-                    <BioStat stat="5 years" text="of professional work experience" />
-                    <BioStat stat="6 client sites" text="where I led development" />
-                    <BioStat stat="20 sites" text="currently maintained" />
-                    <BioStat stat="10,000+ users" text="monthly on some sites" />
+                    <BioStat stat="5" text="years of work experience" />
+                    <BioStat stat="6" text="websites builds led to completion" />
+                    <BioStat stat="20" text="websites currently maintained" />
+                    <BioStat stat="50,000" text="monthly active users on some sites" />
                 </div>
                 <div className="typewriter-container">
                     <h4 className='typewriter'>What Others Say</h4>

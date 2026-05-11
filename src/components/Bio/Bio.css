@@ -34,9 +34,7 @@
 }
 
 #bio-stats-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
     gap: 2rem;
     height: fit-content;
     margin-bottom: 4rem;
