@@ -24,7 +24,6 @@ export default function Footer() {
                     </div>
                 </div>
                 <div id="contact">
-                    <h3>Get in touch</h3>
                     <div id="contact-info-container">
                         <div className='contact-info'>
                             <p className='contact-info-category'>email</p>
@@ -49,7 +48,7 @@ export default function Footer() {
                     <a className="footer-nav-link" href="#skills">Skills</a>
                     <a className="footer-nav-link" href="#personal">Personal</a>
                 </nav>
-                <p>Designed and Built by Kyle Olson 2026</p>
+                <p>Designed and built by Kyle Olson 2026</p>
             </div>
         </footer>
     );

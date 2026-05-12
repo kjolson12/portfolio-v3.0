@@ -1,19 +1,18 @@
 footer {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: 400px;
     width: 850px;
 }
 
 #footer-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    margin-bottom: 5rem;
 }
 
 #bio-image-and-title-footer {
     display: flex;
+    align-items: center;
     gap: 2rem;
 }
 
@@ -52,8 +51,11 @@ footer {
     font-size: 3rem;
 }
 
+.social-container i:hover {
+    color: var(--color-500);
+}
+
 #contact-info-container {
-    margin-top: 2rem;
     display: flex;
     gap: 4rem;
 }
@@ -76,7 +78,7 @@ footer {
 
 #footer-nav-container {
     border-top: 2px solid var(--color-500);
-    padding-top: 2rem;
+    padding: 2rem 0;
     display: flex;
     justify-content: space-between;
     gap: 5rem;

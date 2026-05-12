@@ -61,6 +61,10 @@ section#experience .container {
     padding: 50px 0;
 }
 
+section#footer {
+    background: linear-gradient(135deg, var(--color-600) 0%, var(--color-900) 100%);
+}
+
 section#footer .container {
     display: flex;
     flex-direction: column;
