@@ -1,6 +1,65 @@
 footer {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
+    justify-content: space-evenly;
+    width: 1250px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#bio-image-and-title-footer {
+    display: flex;
+    gap: 2rem;
+}
+
+#bio-image-footer {
+    border: 1px solid var(--color-100);
+    background-image: url('../../images/bio-image.jpeg');
+    background-size: 112%;
+    background-position: 0 20%;
+    height: 100px;
+    width: 100px;
+    border-radius: 999px;
+    aspect-ratio: 1;
+    box-shadow: var(--box-shadow);
+}
+
+#bio-title-footer h3 {
+    font-size: 3rem;
+}
+
+#bio-title-footer h4 {
+    font-size: 2rem;
+}
+
+#socials {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.social-container i {
+    color: var(--color-text-primary);
+    font-size: 3rem;
+}
+
+#contact-info-container {
+    margin-top: 2rem;
+    display: flex;
+    gap: 4rem;
+}
+
+.contact-info-category {
+    color: var(--color-100);
+    font-weight: 500;
+}
+
+.contact-info-value a {
+    color: var(--color-text-primary);
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.contact-info-value a:hover {
+    text-decoration: underline;
 }
