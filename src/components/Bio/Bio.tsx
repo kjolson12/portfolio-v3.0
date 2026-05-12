@@ -40,7 +40,7 @@ export default function Bio() {
                 </div>
                 <div id="bio-stats-container">
                     <BioStat stat="5" text="years of work experience" />
-                    <BioStat stat="6" text="websites builds led to completion" />
+                    <BioStat stat="6" text="website builds led to completion" />
                     <BioStat stat="20" text="websites currently maintained" />
                     <BioStat stat="50,000" text="monthly active users on some sites" />
                 </div>
