@@ -49,7 +49,7 @@ export default function Footer() {
                     <a className="footer-nav-link" href="#skills">Skills</a>
                     <a className="footer-nav-link" href="#personal">Personal</a>
                 </nav>
-                <p>Designed and Built by Kyle Olson 2026 - Powered by React</p>
+                <p>Designed and Built by Kyle Olson 2026</p>
             </div>
         </footer>
     );
