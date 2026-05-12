@@ -1,9 +1,15 @@
 footer {
     display: flex;
-    justify-content: space-evenly;
-    width: 1250px;
-    margin: 0 auto;
-    padding: 100px 0;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 400px;
+    width: 850px;
+}
+
+#footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #bio-image-and-title-footer {
@@ -37,6 +43,10 @@ footer {
     gap: 1rem;
 }
 
+.social-container a {
+    display: block;
+}
+
 .social-container i {
     color: var(--color-text-primary);
     font-size: 3rem;
@@ -62,4 +72,29 @@ footer {
 
 .contact-info-value a:hover {
     text-decoration: underline;
+}
+
+#footer-nav-container {
+    border-top: 2px solid var(--color-500);
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+#footer-nav {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.footer-nav-link {
+    text-decoration: none;
+    color: var(--color-text-primary);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.footer-nav-link:hover {
+    color: var(--color-500);
 }
