@@ -1,6 +1,7 @@
 #bio-container {
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
 }
 
 #bio-image-and-title {
@@ -57,4 +58,14 @@
     color: var(--color-text-primary);
     font-size: 1.8rem;
     font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+    #bio-image {
+        width: 300px;
+    }
+
+    .fun-fact-value {
+        font-size: 1.5rem;
+    }
 }

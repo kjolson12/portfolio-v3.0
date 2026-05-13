@@ -52,6 +52,12 @@ body {
   --color-text-tertiary: #666;
 
   --box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  --desktop-breakpoint: 1200px;
+  --laptop-breakpoint: 1024px;
+  --tablet-breakpoint: 768px;
+  --mobile-large-breakpoint: 480px;
+  --mobile-breakpoint: 390px;
 }
 
 .magenta {

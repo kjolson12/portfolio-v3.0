@@ -120,6 +120,7 @@ p {
     margin-top: 4rem;
     display: flex;
     justify-content: space-evenly;
+    gap: 1rem;
 }
 
 .typewriter-container {
@@ -143,4 +144,30 @@ p {
 @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: var(--color-highlight); }
+}
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 6rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    h4 {
+        font-size: 2.5rem;
+    }
+
+    h5 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+    }
 }

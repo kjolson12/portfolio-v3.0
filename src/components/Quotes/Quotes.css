@@ -64,3 +64,17 @@
     width: 100%;
     transition: width 7s linear;
 }
+
+@media (max-width: 1200px) {
+    #quotes-container {
+        padding: 3rem;
+    }
+
+    .quote-text {
+        font-size: 1.8rem;
+    }
+
+    #quote-text-container {
+        height: 100px;  /* Height needed for longest quote */
+    }
+}
