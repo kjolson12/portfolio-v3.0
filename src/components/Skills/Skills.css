@@ -1,15 +1,22 @@
 #chips-container {
     margin-top: 4rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     gap: 1rem;
 }
 
 .chip-board {
-    padding: 40px;
+    padding: 4rem;
     border: 1px solid var(--color-50);
     border-radius: 30px;
     background-color: var(--color-900);
     background-image: radial-gradient(var(--color-700) 0.65px, var(--color-900) 0.65px);
     background-size: 13px 13px;
+}
+
+@media (max-width: 1200px) {
+    .chip-board {
+        padding: 2rem;
+    }
 }
