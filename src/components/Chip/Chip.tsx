@@ -21,7 +21,10 @@ interface ChipProps {
         [key: string]: {
             title: string,
             description: string,
-            location: Array<number>,
+            location: {
+                'desktop': Array<number>,
+                'laptop': Array<number>,
+            },
             img: string,
         }
     };
@@ -65,6 +68,18 @@ export default function Chip ({ title, skillsObject, activeSection }: ChipProps)
         });
     }
 
+    const generateSkillLocation = skill => {
+        let location;
+
+        if (window.innerWidth > 1200) {
+            location = skill.location.desktop;
+        } else if (window.innerWidth <= 1200) {
+            location = skill.location.laptop;
+        }
+
+        return location;
+    }
+
     return (
         <div className="chip-container">
             {nodeArray}
@@ -76,7 +91,7 @@ export default function Chip ({ title, skillsObject, activeSection }: ChipProps)
                 return (
                     <React.Fragment key={`${title}-skill-${index}`}>
                         {generateCircuit(skillCircuitMap, skillKey)}
-                        <Skill title={skill.title} description={skill.description} location={skill.location} img={skill.img} activeSection={activeSection} />
+                        <Skill title={skill.title} description={skill.description} location={generateSkillLocation(skill)} img={skill.img} activeSection={activeSection} />
                     </React.Fragment>
                 );
             })}
