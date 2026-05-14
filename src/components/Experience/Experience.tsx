@@ -48,8 +48,8 @@ const experienceObjects: Record<'SSNC' | 'OHSU' | 'UO', {
         image: laboratoryImg
     },
     'UO': {
-        title: 'University of Oregon',
-        subtitle: 'Bachelor of Science in Biology',
+        title: 'Bachelor of Science',
+        subtitle: 'University of Oregon',
         dateRange: 'Sep 2013 - Jun 2018',
         duration: '4 Years 9 Months',
         description: 'Graduated with a Bachelor of Science in Biology, with a focus on XXXX and XXXX biology. Completed coursework in conservation biology, neurobiology, and organic chemistry.',

@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     margin: 4rem 0;
+    gap: 2rem;
 }
 
 #experience-item-container {

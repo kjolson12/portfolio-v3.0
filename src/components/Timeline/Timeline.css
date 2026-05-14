@@ -85,3 +85,13 @@
 #uo-line {
     height: 80px;
 }
+
+@media (max-width: 1200px) {
+    #timeline-container {
+        width: 225px;
+    }
+
+    .timeline-line {
+        left: 199px;
+    }
+}

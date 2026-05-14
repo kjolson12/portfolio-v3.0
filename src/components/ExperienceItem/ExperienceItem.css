@@ -1,7 +1,6 @@
 .experience-item {
     position: relative;
     display: flex;
-    align-items: center;
     gap: 4rem;
     max-width: 850px;
     padding: 4rem;
@@ -19,17 +18,23 @@
 }
 
 .experience-text h4 {
+    color: var(--color-500);
     font-family: var(--font-primary);
     font-weight: 700;
 }
 
 .experience-date-range {
-    font-weight: 500;
-    margin-bottom: 2rem;
+    color: white;
+    width: fit-content;
+    background-color: var(--color-500);
+    padding: 0.5rem 1rem;
+    border-radius: 7px;
+    font-weight: 600;
+    margin: 1rem 0 2rem;
 }
 
 .experience-duration {
-    color: var(--color-600);
+    color: var(--color-highlight-secondary);
 }
 
 .arrow-placeholder {
@@ -153,5 +158,20 @@
         -webkit-transform: scale(1.8);
         transform: scale(1.8);
         opacity: 0
+    }
+}
+
+@media (max-width: 1200px) {
+    .experience-img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .experience-item {
+        padding: 3rem;
+    }
+
+    .experience-text p {
+        font-size: 1.5rem;
     }
 }
