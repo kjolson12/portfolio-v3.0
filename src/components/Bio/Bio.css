@@ -1,7 +1,7 @@
 #bio-container {
     display: flex;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 #bio-image-and-title {
@@ -26,7 +26,6 @@
 #bio-stats-and-quote-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     max-width: 720px;
 }
 

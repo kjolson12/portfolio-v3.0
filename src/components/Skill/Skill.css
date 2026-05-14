@@ -67,3 +67,9 @@
         color: revert-layer;
     }
 }
+
+@media (max-width: 1200px) {
+    .skill-title {
+        font-size: 1.8rem;
+    }
+}

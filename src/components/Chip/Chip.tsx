@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Skill from '../Skill/Skill';
 import Circuit from '../Circuit/Circuit';
 
@@ -37,6 +37,8 @@ const activeNodes = {
 }
 
 export default function Chip ({ title, skillsObject, activeSection }: ChipProps) {
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
     const numofNodes = 16;
     const nodeArray = [];
 
@@ -68,17 +70,28 @@ export default function Chip ({ title, skillsObject, activeSection }: ChipProps)
         });
     }
 
-    const generateSkillLocation = skill => {
+    const generateSkillLocation = (skill: { location: { desktop: Array<number>, laptop: Array<number> } }) => {
         let location;
 
-        if (window.innerWidth > 1200) {
+        if (windowWidth > 1200) {
             location = skill.location.desktop;
-        } else if (window.innerWidth <= 1200) {
+        } else if (windowWidth <= 1200) {
             location = skill.location.laptop;
         }
 
         return location;
     }
+
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
+        
+        window.addEventListener('resize', handleResize);
+        
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     return (
         <div className="chip-container">
@@ -91,7 +104,7 @@ export default function Chip ({ title, skillsObject, activeSection }: ChipProps)
                 return (
                     <React.Fragment key={`${title}-skill-${index}`}>
                         {generateCircuit(skillCircuitMap, skillKey)}
-                        <Skill title={skill.title} description={skill.description} location={generateSkillLocation(skill)} img={skill.img} activeSection={activeSection} />
+                        <Skill title={skill.title} description={skill.description} location={generateSkillLocation(skill) || []} img={skill.img} activeSection={activeSection} />
                     </React.Fragment>
                 );
             })}
