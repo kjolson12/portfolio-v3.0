@@ -74,10 +74,24 @@ export default function Chip ({ title, skillsObject, activeSection }: ChipProps)
         }
     }
 
-    const generateCircuit = (skillCircuitMap: { [key: string]: Array<{ coordinate: Array<number>, rotation: number , version: string}> }, skillKey: string) => {
-        if (skillCircuitMap[skillKey].length === 0) return null;
+    const generateCircuit = (
+        skillCircuitMap: {
+            [key: string]:{
+                [key: string]: Array<{ coordinate: Array<number>, rotation: number , version: string}>
+            }
+        }, skillKey: string
+    ) => {
+        let map = [];
 
-        return skillCircuitMap[skillKey].map((circuit, index) => {
+        if (windowWidth > 1200) {
+            map = skillCircuitMap[skillKey]['desktop'];
+        } else if (windowWidth <= 1200) {
+            map = skillCircuitMap[skillKey]['laptop'];
+        }
+
+        if (map.length === 0) return null;
+
+        return map.map((circuit, index) => {
             return <Circuit key={`$${skillKey}-circuit-${index}`} version={circuit.version} coordinate={circuit.coordinate} rotation={circuit.rotation} />
         });
     }
