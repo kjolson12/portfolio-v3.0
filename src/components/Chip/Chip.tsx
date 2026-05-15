@@ -81,7 +81,7 @@ export default function Chip ({ title, skillsObject, activeSection }: ChipProps)
             }
         }, skillKey: string
     ) => {
-        let map = [];
+        let map: Array<{ coordinate: Array<number>, rotation: number, version: string }> = [];
 
         if (windowWidth > 1200) {
             map = skillCircuitMap[skillKey]['desktop'];
