@@ -25,7 +25,7 @@ const onlineSkillsObject = {
     },
     'html': {
         location: {
-            'desktop': [43, 6],
+            'desktop': [44, 6],
             'laptop': [43, 6],
         },
         title: 'HTML',
@@ -43,7 +43,7 @@ const onlineSkillsObject = {
     },
     'react': {
         location: {
-            'desktop': [44, 26],
+            'desktop': [46, 26],
             'laptop': [44, 26],
         },
         title: 'React',
@@ -64,7 +64,7 @@ const onlineSkillsObject = {
 const offlineSkillsObject = {
     'weightlifting': {
         location: {
-            'desktop': [3, 1],
+            'desktop': [4, 1],
             'laptop': [3, 1],
         },
         title: 'Weightlifting',

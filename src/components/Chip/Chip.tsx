@@ -33,7 +33,7 @@ interface ChipProps {
 
 const activeNodes = {
     'online': [0, 3, 4, 7, 9, 10, 13],
-    'offline': [1, 2 , 5, 8, 11, 12],
+    'offline': [1, 2 , 5, 8, 9, 12],
 }
 
 export default function Chip ({ title, skillsObject, activeSection }: ChipProps) {
