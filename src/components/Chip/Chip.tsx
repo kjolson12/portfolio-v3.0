@@ -43,14 +43,26 @@ export default function Chip ({ title, skillsObject, activeSection }: ChipProps)
     const nodeArray = [];
 
     const generateNodeStyle = (index: number) => {
-        if (index < 4) {
-            return { gridRowStart: `14`, gridColumnStart: `${25 + (index * 3)}` };
-        } else if (index < 8) {
-            return { gridColumnStart: `37`, gridRowStart: `${17 + ((index - 4) * 3)}` };
-        } else if (index < 12) {
-            return { gridRowStart: `29`, gridColumnStart: `${25 + ((index - 8) * 3)}` };
-        } else if (index < 16) {
-            return { gridColumnStart: `22`, gridRowStart: `${17 + ((index - 12) * 3)}` };
+        if (windowWidth > 1200) {
+            if (index < 4) {
+                return { gridRowStart: `15`, gridColumnStart: `${26 + (index * 3)}` };
+            } else if (index < 8) {
+                return { gridColumnStart: `38`, gridRowStart: `${18 + ((index - 4) * 3)}` };
+            } else if (index < 12) {
+                return { gridRowStart: `30`, gridColumnStart: `${26 + ((index - 8) * 3)}` };
+            } else if (index < 16) {
+                return { gridColumnStart: `23`, gridRowStart: `${18 + ((index - 12) * 3)}` };
+            }
+        } else if (windowWidth <= 1200) {
+            if (index < 4) {
+                return { gridRowStart: `15`, gridColumnStart: `${24 + (index * 3)}` };
+            } else if (index < 8) {
+                return { gridColumnStart: `36`, gridRowStart: `${18 + ((index - 4) * 3)}` };
+            } else if (index < 12) {
+                return { gridRowStart: `30`, gridColumnStart: `${24 + ((index - 8) * 3)}` };
+            } else if (index < 16) {
+                return { gridColumnStart: `21`, gridRowStart: `${18 + ((index - 12) * 3)}` };
+            }
         }
     }
     

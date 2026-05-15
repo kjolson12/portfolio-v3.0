@@ -10,8 +10,8 @@
 }
 
 .chip {
-    grid-column-start: 23;
-    grid-row-start: 15;
+    grid-column-start: 24;
+    grid-row-start: 16;
 
     display: grid;
     position: relative;
@@ -87,5 +87,9 @@
 @media (max-width: 1200px) {
     .chip-container {
         width: 456px;
+    }
+
+    .chip {
+        grid-column-start: 22;
     }
 }

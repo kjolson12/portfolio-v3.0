@@ -35,7 +35,7 @@ const onlineSkillsObject = {
     'github': {
         location: {
             'desktop': [13, 39],
-            'laptop': [15, 39],
+            'laptop': [13, 39],
         },
         title: 'GitHub Copilot',
         description: 'I have experience with GitHub, and I am proficient in using it for version control and collaboration on software projects.',
@@ -65,7 +65,7 @@ const offlineSkillsObject = {
     'weightlifting': {
         location: {
             'desktop': [3, 1],
-            'laptop': [4, 1],
+            'laptop': [3, 1],
         },
         title: 'Weightlifting',
         description: 'I have experience with weightlifting, and I am proficient in using various exercises and techniques to build strength and muscle.',
@@ -83,7 +83,7 @@ const offlineSkillsObject = {
     'videogames': {
         location: {
             'desktop': [13, 39],
-            'laptop': [15, 39],
+            'laptop': [13, 39],
         },
         title: 'Video Games',
         description: 'I have experience with playing videogames, and I enjoy exploring different genres and platforms to find new and exciting gaming experiences.',
