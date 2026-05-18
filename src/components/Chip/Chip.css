@@ -93,3 +93,24 @@
         grid-column-start: 22;
     }
 }
+
+@media (max-width: 1024px) {
+    .chip-container {
+        width: 408px;
+        height: 328px;
+    }
+
+    .chip {
+        grid-column-start: 21;
+        height: 88px;
+    }
+
+    .chip::before {
+        border-width: 3px;
+        border-radius: 6px;
+    }
+
+    .chip-title {
+        font-size: 1.2rem;
+    }
+}

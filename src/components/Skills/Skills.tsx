@@ -18,6 +18,7 @@ const onlineSkillsObject = {
         location: {
             'desktop': [11, 1],
             'laptop': [11, 1],
+            'tablet': [9, 1],
         },
         title: 'JavaScript',
         description: 'I have experience with JavaScript, and I am proficient in using it for both frontend and backend development.',
@@ -27,6 +28,7 @@ const onlineSkillsObject = {
         location: {
             'desktop': [44, 6],
             'laptop': [43, 6],
+            'tablet': [38, 7],
         },
         title: 'HTML',
         description: 'I have experience with HTML, and I am proficient in using it to create structured and semantic web pages.',
@@ -36,6 +38,7 @@ const onlineSkillsObject = {
         location: {
             'desktop': [13, 39],
             'laptop': [13, 39],
+            'tablet': [10, 36],
         },
         title: 'GitHub Copilot',
         description: 'I have experience with GitHub, and I am proficient in using it for version control and collaboration on software projects.',
@@ -45,6 +48,7 @@ const onlineSkillsObject = {
         location: {
             'desktop': [46, 26],
             'laptop': [44, 26],
+            'tablet': [39, 23],
         },
         title: 'React',
         description: 'I have experience with React, and I am proficient in using it to build dynamic and interactive user interfaces.',
@@ -54,6 +58,7 @@ const onlineSkillsObject = {
         location: {
             'desktop': [1, 21],
             'laptop': [1, 21],
+            'tablet': [1, 20],
         },
         title: 'CSS',
         description: 'I have experience with CSS, and I am proficient in using it to create visually appealing and responsive web designs.',
@@ -66,6 +71,7 @@ const offlineSkillsObject = {
         location: {
             'desktop': [4, 1],
             'laptop': [3, 1],
+            'tablet': [4, 1],
         },
         title: 'Weightlifting',
         description: 'I have experience with weightlifting, and I am proficient in using various exercises and techniques to build strength and muscle.',
@@ -75,6 +81,7 @@ const offlineSkillsObject = {
         location: {
             'desktop': [40, 5],
             'laptop': [38, 5],
+            'tablet': [35, 5],
         },
         title: 'Espresso',
         description: 'I have experience with making espresso, and I am proficient in using an espresso machine to create rich and flavorful coffee beverages.',
@@ -84,6 +91,7 @@ const offlineSkillsObject = {
         location: {
             'desktop': [13, 39],
             'laptop': [13, 39],
+            'tablet': [12, 36],
         },
         title: 'Video Games',
         description: 'I have experience with playing videogames, and I enjoy exploring different genres and platforms to find new and exciting gaming experiences.',
@@ -93,6 +101,7 @@ const offlineSkillsObject = {
         location: {
             'desktop': [43, 26],
             'laptop': [40, 26],
+            'tablet': [36, 23],
         },
         title: 'Cooking',
         description: 'I have experience with cooking, and I enjoy experimenting with different recipes and cuisines to create delicious meals.',
@@ -102,6 +111,7 @@ const offlineSkillsObject = {
         location: {
             'desktop': [1, 21],
             'laptop': [1, 21],
+            'tablet': [1, 21],
         },
         title: 'Guitar',
         description: 'I have experience with playing the guitar, and I enjoy learning new songs and techniques to improve my skills.',

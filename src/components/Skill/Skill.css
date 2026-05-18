@@ -73,3 +73,13 @@
         font-size: 1.8rem;
     }
 }
+
+@media (max-width: 1024px) {
+    .skill-title {
+        font-size: 1.6rem;
+    }
+
+    .skill-img {
+        height: 25px;
+    }
+}

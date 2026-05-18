@@ -93,6 +93,53 @@ export const skillCircuitMap = {
                 coordinate: [19, 6],
                 rotation: 0
             }
+        ],
+        'tablet': [
+            {
+                version: 'straight',
+                coordinate: [23, 14],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [23, 13],
+                rotation: 0
+            },
+            {
+                version: 'elbow',
+                coordinate: [23, 12],
+                rotation: 180
+            },
+            {
+                version: 'diagonal',
+                coordinate: [22, 11],
+                rotation: 0
+            },
+            {
+                version: 'diagonal',
+                coordinate: [21, 10],
+                rotation: 0
+            },
+            {
+                version: 'diagonal',
+                coordinate: [20, 9],
+                rotation: 0
+            },
+            {
+                version: 'diagonal',
+                coordinate: [19, 8],
+                rotation: 0
+            },
+            {
+                version: 'elbow',
+                coordinate: [18, 7],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [18, 6],
+                rotation: 0
+            }
         ]
     },
     html: {
@@ -257,6 +304,88 @@ export const skillCircuitMap = {
             {
                 version: 'diagonal',
                 coordinate: [42, 11],
+                rotation: 90
+            },
+        ],
+        'tablet': [
+            {
+                version: 'elbow',
+                coordinate: [30, 14],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [31, 14],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [32, 14],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [33, 14],
+                rotation: 90
+            },
+            {
+                version: 'elbow',
+                coordinate: [34, 14],
+                rotation: 270
+            },
+            {
+                version: 'diagonal',
+                coordinate: [35, 13],
+                rotation: 90
+            },
+            {
+                version: 'diagonal',
+                coordinate: [36, 12],
+                rotation: 90
+            },
+            {
+                version: 'diagonal',
+                coordinate: [37, 11],
+                rotation: 90
+            },
+            {
+                version: 'diagonal',
+                coordinate: [38, 10],
+                rotation: 90
+            },
+            {
+                version: 'diagonal',
+                coordinate: [33, 17],
+                rotation: 90
+            },
+            {
+                version: 'elbow2',
+                coordinate: [34, 16],
+                rotation: 90
+            },
+            {
+                version: 'elbow2',
+                coordinate: [34, 15],
+                rotation: 270
+            },
+            {
+                version: 'diagonal',
+                coordinate: [35, 14],
+                rotation: 90
+            },
+            {
+                version: 'diagonal',
+                coordinate: [36, 13],
+                rotation: 90
+            },
+            {
+                version: 'diagonal',
+                coordinate: [37, 12],
+                rotation: 90
+            },
+            {
+                version: 'diagonal',
+                coordinate: [38, 11],
                 rotation: 90
             },
         ],
@@ -436,6 +565,88 @@ export const skillCircuitMap = {
                 rotation: 270
             },
         ],
+        'tablet': [
+            {
+                version: 'straight',
+                coordinate: [19, 20],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [18, 20],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [17, 20],
+                rotation: 90
+            },
+            {
+                version: 'elbow2',
+                coordinate: [16, 20],
+                rotation: 180
+            },
+            {
+                version: 'diagonal',
+                coordinate: [15, 19],
+                rotation: 0
+            },
+            {
+                version: 'elbow2',
+                coordinate: [14, 18],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [13, 18],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [12, 18],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [11, 18],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [10, 18],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [9, 18],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [8, 18],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [7, 18],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [6, 18],
+                rotation: 90
+            },
+            {
+                version: 'elbow',
+                coordinate: [5, 18],
+                rotation: 90
+            },
+            {
+                version: 'elbow2',
+                coordinate: [4, 19],
+                rotation: 270
+            },
+        ]
     },
     react: {
         'desktop': [
@@ -579,6 +790,78 @@ export const skillCircuitMap = {
             {
                 version: 'elbow',
                 coordinate: [50, 25],
+                rotation: 180
+            },
+        ],
+        'tablet': [
+            {
+                version: 'straight',
+                coordinate: [33, 24],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [34, 24],
+                rotation: 90
+            },
+            {
+                version: 'elbow',
+                coordinate: [35, 24],
+                rotation: 270
+            },
+            {
+                version: 'diagonal',
+                coordinate: [36, 23],
+                rotation: 90
+            },
+            {
+                version: 'diagonal',
+                coordinate: [37, 22],
+                rotation: 90
+            },
+            {
+                version: 'elbow',
+                coordinate: [38, 21],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [39, 21],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [40, 21],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [41, 21],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [42, 21],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [43, 21],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [44, 21],
+                rotation: 90
+            },
+            {
+                version: 'elbow2',
+                coordinate: [45, 21],
+                rotation: 0
+            },
+            {
+                version: 'elbow',
+                coordinate: [46, 22],
                 rotation: 180
             },
         ],
@@ -748,6 +1031,88 @@ export const skillCircuitMap = {
                 rotation: 180
             },
         ],
+        'tablet': [
+            {
+                version: 'straight',
+                coordinate: [25, 28],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [25, 29],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [25, 30],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [25, 31],
+                rotation: 0
+            },
+            {
+                version: 'elbow2',
+                coordinate: [25, 32],
+                rotation: 90
+            },
+            {
+                version: 'diagonal',
+                coordinate: [24, 33],
+                rotation: 90
+            },
+            {
+                version: 'elbow2',
+                coordinate: [23, 34],
+                rotation: 270
+            },
+            {
+                version: 'straight',
+                coordinate: [23, 35],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [27, 28],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [27, 29],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [27, 30],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [27, 31],
+                rotation: 0
+            },
+            {
+                version: 'elbow',
+                coordinate: [27, 32],
+                rotation: 0
+            },
+            {
+                version: 'diagonal',
+                coordinate: [28, 33],
+                rotation: 0
+            },
+            {
+                version: 'elbow',
+                coordinate: [29, 34],
+                rotation: 180
+            },
+            {
+                version: 'straight',
+                coordinate: [29, 35],
+                rotation: 180
+            },
+        ]
     },
     weightlifting: {
         'desktop': [
@@ -884,6 +1249,73 @@ export const skillCircuitMap = {
                 rotation: 90
             },
         ],
+        'tablet': [
+            {
+                version: 'straight',
+                coordinate: [25, 14],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [25, 13],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [25, 12],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [25, 11],
+                rotation: 0
+            },
+            {
+                version: 'elbow2',
+                coordinate: [25, 10],
+                rotation: 270
+            },
+            {
+                version: 'diagonal',
+                coordinate: [26, 9],
+                rotation: 90
+            },
+            {
+                version: 'diagonal',
+                coordinate: [27, 8],
+                rotation: 90
+            },
+            {
+                version: 'elbow2',
+                coordinate: [28, 7],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [28, 6],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [28, 5],
+                rotation: 0
+            },
+            {
+                version: 'elbow',
+                coordinate: [28, 4],
+                rotation: 180
+            },
+            {
+                version: 'elbow2',
+                coordinate: [27, 3],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [26, 3],
+                rotation: 90
+            },
+        ]
     },
     espresso: {
         'desktop': [
@@ -1010,6 +1442,68 @@ export const skillCircuitMap = {
                 rotation: 90
             },
         ],
+        'tablet': [
+            {
+                version: 'straight',
+                coordinate: [27, 14],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [27, 13],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [27, 12],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [27, 11],
+                rotation: 0
+            },
+            {
+                version: 'elbow2',
+                coordinate: [27, 10],
+                rotation: 270
+            },
+            {
+                version: 'diagonal',
+                coordinate: [28, 9],
+                rotation: 270
+            },
+            {
+                version: 'diagonal',
+                coordinate: [29, 8],
+                rotation: 270
+            },
+            {
+                version: 'elbow',
+                coordinate: [30, 7],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [31, 7],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [32, 7],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [33, 7],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [34, 7],
+                rotation: 90
+            },
+        ]
     },
     guitar: {
         'desktop': [
@@ -1166,6 +1660,83 @@ export const skillCircuitMap = {
                 rotation: 0
             },
         ],
+        'tablet': [
+            {
+                version: 'diagonal',
+                coordinate: [19, 17],
+                rotation: 0
+            },
+            {
+                version: 'elbow2',
+                coordinate: [18, 16],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [17, 16],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [16, 16],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [15, 16],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [14, 16],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [13, 16],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [12, 16],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [11, 16],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [10, 16],
+                rotation: 90
+            },
+            {
+                version: 'elbow',
+                coordinate: [9, 16],
+                rotation: 90
+            },
+            {
+                version: 'diagonal',
+                coordinate: [8, 17],
+                rotation: 90
+            },
+            {
+                version: 'elbow2',
+                coordinate: [7, 18],
+                rotation: 270
+            },
+            {
+                version: 'straight',
+                coordinate: [7, 19],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [7, 20],
+                rotation: 0
+            },
+        ]
     },
     videogames: {
         'desktop': [
@@ -1502,6 +2073,163 @@ export const skillCircuitMap = {
                 rotation: 90
             },
         ],
+        'tablet': [
+            {
+                version: 'straight',
+                coordinate: [23, 28],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [23, 29],
+                rotation: 0
+            },
+            {
+                version: 'elbow2',
+                coordinate: [23, 30],
+                rotation: 90
+            },
+            {
+                version: 'elbow',
+                coordinate: [22, 31],
+                rotation: 270
+            },
+            {
+                version: 'straight',
+                coordinate: [21, 31],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [20, 31],
+                rotation: 90
+            },
+            {
+                version: 'elbow',
+                coordinate: [19, 31],
+                rotation: 90
+            },
+            {
+                version: 'diagonal',
+                coordinate: [18, 32],
+                rotation: 90
+            },
+            {
+                version: 'elbow2',
+                coordinate: [17, 33],
+                rotation: 270
+            },
+            {
+                version: 'straight',
+                coordinate: [17, 34],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [17, 35],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [25, 28],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [25, 29],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [25, 30],
+                rotation: 0
+            },
+            {
+                version: 'elbow',
+                coordinate: [25, 31],
+                rotation: 0
+            },
+            {
+                version: 'diagonal',
+                coordinate: [26, 32],
+                rotation: 0
+            },
+            {
+                version: 'elbow2',
+                coordinate: [27, 33],
+                rotation: 180
+            },
+            {
+                version: 'straight',
+                coordinate: [28, 33],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [29, 33],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [30, 33],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [31, 33],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [32, 33],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [33, 33],
+                rotation: 90
+            },
+            {
+                version: 'elbow2',
+                coordinate: [34, 33],
+                rotation: 0
+            },
+            {
+                version: 'elbow',
+                coordinate: [35, 34],
+                rotation: 180
+            },
+            {
+                version: 'straight',
+                coordinate: [35, 35],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [35, 36],
+                rotation: 0
+            },
+            {
+                version: 'elbow2',
+                coordinate: [35, 37],
+                rotation: 90
+            },
+            {
+                version: 'elbow',
+                coordinate: [34, 38],
+                rotation: 270
+            },
+            {
+                version: 'straight',
+                coordinate: [33, 38],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [32, 38],
+                rotation: 90
+            },
+        ]
     },
     cooking: {
         'desktop': [
@@ -1658,5 +2386,77 @@ export const skillCircuitMap = {
                 rotation: 0
             },
         ],
+        'tablet': [
+            {
+                version: 'straight',
+                coordinate: [33, 20],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [34, 20],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [35, 20],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [36, 20],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [37, 20],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [38, 20],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [39, 20],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [40, 20],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [41, 20],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [42, 20],
+                rotation: 90
+            },
+            {
+                version: 'elbow2',
+                coordinate: [43, 20],
+                rotation: 0
+            },
+            {
+                version: 'diagonal',
+                coordinate: [44, 21],
+                rotation: 0
+            },
+            {
+                version: 'elbow',
+                coordinate: [45, 22],
+                rotation: 180
+            },
+            {
+                version: 'straight',
+                coordinate: [46, 23],
+                rotation: 0
+            },
+        ]
     },
 };
