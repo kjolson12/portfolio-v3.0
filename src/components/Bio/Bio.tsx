@@ -25,7 +25,7 @@ export default function Bio() {
                         <p className='fun-fact-value'>Github Copilot</p>
                     </div>
                     <div className="fun-fact">
-                        <p className="fun-fact-category">current location</p>
+                        <p className="fun-fact-category">location</p>
                         <p className='fun-fact-value'>Charlotte, NC</p>
                     </div>
                     <div className="fun-fact">
