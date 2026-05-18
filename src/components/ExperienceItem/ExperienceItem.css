@@ -24,17 +24,14 @@
 }
 
 .experience-date-range {
-    color: white;
     width: fit-content;
-    background-color: var(--color-500);
-    padding: 0.5rem 1rem;
     border-radius: 7px;
     font-weight: 600;
     margin: 1rem 0 2rem;
 }
 
 .experience-duration {
-    color: var(--color-highlight-secondary);
+    color: var(--color-500);
 }
 
 .arrow-placeholder {
