@@ -21,16 +21,16 @@ export default function Bio() {
                         <p className='fun-fact-value'>JavaScript</p>
                     </div>
                     <div className="fun-fact">
-                        <p className="fun-fact-category">education</p>
-                        <p className='fun-fact-value'>University of Oregon</p>
+                        <p className="fun-fact-category">artificial intelligence</p>
+                        <p className='fun-fact-value'>Github Copilot</p>
                     </div>
                     <div className="fun-fact">
                         <p className="fun-fact-category">current location</p>
                         <p className='fun-fact-value'>Charlotte, NC</p>
                     </div>
                     <div className="fun-fact">
-                        <p className="fun-fact-category">hometown</p>
-                        <p className='fun-fact-value'>Brea, CA</p>
+                        <p className="fun-fact-category">education</p>
+                        <p className='fun-fact-value'>University of Oregon</p>
                     </div>
                 </div>
             </div>
