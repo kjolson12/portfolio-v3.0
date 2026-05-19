@@ -26,7 +26,7 @@
     transition: all 0.3s ease;
 }
 
-button.mobile-nav-button {
+a.mobile-nav-button {
     background-color: var(--color-800);
     width: 100%;
     padding: 0;
@@ -35,7 +35,7 @@ button.mobile-nav-button {
     justify-content: space-between;
 }
 
-button.mobile-nav-button:hover {
+a.mobile-nav-button:hover {
     background: none;
     border: 2px solid var(--color-800);
     color: var(--color-highlight);
