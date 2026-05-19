@@ -1,0 +1,31 @@
+#main-nav-mobile {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    color: var(--color-text-primary);
+    background-color: var(--color-500);
+    border: 2px solid transparent;
+    border-radius: 999rem;
+    padding: 1rem 2rem;
+    font-family: var(--font-tertiary);
+    font-size: 1.5rem;
+    font-weight: 400;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button.mobile-nav-button {
+    width: 100%;
+    padding: 0;
+    box-shadow: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+button.mobile-nav-button:hover {
+    background: none;
+    color: var(--color-highlight);
+}
