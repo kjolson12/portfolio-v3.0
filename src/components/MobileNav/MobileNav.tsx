@@ -4,9 +4,9 @@ import './MobileNav.css';
 
 const menuOptions = [
     { name: 'Experience', href: '#experience' },
-    { name: 'Professional Work', href: '#professional' },
+    { name: 'Professional', href: '#professional' },
     { name: 'Skills', href: '#skills' },
-    { name: 'Personal Projects', href: '#personal' },
+    { name: 'Personal', href: '#personal' },
 ]
 
 export default function MobileNav ({ activeSection }: { activeSection: string }) {
@@ -18,11 +18,22 @@ export default function MobileNav ({ activeSection }: { activeSection: string })
     }, [activeSection]);
 
     return (
-        <nav id="main-nav-mobile" onClick={() => setNavOpen(true)}>
+        <nav id="main-nav-mobile" onClick={() => setNavOpen(!navOpen)}>
             <button className={`button mobile-nav-button`}>
                 {activeNavLink}
                 <i className="bi bi-list"></i>
-            </button>     
+            </button>
+            <div id="mobile-nav-menu" className={navOpen ? 'open' : ''}>
+                { menuOptions.map(option => (
+                    <button 
+                        key={option.name} 
+                        className={`button mobile-nav-button ${activeNavLink === option.href.substring(1) ? 'active' : ''}`} 
+                        onClick={() => setNavOpen(false)}
+                    >
+                        {option.name}
+                    </button>
+                )) }
+            </div>
         </nav>
     );
 }
