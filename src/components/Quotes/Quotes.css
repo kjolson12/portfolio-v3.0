@@ -78,3 +78,13 @@
         height: 100px;  /* Height needed for longest quote */
     }
 }
+
+@media (max-width: 1024px) {
+    .quote-text {
+        font-size: 1.5rem;
+    }
+
+    #quote-text-container {
+        height: 80px;  /* Height needed for longest quote */
+    }
+}

@@ -22,3 +22,13 @@
         font-size: 1.8rem;
     }
 }
+
+@media (max-width: 1024px) {
+    .bio-stat-number {
+        font-size: 2.5rem;
+    }
+    
+    .bio-stat-text {
+        font-size: 1.5rem;
+    }
+}

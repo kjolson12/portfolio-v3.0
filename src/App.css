@@ -166,8 +166,16 @@ p {
     h5 {
         font-size: 2rem;
     }
+}
 
-    p {
-        font-size: 1.25rem;
+@media (max-width: 1101px) {
+    h1 {
+        font-size: 5.75rem;
+    }
+}
+
+@media (max-width: 880px) {
+    h1 {
+        font-size: 5rem;
     }
 }
