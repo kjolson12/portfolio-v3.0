@@ -119,3 +119,31 @@
 #smite-2-ui-concept-img {
     object-position: left;
 }
+
+@media (max-width: 1024px) {
+    .project-container {
+        padding: 2rem;
+    }
+
+    .project-tag {
+        font-size: 1rem;
+        padding: 0.4rem 0.8rem;
+    }
+    .project-text h5 {
+        font-size: 1.8rem;
+    }
+
+    .project-text p {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 880px) {
+    .project-text h5 {
+        font-size: 1.5rem;
+    }
+
+    .project-text p {
+        font-size: 1.2rem;
+    }
+}

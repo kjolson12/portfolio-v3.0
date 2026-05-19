@@ -86,12 +86,16 @@
     height: 80px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
     #timeline-container {
         width: 225px;
     }
 
     .timeline-line {
         left: 199px;
+    }
+
+    .timeline-item p {
+        font-size: 1.2rem;
     }
 }
