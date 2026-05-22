@@ -1,4 +1,4 @@
-#main-nav-mobile {
+.main-nav-mobile {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0%);
@@ -26,6 +26,23 @@
     transition: all 0.3s ease;
 }
 
+.footer-nav.main-nav-mobile {
+    width: 100%;
+    top: 140px;
+    left: 0;
+    transform: none;
+    background-color: var(--color-600);
+}
+
+.footer-nav.main-nav-mobile a.mobile-nav-button {
+    background-color: var(--color-600);
+}
+
+.footer-nav.main-nav-mobile a.mobile-nav-button:hover {
+    background: none;
+    border: 2px solid var(--color-600);
+}
+
 a.mobile-nav-button {
     background-color: var(--color-800);
     width: 100%;
@@ -41,14 +58,14 @@ a.mobile-nav-button:hover {
     color: var(--color-highlight);
 }
 
-#mobile-nav-menu {
+.mobile-nav-menu {
     overflow: hidden;
     width: 100%;
     height: 0;
     transition: all 0.3s ease;
 }
 
-#mobile-nav-menu.open {
-    height: 100px;
+.mobile-nav-menu.open {
+    height: 120px;
     margin-top: 1rem;
 }

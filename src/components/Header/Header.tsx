@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import './Header.css';
 
 import MobileNav from '../MobileNav/MobileNav';
+import ResumeButton from '../ResumeButton/ResumeButton';
 
 const headerLogoStart = "<";
 const headerLogoEnd = "/>";
@@ -39,9 +40,7 @@ export default function Header ({ activeSection }: { activeSection: string }) {
 
             { windowWidth > 1024 ? desktopNav : <MobileNav activeSection={activeSection} /> }
 
-            <div>
-                <button className='button button-secondary'>Download Resume</button>
-            </div>
+            <ResumeButton />
         </header>
     );
 };

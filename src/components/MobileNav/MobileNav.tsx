@@ -8,25 +8,28 @@ const menuOptions = [
     { name: 'Professional', href: '#professional' },
     { name: 'Skills', href: '#skills' },
     { name: 'Personal', href: '#personal' },
+    { name: 'Contact', href: '#contact' },
 ]
 
-export default function MobileNav ({ activeSection }: { activeSection: string }) {
+export default function MobileNav ({ activeSection, version }: { activeSection: string, version?: string }) {
     const [navOpen, setNavOpen] = useState(false);
     const [activeNavLink, setActiveNavLink] = useState(activeSection);
 
     const cleanedMenuOptions = menuOptions.filter(option => option.href.substring(1) !== activeNavLink);
+
+    console.log(cleanedMenuOptions, version);
 
     useEffect(() => {
         setActiveNavLink(activeSection);
     }, [activeSection]);
 
     return (
-        <nav id="main-nav-mobile" onClick={() => setNavOpen(!navOpen)}>
+        <nav className={`${version} main-nav-mobile`} onClick={() => setNavOpen(!navOpen)}>
             <a className={`button mobile-nav-button`}>
                 {activeNavLink}
                 <i className="bi bi-list"></i>
             </a>
-            <div id="mobile-nav-menu" className={navOpen ? 'open' : ''}>
+            <div className={`mobile-nav-menu ${navOpen ? 'open' : ''}`}>
                 { cleanedMenuOptions.map(option => (
                     <a 
                         key={option.name} 

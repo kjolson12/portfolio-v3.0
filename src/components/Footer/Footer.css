@@ -1,17 +1,22 @@
 footer {
     display: flex;
     flex-direction: column;
-    width: 850px;
+    width: 100%;
 }
 
 #footer-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-bottom: 5rem;
+}
+
+#bio-and-footer-nav {
+    position: relative;
 }
 
 #bio-image-and-title-footer {
     display: flex;
+    align-items: center;
     gap: 2rem;
 }
 
@@ -56,6 +61,7 @@ footer {
 
 #contact-info-container {
     display: flex;
+    flex-direction: column;
     gap: 4rem;
 }
 
@@ -75,27 +81,9 @@ footer {
     text-decoration: underline;
 }
 
-#footer-nav-container {
+#footer-disclosure-container {
     border-top: 2px solid var(--color-500);
     padding: 2rem 0;
     display: flex;
-    justify-content: space-between;
-    gap: 5rem;
-}
-
-#footer-nav {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-}
-
-.footer-nav-link {
-    text-decoration: none;
-    color: var(--color-text-primary);
-    font-size: 1.6rem;
-    font-weight: 500;
-}
-
-.footer-nav-link:hover {
-    color: var(--color-500);
+    justify-content: center;
 }
