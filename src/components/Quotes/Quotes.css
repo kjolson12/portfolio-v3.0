@@ -88,3 +88,10 @@
         height: 80px;  /* Height needed for longest quote */
     }
 }
+
+@media (max-width: 840px) {
+    #quotes-container {
+        width: 80%;
+        align-self: center;
+    }
+}
