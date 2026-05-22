@@ -92,3 +92,25 @@
         font-size: 1.2rem;
     }
 }
+
+@media (max-width: 840px) {
+    #bio-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #bio-image-and-title {
+        max-width: 100%;
+        display: flex;
+        gap: 5rem;
+        align-items: center;
+    }
+
+    #bio-image {
+        height: 250px;
+    }
+
+    #bio-fun-facts {
+        width: fit-content;
+    }
+}

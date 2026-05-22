@@ -14,23 +14,23 @@ export default function Bio() {
                     <div className="typewriter-container">
                         <h4 className='typewriter'>Website Developer</h4>
                     </div>
-                </div>
-                <div id="bio-fun-facts">
-                    <div className="fun-fact">
-                        <p className="fun-fact-category">programming</p>
-                        <p className='fun-fact-value'>JavaScript</p>
-                    </div>
-                    <div className="fun-fact">
-                        <p className="fun-fact-category">artificial intelligence</p>
-                        <p className='fun-fact-value'>Github Copilot</p>
-                    </div>
-                    <div className="fun-fact">
-                        <p className="fun-fact-category">location</p>
-                        <p className='fun-fact-value'>Charlotte, NC</p>
-                    </div>
-                    <div className="fun-fact">
-                        <p className="fun-fact-category">education</p>
-                        <p className='fun-fact-value'>University of Oregon</p>
+                    <div id="bio-fun-facts">
+                        <div className="fun-fact">
+                            <p className="fun-fact-category">programming</p>
+                            <p className='fun-fact-value'>JavaScript</p>
+                        </div>
+                        <div className="fun-fact">
+                            <p className="fun-fact-category">artificial intelligence</p>
+                            <p className='fun-fact-value'>Github Copilot</p>
+                        </div>
+                        <div className="fun-fact">
+                            <p className="fun-fact-category">location</p>
+                            <p className='fun-fact-value'>Charlotte, NC</p>
+                        </div>
+                        <div className="fun-fact">
+                            <p className="fun-fact-category">education</p>
+                            <p className='fun-fact-value'>University of Oregon</p>
+                        </div>
                     </div>
                 </div>
             </div>
