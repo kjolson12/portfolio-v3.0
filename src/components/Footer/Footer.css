@@ -7,7 +7,7 @@ footer {
 #footer-content {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 }
 
 #bio-and-footer-nav {
@@ -92,4 +92,21 @@ footer {
     padding: 2rem 0;
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 1050px) {
+    #footer-content {
+        margin-bottom: 12rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #contact-info-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #footer-content {
+        margin-bottom: 5rem;
+    }
 }
