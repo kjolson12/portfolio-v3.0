@@ -92,3 +92,9 @@ a.mobile-nav-button:hover {
         display: flex;
     }
 }
+
+@media(max-width: 768px) {
+    .main-nav-mobile {
+        padding: 0.4rem 1.6rem;
+    }
+}

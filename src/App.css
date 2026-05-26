@@ -179,3 +179,16 @@ p {
         gap: 2rem;
     }
 }
+
+@media (max-width: 840px) {
+    section .container {
+        padding: 80px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .button {
+        font-size: 1.4rem;
+        padding: 0.8rem 1.6rem;
+    }
+}

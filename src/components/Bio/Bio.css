@@ -110,7 +110,11 @@
         height: 250px;
     }
 
-    #bio-fun-facts {
-        width: fit-content;
+    .fun-fact-category {
+        font-size: 1.2rem;
+    }
+
+    .fun-fact-value {
+        font-size: 1.5rem;
     }
 }
