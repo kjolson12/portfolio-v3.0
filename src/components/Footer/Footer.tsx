@@ -29,6 +29,7 @@ export default function Footer() {
                     </div>
                     <MobileNav activeSection="Contact" version="footer-nav" />
                 </div>
+                <MobileNav activeSection="Contact" version="footer-nav-desktop" />
                 <div id="contact">
                     <div id="contact-info-container">
                         <div className='contact-info'>
