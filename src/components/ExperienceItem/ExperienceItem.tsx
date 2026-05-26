@@ -47,12 +47,14 @@ export default function ExperienceItem({ activeExperience, setActiveExperience, 
     return (
         <div className='experience-item'>
             {(activeExperience === 'OHSU' || activeExperience === 'UO') && topArrow}
-            <img className="experience-img" src={image} alt="" />
-            <div className="experience-text">
-                <h3>{title}</h3>
-                <h4>{subtitle}</h4>
-                <p className='experience-date-range'>{dateRange} | <span className='experience-duration'>{duration}</span></p>
-                {description && <p>{description}</p>}
+            <div className="experience-item-content">
+                <img className="experience-img" src={image} alt="" />
+                <div className="experience-text">
+                    <h3>{title}</h3>
+                    <h4>{subtitle}</h4>
+                    <p className='experience-date-range'>{dateRange} | <span className='experience-duration'>{duration}</span></p>
+                </div>
+                {description && <p className='experience-description'>{description}</p>}
             </div>
             {(activeExperience === 'OHSU' || activeExperience === 'SSNC') && bottomArrow}
         </div>

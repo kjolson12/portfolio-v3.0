@@ -1,7 +1,5 @@
 .experience-item {
     position: relative;
-    display: flex;
-    gap: 4rem;
     max-width: 850px;
     padding: 4rem;
     border-radius: 30px;
@@ -10,7 +8,14 @@
     color: var(--color-text-secondary);
 }
 
+.experience-item-content {
+    display: grid;
+    column-gap: 4rem;
+    grid-template-columns: auto auto;
+}
+
 .experience-img {
+    grid-row: span 2;
     width: 200px;
     height: 200px;
     object-fit: cover;
@@ -27,11 +32,15 @@
     width: fit-content;
     border-radius: 7px;
     font-weight: 600;
-    margin: 1rem 0 2rem;
+    margin: 1rem 0;
 }
 
 .experience-duration {
     color: var(--color-500);
+}
+
+.experience-description {
+    grid-column-start: 2;
 }
 
 .arrow-placeholder {
