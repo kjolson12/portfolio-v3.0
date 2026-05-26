@@ -6,8 +6,8 @@ footer {
 
 #footer-content {
     display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 5rem;
+    justify-content: space-between;
+    margin-bottom: 10rem;
 }
 
 #bio-and-footer-nav {
@@ -59,9 +59,15 @@ footer {
     color: var(--color-500);
 }
 
-#contact-info-container {
+#contact {
     display: flex;
     flex-direction: column;
+    gap: 4rem;
+    align-items: end;
+}
+
+#contact-info-container {
+    display: flex;
     gap: 4rem;
 }
 

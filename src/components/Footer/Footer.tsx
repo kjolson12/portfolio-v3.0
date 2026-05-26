@@ -43,8 +43,8 @@ export default function Footer() {
                                 <a href="tel:714-873-5571">714-873-5571</a>
                             </p>
                         </div>
-                        <ResumeButton />
                     </div>
+                    <ResumeButton />
                 </div>
             </div>
             <div id="footer-disclosure-container">
