@@ -28,8 +28,8 @@
 
 .footer-nav.main-nav-mobile {
     width: 100%;
-    top: 140px;
-    left: 0;
+    top: 0;
+    left: 450px;
     transform: none;
     background-color: var(--color-600);
 }
@@ -68,4 +68,24 @@ a.mobile-nav-button:hover {
 .mobile-nav-menu.open {
     height: 120px;
     margin-top: 1rem;
+}
+
+@media (max-width: 1200px) {
+    .footer-nav.main-nav-mobile {
+        left: 400px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .footer-nav.main-nav-mobile {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .footer-nav.main-nav-mobile {
+        width: 100%;
+        top: 140px;
+        left: 0;
+    }
 }
