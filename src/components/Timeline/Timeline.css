@@ -60,6 +60,7 @@
     background-image: url('../../images/ssnc-logo.png');
     background-color: white;
     background-size: 60px;
+    background-position-y: 8px;
 }
 
 #ssnc-line {
@@ -102,14 +103,36 @@
 
 @media (max-width: 768px) {
     #timeline-container {
-        width: 200px;
+        width: 180px;
+    }
+
+    .timeline-bubble {
+        height: 40px;
+        width: 40px;
     }
 
     .timeline-line {
-        left: 174px;
+        left: 159px;
+    }
+
+    .timeline-item::after {
+        width: 40px;
     }
 
     .timeline-item.active::after {
         width: 100%;
+    }
+
+    #ssnc-bubble {
+        background-size: 50px;
+        background-position-y: 6px;
+    }
+
+    #ohsu-bubble {
+        background-size: 19px;
+    }
+
+    #uo-bubble {
+        background-size: 30px;
     }
 }
