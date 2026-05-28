@@ -1,4 +1,5 @@
 .main-nav-mobile {
+    align-self: start;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0%);
