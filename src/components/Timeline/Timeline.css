@@ -99,3 +99,17 @@
         font-size: 1.2rem;
     }
 }
+
+@media (max-width: 768px) {
+    #timeline-container {
+        width: 200px;
+    }
+
+    .timeline-line {
+        left: 174px;
+    }
+
+    .timeline-item.active::after {
+        width: 100%;
+    }
+}
