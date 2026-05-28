@@ -118,3 +118,13 @@
         font-size: 1.5rem;
     }
 }
+
+@media (max-width: 660px) {
+    #bio-image {
+        height: 200px;
+    }
+
+    #bio-image-and-title {
+        gap: 4rem;
+    }
+}

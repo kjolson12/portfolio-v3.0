@@ -96,7 +96,7 @@ footer {
 
 @media (max-width: 1050px) {
     #footer-content {
-        margin-bottom: 12rem;
+        margin-bottom: 14rem;
     }
 }
 
@@ -107,6 +107,6 @@ footer {
     }
 
     #footer-content {
-        margin-bottom: 5rem;
+        margin-bottom: 7rem;
     }
 }

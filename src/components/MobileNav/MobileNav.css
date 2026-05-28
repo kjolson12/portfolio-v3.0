@@ -1,6 +1,7 @@
 .main-nav-mobile {
     align-self: start;
     position: absolute;
+    top: 18px;
     left: 50%;
     transform: translate(-50%, 0%);
 
@@ -79,6 +80,10 @@ a.mobile-nav-button:hover {
     margin-top: 1rem;
 }
 
+.footer-nav-desktop .mobile-nav-menu.open, .footer-nav .mobile-nav-menu.open {
+    height: 141px;
+}
+
 @media (max-width: 1200px) {
     .footer-nav-desktop.main-nav-mobile {
         width: 250px;
@@ -96,6 +101,13 @@ a.mobile-nav-button:hover {
 
 @media(max-width: 768px) {
     .main-nav-mobile {
+        top: 20px;
         padding: 0.4rem 1.6rem;
+    }
+}
+
+@media (max-width: 660px) {
+    .main-nav-mobile {
+        width: fit-content;
     }
 }
