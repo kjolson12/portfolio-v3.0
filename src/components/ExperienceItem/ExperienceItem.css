@@ -28,11 +28,13 @@
     font-weight: 700;
 }
 
-.experience-date-range {
-    width: fit-content;
-    border-radius: 7px;
+.experience-date-range,.experience-date-range-mobile {
     font-weight: 600;
     margin: 1rem 0;
+}
+
+.experience-date-range-mobile {
+    display: none;
 }
 
 .experience-duration {
@@ -254,5 +256,20 @@
 
     .experience-text h4 {
         font-size: 2rem;
+    }
+}
+
+@media (max-width: 660px) {
+    .experience-date-range {
+        display: none;
+    }
+
+    .experience-date-range-mobile {
+        display: block;
+        grid-column: span 2;
+    }
+
+    .experience-text {
+        min-height: auto;
     }
 }

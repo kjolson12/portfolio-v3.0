@@ -54,6 +54,7 @@ export default function ExperienceItem({ activeExperience, setActiveExperience, 
                     <h4>{subtitle}</h4>
                     <p className='experience-date-range'>{dateRange} | <span className='experience-duration'>{duration}</span></p>
                 </div>
+                <p className='experience-date-range-mobile'>{dateRange} | <span className='experience-duration'>{duration}</span></p>
                 {description && <p className='experience-description'>{description}</p>}
             </div>
             {(activeExperience === 'OHSU' || activeExperience === 'SSNC') && bottomArrow}
