@@ -136,3 +136,17 @@
         background-size: 30px;
     }
 }
+
+@media (max-width: 575px) {
+    #timeline-container {
+        width: 152px;
+    }
+
+    .timeline-line {
+        left: 131px;
+    }
+
+    .timeline-item p {
+        font-size: 1rem;
+    }
+}

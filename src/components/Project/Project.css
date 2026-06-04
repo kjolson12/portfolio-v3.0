@@ -167,3 +167,13 @@
         font-size: 1.5rem;
     }
 }
+
+@media (max-width: 575px) {
+    .project-text h5 {
+        font-size: 2rem;
+    }
+
+    .project-text p {
+        font-size: 1.2rem;
+    }
+}

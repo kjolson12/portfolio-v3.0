@@ -228,7 +228,6 @@
         height: 120px;
         width: 120px;
         border-radius: 20px;
-        margin-right: 1rem;
     }
     .experience-text {
         min-height: 141px;
@@ -271,5 +270,21 @@
 
     .experience-text {
         min-height: auto;
+    }
+}
+
+@media (max-width: 575px) {
+    .experience-item-content {
+        grid-template-columns: 85px auto;
+    }
+
+    .experience-img {
+        height: 80px;
+        width: 80px;
+        border-radius: 10px;
+    }
+
+    .experience-text h4 {
+        font-size: 1.8rem;
     }
 }

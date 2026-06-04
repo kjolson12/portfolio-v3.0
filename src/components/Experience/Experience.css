@@ -12,3 +12,9 @@
     flex: 1;
     transition: padding 0.3s ease;
 }
+
+@media (max-width: 575px) {
+    #experience-container {
+        gap: 2rem;
+    }
+}
