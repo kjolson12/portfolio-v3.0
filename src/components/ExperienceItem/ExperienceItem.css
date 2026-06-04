@@ -176,6 +176,7 @@
     }
 
     .experience-item {
+        max-width: 750px;
         padding: 3rem;
     }
 

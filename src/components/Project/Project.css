@@ -161,8 +161,13 @@
 
 @media (max-width: 768px) {
     .project-container {
-        max-width: 400px;
+        flex-direction: row;
+        max-width: 100%;
         padding: 3rem;
+    }
+
+    .project-container img {
+        width: 200px;
     }
 
     .project-tag {
@@ -176,6 +181,10 @@
 
     .project-text p {
         font-size: 1.5rem;
+    }
+
+    .project-button-container {
+        justify-content: start;
     }
 }
 

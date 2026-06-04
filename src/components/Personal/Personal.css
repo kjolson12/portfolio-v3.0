@@ -1,3 +1,9 @@
 #personal-container .project-container {
     max-width: 400px;
 }
+
+@media (max-width: 880px) {
+    #personal-container .project-container {
+        max-width: 100%;
+    }
+}
