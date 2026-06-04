@@ -111,3 +111,13 @@ a.mobile-nav-button:hover {
         width: fit-content;
     }
 }
+
+@media (max-width: 575px) {
+    .main-nav-mobile {
+        top: 15px;
+    }
+    
+    .mobile-nav-menu.open {
+        height: 100px;
+    }
+}

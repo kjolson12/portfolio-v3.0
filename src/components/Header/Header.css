@@ -61,3 +61,13 @@ header {
         font-size: 1.4rem;
     }
 }
+
+@media (max-width: 575px) {
+    #name-home-link-container {
+        padding: 0rem;
+    }
+
+    #name-home-link {
+        font-size: 1.8rem;
+    }
+}

@@ -206,3 +206,10 @@ p {
         gap: 3rem;
     }
 }
+
+@media (max-width: 575px) {
+    .button {
+        font-size: 1.2rem;
+        padding: 0.6rem 1.2rem;
+    }
+}

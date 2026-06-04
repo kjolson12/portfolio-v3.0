@@ -37,7 +37,7 @@ export default function Quotes() {
     }, [handleQuoteClick]);
 
     return (
-        <div id="quotes-container" className='hover-animation'>
+        <div id="quotes-container">
             <div id="quote-text-container">
                 <p className='quote-text'>"{quotesArray[quoteCount]}"</p>
             </div>

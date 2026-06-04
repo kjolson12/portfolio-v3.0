@@ -24,7 +24,7 @@ export default function MobileNav ({ activeSection, version }: { activeSection: 
     }, [activeSection]);
 
     return (
-        <nav className={`${version} main-nav-mobile`} onClick={() => setNavOpen(!navOpen)}>
+        <nav className={`${version? version : ""} main-nav-mobile`} onClick={() => setNavOpen(!navOpen)}>
             <a className={`button mobile-nav-button`}>
                 {activeNavLink}
                 <i className="bi bi-list"></i>
