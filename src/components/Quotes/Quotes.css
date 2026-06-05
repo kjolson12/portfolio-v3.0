@@ -139,3 +139,9 @@
         width: 20px;
     }
 }
+
+@media (max-width: 500px) {
+    #quotes-container {
+        width: 100%;
+    }
+}
