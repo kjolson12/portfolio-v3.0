@@ -71,3 +71,13 @@ header {
         font-size: 1.8rem;
     }
 }
+
+@media (max-width: 500px) {
+    header {
+        padding: 1.5rem 1rem;
+    }
+
+    #name-home-link {
+        font-size: 1.4rem;
+    }
+}
