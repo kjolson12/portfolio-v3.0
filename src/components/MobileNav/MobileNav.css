@@ -120,4 +120,8 @@ a.mobile-nav-button:hover {
     .mobile-nav-menu.open {
         height: 100px;
     }
+
+    .footer-nav .mobile-nav-menu.open {
+        height: 120px;
+    }
 }

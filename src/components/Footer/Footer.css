@@ -74,6 +74,7 @@ footer {
 .contact-info-category {
     color: var(--color-100);
     font-weight: 500;
+    font-size: 1.5rem;
 }
 
 .contact-info-value a {
@@ -108,5 +109,26 @@ footer {
 
     #footer-content {
         margin-bottom: 7rem;
+    }
+}
+
+@media (max-width: 660px) {
+    .contact-info-category {
+        font-size: 1.2rem;
+    }
+
+    .contact-info-value a {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 575px) {
+    #bio-image-footer {
+        height: 80px;
+        width: 80px;
+    }
+
+    #bio-image-and-title-footer {
+        gap: 1rem;
     }
 }

@@ -162,7 +162,7 @@
 @media (max-width: 768px) {
     .project-container {
         flex-direction: row;
-        max-width: 100%;
+        max-width: 80%;
         padding: 3rem;
     }
 
@@ -185,6 +185,12 @@
 
     .project-button-container {
         justify-content: start;
+    }
+}
+
+@media (max-width: 660px) {
+    .project-container {
+        max-width: 100%;
     }
 }
 

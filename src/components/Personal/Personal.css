@@ -2,7 +2,13 @@
     max-width: 400px;
 }
 
-@media (max-width: 880px) {
+@media (max-width: 768px) {
+    #personal-container .project-container {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 660px) {
     #personal-container .project-container {
         max-width: 100%;
     }
