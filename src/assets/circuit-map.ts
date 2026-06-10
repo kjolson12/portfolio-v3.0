@@ -140,6 +140,13 @@ export const skillCircuitMap = {
                 coordinate: [18, 6],
                 rotation: 0
             }
+        ],
+        'mobile': [
+            {
+                version: 'straight',
+                coordinate: [23, 14],
+                rotation: 0
+            },
         ]
     },
     html: {
@@ -389,6 +396,13 @@ export const skillCircuitMap = {
                 rotation: 90
             },
         ],
+        'mobile': [
+            {
+                version: 'straight',
+                coordinate: [23, 14],
+                rotation: 0
+            },
+        ]
     },
     css: {
         'desktop': [
@@ -646,6 +660,13 @@ export const skillCircuitMap = {
                 coordinate: [4, 19],
                 rotation: 270
             },
+        ],
+        'mobile': [
+            {
+                version: 'straight',
+                coordinate: [23, 14],
+                rotation: 0
+            },
         ]
     },
     react: {
@@ -865,6 +886,13 @@ export const skillCircuitMap = {
                 rotation: 180
             },
         ],
+        'mobile': [
+            {
+                version: 'straight',
+                coordinate: [23, 14],
+                rotation: 0
+            },
+        ]
     },
     github: {
         'desktop': [
@@ -1112,6 +1140,13 @@ export const skillCircuitMap = {
                 coordinate: [29, 35],
                 rotation: 180
             },
+        ],
+        'mobile': [
+            {
+                version: 'straight',
+                coordinate: [23, 14],
+                rotation: 0
+            },
         ]
     },
     weightlifting: {
@@ -1315,6 +1350,13 @@ export const skillCircuitMap = {
                 coordinate: [26, 3],
                 rotation: 90
             },
+        ],
+        'mobile': [
+            {
+                version: 'straight',
+                coordinate: [23, 14],
+                rotation: 0
+            },
         ]
     },
     espresso: {
@@ -1502,6 +1544,13 @@ export const skillCircuitMap = {
                 version: 'straight',
                 coordinate: [34, 7],
                 rotation: 90
+            },
+        ],
+        'mobile': [
+            {
+                version: 'straight',
+                coordinate: [23, 14],
+                rotation: 0
             },
         ]
     },
@@ -1734,6 +1783,13 @@ export const skillCircuitMap = {
             {
                 version: 'straight',
                 coordinate: [7, 20],
+                rotation: 0
+            },
+        ],
+        'mobile': [
+            {
+                version: 'straight',
+                coordinate: [23, 14],
                 rotation: 0
             },
         ]
@@ -2229,6 +2285,13 @@ export const skillCircuitMap = {
                 coordinate: [32, 38],
                 rotation: 90
             },
+        ],
+        'mobile': [
+            {
+                version: 'straight',
+                coordinate: [23, 14],
+                rotation: 0
+            },
         ]
     },
     cooking: {
@@ -2455,6 +2518,13 @@ export const skillCircuitMap = {
             {
                 version: 'straight',
                 coordinate: [46, 23],
+                rotation: 0
+            },
+        ],
+        'mobile': [
+            {
+                version: 'straight',
+                coordinate: [23, 14],
                 rotation: 0
             },
         ]

@@ -17,8 +17,6 @@ export default function MobileNav ({ activeSection, version }: { activeSection: 
 
     const cleanedMenuOptions = menuOptions.filter(option => option.href.substring(1) !== activeNavLink);
 
-    console.log(cleanedMenuOptions, version);
-
     useEffect(() => {
         setActiveNavLink(activeSection);
     }, [activeSection]);

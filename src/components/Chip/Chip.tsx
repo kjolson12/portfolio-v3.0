@@ -25,6 +25,7 @@ interface ChipProps {
                 'desktop': Array<number>,
                 'laptop': Array<number>,
                 'tablet': Array<number>,
+                'mobile': Array<number>,
             },
             img: string,
         }
@@ -64,7 +65,7 @@ export default function Chip ({ title, skillsObject, activeSection }: ChipProps)
             } else if (index < 16) {
                 return { gridColumnStart: `21`, gridRowStart: `${18 + ((index - 12) * 3)}` };
             }
-        } else if (windowWidth <= 1024) {
+        } else if (windowWidth <= 1024 && windowWidth > 500) {
             if (index < 4) {
                 return { gridRowStart: `15`, gridColumnStart: `${23 + (index * 2)}` };
             } else if (index < 8) {
@@ -73,6 +74,16 @@ export default function Chip ({ title, skillsObject, activeSection }: ChipProps)
                 return { gridRowStart: `27`, gridColumnStart: `${23 + ((index - 8) * 2)}` };
             } else if (index < 16) {
                 return { gridColumnStart: `20`, gridRowStart: `${18 + ((index - 12) * 2)}` };
+            }
+        } else {
+            if (index < 4) {
+                return { gridRowStart: `22`, gridColumnStart: `${16 + (index * 2)}` };
+            } else if (index < 8) {
+                return { gridColumnStart: `25`, gridRowStart: `${25 + ((index - 4) * 2)}` };
+            } else if (index < 12) {
+                return { gridRowStart: `34`, gridColumnStart: `${16 + ((index - 8) * 2)}` };
+            } else if (index < 16) {
+                return { gridColumnStart: `13`, gridRowStart: `${25 + ((index - 12) * 2)}` };
             }
         }
     }
@@ -98,8 +109,10 @@ export default function Chip ({ title, skillsObject, activeSection }: ChipProps)
             map = skillCircuitMap[skillKey]['desktop'];
         } else if (windowWidth <= 1200 && windowWidth > 1024) {
             map = skillCircuitMap[skillKey]['laptop'];
-        } else if (windowWidth <= 1024) {
+        } else if (windowWidth <= 1024 && windowWidth > 500) {
             map = skillCircuitMap[skillKey]['tablet'];
+        } else {
+            map = skillCircuitMap[skillKey]['mobile'];
         }
 
         if (map.length === 0) return null;
@@ -109,15 +122,17 @@ export default function Chip ({ title, skillsObject, activeSection }: ChipProps)
         });
     }
 
-    const generateSkillLocation = (skill: { location: { desktop: Array<number>, laptop: Array<number>, tablet: Array<number> } }) => {
+    const generateSkillLocation = (skill: { location: { desktop: Array<number>, laptop: Array<number>, tablet: Array<number>, mobile: Array<number> } }) => {
         let location;
 
         if (windowWidth > 1200) {
             location = skill.location.desktop;
         } else if (windowWidth <= 1200 && windowWidth > 1024) {
             location = skill.location.laptop;
-        } else if (windowWidth <= 1024) {
+        } else if (windowWidth <= 1024 && windowWidth > 500) {
             location = skill.location.tablet;
+        } else {
+            location = skill.location.mobile;
         }
 
         return location;
