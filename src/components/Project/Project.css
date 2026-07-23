@@ -207,3 +207,17 @@
         font-size: 1.2rem;
     }
 }
+
+@media (max-width: 500px) {
+    .project-container {
+        flex-direction: column;
+    }
+
+    .project-container img {
+        width: 100%;
+    }
+
+    .project-button-container {
+        justify-content: center;
+    }
+}

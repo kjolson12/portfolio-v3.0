@@ -40,7 +40,7 @@ export default function Header ({ activeSection }: { activeSection: string }) {
 
             { windowWidth > 1024 ? desktopNav : <MobileNav activeSection={activeSection} /> }
 
-            <ResumeButton />
+            <ResumeButton windowWidth={windowWidth} version="header" />
         </header>
     );
 };

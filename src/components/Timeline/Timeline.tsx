@@ -12,21 +12,21 @@ export default function Timeline({ activeExperience, setActiveExperience }: Time
         <div id="timeline-container">
             <div className='timeline-item-container' onMouseEnter={() => setActiveExperience('SSNC')}>
                 <div className={`timeline-item ${ activeExperience === "SSNC" && 'active' }`}>
-                    <p>Jun 2021 - Present</p>
+                    <p>Jun 2021 -<br className="timeline-break" /> Present</p>
                     <div className='timeline-bubble' id="ssnc-bubble"></div>
                 </div>
                 <div className="timeline-line" id="ssnc-line"></div>
             </div>
             <div className='timeline-item-container' onMouseEnter={() => setActiveExperience('OHSU')}>
                 <div className={`timeline-item ${ activeExperience === "OHSU" && 'active' }`}>
-                    <p>Dec 2018 - Jan 2021</p>
+                    <p>Dec 2018 -<br className="timeline-break" /> Jan 2021</p>
                     <div className='timeline-bubble' id="ohsu-bubble"></div>
                 </div>
                 <div className="timeline-line" id="ohsu-line"></div>
             </div>
             <div className='timeline-item-container' onMouseEnter={() => setActiveExperience('UO')}>
                 <div className={`timeline-item ${ activeExperience === "UO" && 'active' }`}>
-                    <p>Sep 2013 - Jun 2018</p>
+                    <p>Sep 2013 -<br className="timeline-break" /> Jun 2018</p>
                     <div className='timeline-bubble' id="uo-bubble"></div>
                 </div>
                 <div className="timeline-line" id="uo-line"></div>

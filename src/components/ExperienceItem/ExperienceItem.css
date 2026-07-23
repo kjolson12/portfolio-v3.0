@@ -289,3 +289,31 @@
         font-size: 1.8rem;
     }
 }
+
+@media (max-width: 500px) {
+    .experience-item {
+        padding: 2rem;
+        border-radius: 20px;
+    }
+
+    .experience-item-content {
+        grid-template-columns: 100%;
+    }
+
+    .experience-img {
+        grid-row: span 1;
+        height: 100px;
+        width: 100%;
+        max-width: 200px;
+        margin-bottom: 10px;
+        justify-self: center;
+    }
+
+    .experience-text {
+        grid-column: span 2;
+    }
+
+    .experience-text h4 {
+        font-size: 1.6rem;
+    }
+}

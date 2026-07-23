@@ -1,7 +1,15 @@
-export default function ResumeButton () {
+export default function ResumeButton ({ windowWidth, version }: { windowWidth? : number, version? : string }) {
+    let buttonText;
+
+    if (version === 'header' && windowWidth !== undefined && windowWidth <= 500) {
+        buttonText = 'Resume';
+    } else {
+        buttonText = 'Download Resume';
+    }
+
     return (
         <div>
-            <button className='button button-secondary'>Download Resume</button>
+            <button className='button button-secondary'>{buttonText}</button>
         </div>
     );
 };

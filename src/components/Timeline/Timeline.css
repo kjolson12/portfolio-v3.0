@@ -56,6 +56,10 @@
     background-repeat: no-repeat;
 }
 
+.timeline-break {
+    display: none;
+}
+
 #ssnc-bubble {
     background-image: url('../../images/ssnc-logo.png');
     background-color: white;
@@ -148,5 +152,19 @@
 
     .timeline-item p {
         font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    #timeline-container {
+        width: 115px;
+    }
+
+    .timeline-line {
+        left: 94px;
+    }
+
+    .timeline-break {
+        display: block;
     }
 }
