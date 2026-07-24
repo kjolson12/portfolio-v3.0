@@ -120,6 +120,11 @@ a.mobile-nav-button:hover {
 }
 
 @media (max-width: 500px) {
+    .main-nav-mobile {
+        left: 55%;
+        padding: 0.4rem 1.2rem;
+    }
+
     .footer-nav.main-nav-mobile {
         top: 270px;
         left: 50%;
