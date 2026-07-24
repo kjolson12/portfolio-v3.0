@@ -81,10 +81,6 @@ a.mobile-nav-button:hover {
     margin-top: 1rem;
 }
 
-.footer-nav-desktop .mobile-nav-menu.open, .footer-nav .mobile-nav-menu.open {
-    height: 141px;
-}
-
 @media (max-width: 1200px) {
     .footer-nav-desktop.main-nav-mobile {
         width: 250px;
@@ -120,10 +116,6 @@ a.mobile-nav-button:hover {
     
     .mobile-nav-menu.open {
         height: 100px;
-    }
-
-    .footer-nav .mobile-nav-menu.open {
-        height: 120px;
     }
 }
 

@@ -136,7 +136,7 @@ footer {
     #footer-content {
         flex-direction: column;
         gap: 2rem;
-        margin-bottom: 10rem;
+        margin-bottom: 12rem;
     }
 
     #bio-image-and-title-footer {
