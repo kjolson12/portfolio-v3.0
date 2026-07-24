@@ -16,7 +16,6 @@ footer {
 
 #bio-image-and-title-footer {
     display: flex;
-    align-items: center;
     gap: 2rem;
 }
 
@@ -130,5 +129,29 @@ footer {
 
     #bio-image-and-title-footer {
         gap: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    #footer-content {
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 10rem;
+    }
+
+    #bio-image-and-title-footer {
+        justify-content: center;
+    }
+
+    #contact-info-container {
+        flex-direction: row;
+    }
+
+    #socials {
+        margin-top: 1rem;
+    }
+
+    #contact {
+        align-items: center;
     }
 }

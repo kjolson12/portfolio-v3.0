@@ -211,7 +211,7 @@
 @media (max-width: 500px) {
     .project-container {
         flex-direction: column;
-        max-width: 80%;
+        max-width: 90%;
         padding: 2rem;
     }
 

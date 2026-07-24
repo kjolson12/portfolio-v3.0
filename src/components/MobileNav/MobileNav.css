@@ -29,6 +29,7 @@
 }
 
 .footer-nav-desktop.main-nav-mobile {
+    top: 0;
     width: 300px;
 }
 
@@ -123,5 +124,14 @@ a.mobile-nav-button:hover {
 
     .footer-nav .mobile-nav-menu.open {
         height: 120px;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer-nav.main-nav-mobile {
+        top: 270px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        width: fit-content;
     }
 }
