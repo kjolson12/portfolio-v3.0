@@ -9,7 +9,7 @@ export default function ResumeButton ({ windowWidth, version }: { windowWidth? :
 
     return (
         <div>
-            <button className='button button-secondary'><a href="./src/assets/resume.pdf" target="_blank">{buttonText}</a></button>
+            <button className='button button-secondary'><a href="/public/resume.pdf" target="_blank">{buttonText}</a></button>
         </div>
     );
 };
