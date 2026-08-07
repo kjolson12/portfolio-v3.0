@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import './Experience.css';
 
@@ -57,19 +57,45 @@ const experienceObjects: Record<'SSNC' | 'OHSU' | 'UO', {
     }
 };
 
+const experienceItemContainerStyleMap = {
+    desktop: {
+        'SSNC': {'paddingTop': '0rem'},
+        'OHSU': {'paddingTop': '10rem'},
+        'UO': {'paddingTop': '13rem'}
+    },
+    tablet: {
+        'SSNC': {'paddingTop': '0rem'},
+        'OHSU': {'paddingTop': '7rem'},
+        'UO': {'paddingTop': '12rem'}
+    },
+    mobile: {
+        'SSNC': {'paddingTop': '0rem'},
+        'OHSU': {'paddingTop': '2rem'},
+        'UO': {'paddingTop': '4rem'}
+    }
+}
+
 export default function Experience() {
     const [activeExperience, setActiveExperience] = useState<'SSNC' | 'OHSU' | 'UO'>('SSNC');
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
+        
+        window.addEventListener('resize', handleResize);
+        
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     const experienceItemContainerStyle = () => {
-        switch (activeExperience) {
-            case 'SSNC':
-                return {'paddingTop': '0rem'};
-            case 'OHSU':
-                return {'paddingTop': '10rem'};
-            case 'UO':
-                return {'paddingTop': '13rem'};
-            default:
-                return {};
+        if (windowWidth > 768) {
+            return experienceItemContainerStyleMap.desktop[activeExperience];
+        } else if (windowWidth <= 768 && windowWidth > 500) {
+            return experienceItemContainerStyleMap.tablet[activeExperience];
+        } else {
+            return experienceItemContainerStyleMap.mobile[activeExperience];
         }
     }
 
