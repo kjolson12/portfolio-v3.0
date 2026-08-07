@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { inject } from '@vercel/analytics';
+inject();
 
 import BackgroundAnimation from './utils/BackgroundAnimation';
 import TypewriterObserver from './utils/TypewriterObserver';
