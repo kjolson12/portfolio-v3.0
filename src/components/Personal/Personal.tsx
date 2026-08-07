@@ -16,8 +16,8 @@ const projectsObject: Record<'smiteUI', {
         title: 'SMITE 2 UI Concept',
         description: 'Video games are full of user interfaces where intuitivity is critical. I took an opportunity to practice my React and UI design skills by improving the character select screen for one of my favorite games.',
         image: smiteUIImg,
-        projectUrl: 'https://www.smite2ui.com/',
-        projectGitHubUrl: 'https://github.com/kjolson12',
+        projectUrl: 'https://smite-ui-lovat.vercel.app/',
+        projectGitHubUrl: 'https://github.com/kjolson12/smite-ui',
         projectTags: ['React', 'JavaScript', 'CSS']
     },
 };
