@@ -159,3 +159,13 @@
         gap: 1rem;
     }
 }
+
+@media screen and (max-width: 425px) {
+    #bio-image {
+        width: 95px;
+        height: 160px;
+    }
+    #bio-image-and-title {
+        gap: 2rem;
+    }
+}

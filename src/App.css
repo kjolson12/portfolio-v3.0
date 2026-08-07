@@ -239,4 +239,8 @@ p {
     h2 {
         font-size: 3rem;
     }
+
+    section#bio .container {
+        padding: 60px 20px 80px;
+    }
 }
