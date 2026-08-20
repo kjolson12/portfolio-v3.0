@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 
+import { useSwipeable } from 'react-swipeable';
+
 import './Quotes.css';
 
 const quotesArray = [
@@ -13,6 +15,17 @@ const quotesArray = [
 export default function Quotes() {
     const [quoteCount, setQuoteCount] = useState(0);
     const loadingBarRef = useRef<HTMLDivElement>(null); // Create a ref for the loading bar
+
+    const handlers = useSwipeable({
+        onSwipedLeft: () => {
+            setQuoteCount((prevCount) => (prevCount + 1) % quotesArray.length);
+            startLoadingBar();
+        },
+        onSwipedRight: () => {
+            setQuoteCount((prevCount) => (prevCount - 1 + quotesArray.length) % quotesArray.length);
+            startLoadingBar();
+        },
+    });
 
     const handleQuoteClick = (index: number) => {
         setQuoteCount(index);
@@ -38,7 +51,7 @@ export default function Quotes() {
 
     return (
         <div id="quotes-container">
-            <div id="quote-text-container">
+            <div id="quote-text-container" {...handlers}>
                 <p className='quote-text'>"{quotesArray[quoteCount]}"</p>
             </div>
             <div className='loading-bar-container'>
