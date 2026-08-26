@@ -144,82 +144,82 @@ export const skillCircuitMap = {
         'mobile': [
             {
                 version: 'straight',
-                coordinate: [10, 6],
+                coordinate: [12, 6],
                 rotation: 0
             },
             {
                 version: 'elbow',
-                coordinate: [10, 7],
+                coordinate: [12, 7],
                 rotation: 0
             },
             {
                 version: 'diagonal',
-                coordinate: [11, 8],
+                coordinate: [13, 8],
                 rotation: 0
             },
             {
                 version: 'diagonal',
-                coordinate: [12, 9],
+                coordinate: [14, 9],
                 rotation: 0
             },
             {
                 version: 'diagonal',
-                coordinate: [13, 10],
+                coordinate: [15, 10],
                 rotation: 0
             },
             {
                 version: 'diagonal',
-                coordinate: [14, 11],
+                coordinate: [16, 11],
                 rotation: 0
             },
             {
                 version: 'diagonal',
-                coordinate: [15, 12],
+                coordinate: [17, 12],
                 rotation: 0
             },
             {
                 version: 'elbow',
-                coordinate: [16, 13],
+                coordinate: [18, 13],
                 rotation: 180
             },
             {
                 version: 'straight',
-                coordinate: [16, 14],
+                coordinate: [18, 14],
                 rotation: 0
             },
             {
                 version: 'straight',
-                coordinate: [16, 15],
+                coordinate: [18, 15],
                 rotation: 0
             },
             {
                 version: 'straight',
-                coordinate: [16, 16],
+                coordinate: [18, 16],
                 rotation: 0
             },
             {
                 version: 'straight',
-                coordinate: [16, 17],
+                coordinate: [18, 17],
                 rotation: 0
             },
             {
                 version: 'straight',
-                coordinate: [16, 18],
+                coordinate: [18, 18],
                 rotation: 0
             },
             {
                 version: 'straight',
-                coordinate: [16, 19],
+                coordinate: [18, 19],
                 rotation: 0
             },
             {
                 version: 'straight',
-                coordinate: [16, 20],
+                coordinate: [18, 20],
                 rotation: 0
             },
             {
                 version: 'straight',
-                coordinate: [16, 21],
+                coordinate: [18, 21],
                 rotation: 0
             },
         ]
@@ -804,68 +804,48 @@ export const skillCircuitMap = {
         'mobile': [
             {
                 version: 'straight',
-                coordinate: [3, 20],
-                rotation: 0
+                coordinate: [11, 17],
+                rotation: 90
             },
             {
                 version: 'straight',
-                coordinate: [3, 21],
-                rotation: 0
+                coordinate: [12, 17],
+                rotation: 90
             },
             {
                 version: 'straight',
-                coordinate: [3, 22],
+                coordinate: [13, 17],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [14, 17],
+                rotation: 90
+            },
+            {
+                version: 'elbow2',
+                coordinate: [15, 17],
                 rotation: 0
             },
             {
                 version: 'elbow',
-                coordinate: [3, 23],
-                rotation: 0
-            },
-            {
-                version: 'diagonal',
-                coordinate: [4, 24],
-                rotation: 0
-            },
-            {
-                version: 'diagonal',
-                coordinate: [5, 25],
-                rotation: 0
-            },
-            {
-                version: 'diagonal',
-                coordinate: [6, 26],
-                rotation: 0
-            },
-            {
-                version: 'elbow2',
-                coordinate: [7, 27],
+                coordinate: [16, 18],
                 rotation: 180
             },
             {
                 version: 'straight',
-                coordinate: [8, 27],
-                rotation: 90
+                coordinate: [16, 19],
+                rotation: 0
             },
             {
                 version: 'straight',
-                coordinate: [9, 27],
-                rotation: 90
+                coordinate: [16, 20],
+                rotation: 0
             },
             {
                 version: 'straight',
-                coordinate: [10, 27],
-                rotation: 90
-            },
-            {
-                version: 'straight',
-                coordinate: [11, 27],
-                rotation: 90
-            },
-            {
-                version: 'straight',
-                coordinate: [12, 27],
-                rotation: 90
+                coordinate: [16, 21],
+                rotation: 0
             },
         ]
     },
@@ -1463,99 +1443,94 @@ export const skillCircuitMap = {
         ],
         'mobile': [
             {
+                version: 'straight',
+                coordinate: [6, 46],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [6, 45],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [6, 44],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [6, 43],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [6, 42],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [6, 41],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [6, 40],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [6, 39],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [6, 38],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [6, 37],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [6, 36],
+                rotation: 0
+            },
+            {
                 version: 'elbow2',
-                coordinate: [8, 46],
-                rotation: 270
-            },
-            {
-                version: 'elbow',
-                coordinate: [9, 45],
-                rotation: 90
-            },
-            {
-                version: 'straight',
-                coordinate: [10, 45],
-                rotation: 90
-            },
-            {
-                version: 'straight',
-                coordinate: [11, 45],
-                rotation: 90
-            },
-            {
-                version: 'straight',
-                coordinate: [12, 45],
-                rotation: 90
-            },
-            {
-                version: 'straight',
-                coordinate: [13, 45],
-                rotation: 90
-            },
-            {
-                version: 'straight',
-                coordinate: [14, 45],
-                rotation: 90
-            },
-            {
-                version: 'straight',
-                coordinate: [15, 45],
-                rotation: 90
-            },
-            {
-                version: 'elbow',
-                coordinate: [16, 45],
+                coordinate: [6, 35],
                 rotation: 270
             },
             {
                 version: 'diagonal',
-                coordinate: [17, 44],
+                coordinate: [7, 34],
                 rotation: 90
             },
             {
-                version: 'elbow2',
-                coordinate: [18, 43],
+                version: 'diagonal',
+                coordinate: [8, 33],
+                rotation: 90
+            },
+            {
+                version: 'diagonal',
+                coordinate: [9, 32],
+                rotation: 90
+            },
+            {
+                version: 'elbow',
+                coordinate: [10, 31],
                 rotation: 90
             },
             {
                 version: 'straight',
-                coordinate: [18, 42],
-                rotation: 0
+                coordinate: [11, 31],
+                rotation: 90
             },
             {
                 version: 'straight',
-                coordinate: [18, 41],
-                rotation: 0
-            },
-            {
-                version: 'straight',
-                coordinate: [18, 40],
-                rotation: 0
-            },
-            {
-                version: 'straight',
-                coordinate: [18, 39],
-                rotation: 0
-            },
-            {
-                version: 'straight',
-                coordinate: [18, 38],
-                rotation: 0
-            },
-            {
-                version: 'straight',
-                coordinate: [18, 37],
-                rotation: 0
-            },
-            {
-                version: 'straight',
-                coordinate: [18, 36],
-                rotation: 0
-            },
-            {
-                version: 'straight',
-                coordinate: [18, 35],
-                rotation: 0
+                coordinate: [12, 31],
+                rotation: 90
             },
         ]
     },
@@ -2204,7 +2179,7 @@ export const skillCircuitMap = {
             },
         ]
     },
-    videogames: {
+    motocross: {
         'desktop': [
             {
                 version: 'straight',

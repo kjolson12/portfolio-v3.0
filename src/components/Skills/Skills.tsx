@@ -9,7 +9,7 @@ import githubCopilotLogo from '../../images/github.png';
 
 import guitarLogo from '../../images/guitar.png';
 import espressoLogo from '../../images/espresso.png';
-import videogamesLogo from '../../images/controller.png';
+import motocrossLogo from '../../images/motocross.png';
 import cookingLogo from '../../images/cooking.png';
 import weightliftingLogo from '../../images/dumbell.png';
 
@@ -94,16 +94,16 @@ const offlineSkillsObject = {
         description: 'I have experience with making espresso, and I am proficient in using an espresso machine to create rich and flavorful coffee beverages.',
         img: espressoLogo
     },
-    'videogames': {
+    'motocross': {
         location: {
-            'desktop': [13, 39],
-            'laptop': [13, 39],
-            'tablet': [12, 36],
+            'desktop': [15, 39],
+            'laptop': [15, 39],
+            'tablet': [14, 36],
             'mobile': [1, 47],
         },
-        title: 'Video Games',
+        title: 'Motocross',
         description: 'I have experience with playing videogames, and I enjoy exploring different genres and platforms to find new and exciting gaming experiences.',
-        img: videogamesLogo
+        img: motocrossLogo
     },
     'cooking': {
         location: {
