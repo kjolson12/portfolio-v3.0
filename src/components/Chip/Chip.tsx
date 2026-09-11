@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import Skill from '../Skill/Skill';
 import Circuit from '../Circuit/Circuit';
 
@@ -45,10 +45,21 @@ const activeNodes = {
 }
 
 export default function Chip ({ title, skillsObject, activeSection }: ChipProps) {
+    const chipContainerRef = useRef<HTMLDivElement>(null);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     const numofNodes = 16;
     const nodeArray = [];
+
+    const calculateMidpoint = () => {
+        if (chipContainerRef.current) {
+            const { offsetWidth } = chipContainerRef.current;
+            // Divide the offsetWidth by 8 to get the width of one column, then divide by 2 to get the midpoint
+            return offsetWidth / 8 / 2;
+        }
+    };
+
+    const midpoint = calculateMidpoint();
 
     const generateNodeStyle = (index: number) => {
         if (windowWidth > 1200) {
@@ -160,7 +171,7 @@ export default function Chip ({ title, skillsObject, activeSection }: ChipProps)
     }, []);
 
     return (
-        <div className="chip-container">
+        <div className="chip-container" ref={chipContainerRef}>
             {nodeArray}
             <div id={`${title}-chip`} className="chip">
                 <span className="chip-title">{title}</span>
@@ -170,7 +181,14 @@ export default function Chip ({ title, skillsObject, activeSection }: ChipProps)
                 return (
                     <React.Fragment key={`${title}-skill-${index}`}>
                         {generateCircuit(skillCircuitMap, skillKey)}
-                        <Skill title={skill.title} description={skill.description} location={generateSkillLocation(skill) || []} img={skill.img} activeSection={activeSection} />
+                        <Skill
+                            title={skill.title}
+                            description={skill.description}
+                            location={generateSkillLocation(skill) || []}
+                            img={skill.img}
+                            activeSection={activeSection}
+                            midpoint={midpoint}
+                        />
                     </React.Fragment>
                 );
             })}

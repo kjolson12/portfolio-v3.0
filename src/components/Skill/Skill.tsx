@@ -7,9 +7,10 @@ interface SkillProps {
     location: Array<number>;
     img: string;
     activeSection?: string;
+    midpoint?: number;
 };
 
-export default function Skill({ title, description, location, img, activeSection }: SkillProps) {
+export default function Skill({ title, description, location, img, activeSection, midpoint }: SkillProps) {
     const skillContainerRef = useRef<HTMLHeadingElement>(null); // Ref for the skill-title element
     const descriptionContainerRef = useRef<HTMLDivElement>(null); // Ref for the skill-description element
 
@@ -86,12 +87,16 @@ export default function Skill({ title, description, location, img, activeSection
     }
 
     return (
-        <div id={`${renderID()}-skill`} className={`skill-container ${expanded ? 'active' : ''}`} style={style}>
+        <div
+            id={`${renderID()}-skill`}
+            className={`skill-container ${expanded ? 'active' : ''} ${midpoint !== undefined && location[0] > midpoint ? 'right' : ''}`}
+            style={style}
+            onMouseEnter={() => setExpanded(true)}
+            onMouseLeave={() => setExpanded(false)}
+            >
             <div
                 className="skill-title-and-img"
                 ref={skillContainerRef}
-                onMouseEnter={() => setExpanded(true)}
-                onMouseLeave={() => setExpanded(false)}
             >
                 <img className="skill-img" src={img} alt="" />
                 <h5 className="skill-title">{renderTitle()}</h5>

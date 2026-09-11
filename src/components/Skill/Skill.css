@@ -17,6 +17,10 @@
     transform: scale(1.2);
 }
 
+.skill-container.active.right {
+    transform: translateX(-30%) scale(1.2);
+}
+
 .skill-container.active .skill-description {
     display: inline-block;
 }
@@ -75,11 +79,21 @@
 }
 
 @media (max-width: 1024px) {
+    .skill-container.active.right {
+        transform: translateX(-40%) scale(1.2);
+    }
+
     .skill-title {
         font-size: 1.6rem;
     }
 
     .skill-img {
         height: 25px;
+    }
+}
+
+@media (max-width: 500px) {
+    .skill-description {
+        width: 175px;
     }
 }
