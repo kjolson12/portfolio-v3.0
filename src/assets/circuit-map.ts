@@ -2950,8 +2950,83 @@ export const skillCircuitMap = {
         'mobile': [
             {
                 version: 'straight',
-                coordinate: [23, 14],
+                coordinate: [12, 46],
                 rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [12, 45],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [12, 44],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [12, 43],
+                rotation: 0
+            },
+            {
+                version: 'elbow',
+                coordinate: [12, 42],
+                rotation: 180
+            },
+            {
+                version: 'diagonal',
+                coordinate: [11, 41],
+                rotation: 0
+            },
+            {
+                version: 'diagonal',
+                coordinate: [10, 40],
+                rotation: 0
+            },
+            {
+                version: 'elbow',
+                coordinate: [9, 39],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [9, 38],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [9, 37],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [9, 36],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [9, 35],
+                rotation: 0
+            },
+            {
+                version: 'elbow2',
+                coordinate: [9, 34],
+                rotation: 270
+            },
+            {
+                version: 'diagonal',
+                coordinate: [10, 33],
+                rotation: 90
+            },
+            {
+                version: 'diagonal',
+                coordinate: [11, 32],
+                rotation: 90
+            },
+            {
+                version: 'elbow',
+                coordinate: [12, 31],
+                rotation: 90
             },
         ]
     },
@@ -3185,8 +3260,53 @@ export const skillCircuitMap = {
         'mobile': [
             {
                 version: 'straight',
-                coordinate: [23, 14],
+                coordinate: [31, 37],
                 rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [31, 36],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [31, 35],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [31, 34],
+                rotation: 0
+            },
+            {
+                version: 'elbow',
+                coordinate: [31, 33],
+                rotation: 180
+            },
+            {
+                version: 'diagonal',
+                coordinate: [30, 32],
+                rotation: 180
+            },
+            {
+                version: 'elbow2',
+                coordinate: [29, 31],
+                rotation: 0
+            },
+            {
+                version: 'straight',
+                coordinate: [28, 31],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [27, 31],
+                rotation: 90
+            },
+            {
+                version: 'straight',
+                coordinate: [26, 31],
+                rotation: 90
             },
         ]
     },

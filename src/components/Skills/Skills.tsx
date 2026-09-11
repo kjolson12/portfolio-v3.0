@@ -102,7 +102,7 @@ const offlineSkillsObject = {
             'mobile': [1, 47],
         },
         title: 'Motocross',
-        description: 'I have experience with playing videogames, and I enjoy exploring different genres and platforms to find new and exciting gaming experiences.',
+        description: 'One of my favorite ways to get outside is to go to the motocross track with some friends. I also love to watch the professional races on the weekends.',
         img: motocrossLogo
     },
     'cooking': {

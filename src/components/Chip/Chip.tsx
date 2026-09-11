@@ -40,7 +40,7 @@ const activeNodes = {
     },
     mobile: {
         'online': [0, 1, 3, 4, 7, 8, 15],
-        'offline': [1, 2 , 5, 8, 9, 12],
+        'offline': [1, 3, 4, 7, 12, 15],
     }
 }
 
