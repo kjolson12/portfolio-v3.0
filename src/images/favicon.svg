@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="73 358 854 259" width="32" height="32">
+  <style>
+    /* Default rules optimized for light browser themes */
+    .accent { fill: #6900D1; }          /* Darkened purple for legible contrast on light tabs */
+    .main-text { fill: #111111; }      /* Swaps to near-black on light tabs */
+
+    /* Automatically overrides colors when the browser is set to dark mode */
+    @media (prefers-color-scheme: dark) {
+      .accent { fill: #cf9fff; }       /* Bright neon purple for dark tabs */
+      .main-text { fill: #ffffff; }   /* Pure white text */
+    }
+  </style>
+
+  <!-- Left Arrow (&lt;) -->
+  <g class="accent">
+    <circle cx="170" cy="420" r="22" />
+    <circle cx="130" cy="462" r="22" />
+    <circle cx="95" cy="504" r="22" />
+    <circle cx="130" cy="546" r="22" />
+    <circle cx="170" cy="588" r="22" />
+  </g>
+
+  <!-- Letter K -->
+  <g class="main-text">
+    <!-- Vertical Bar -->
+    <circle cx="285" cy="380" r="22" />
+    <circle cx="285" cy="423" r="22" />
+    <circle cx="285" cy="466" r="22" />
+    <circle cx="285" cy="509" r="22" />
+    <circle cx="285" cy="552" r="22" />
+    <circle cx="285" cy="595" r="22" />
+
+    <circle cx="328" cy="380" r="22" />
+    <circle cx="328" cy="423" r="22" />
+    <circle cx="328" cy="466" r="22" />
+    <circle cx="328" cy="509" r="22" />
+    <circle cx="328" cy="552" r="22" />
+    <circle cx="328" cy="595" r="22" />
+
+    <!-- Upper diagonal leg -->
+    <circle cx="371" cy="466" r="22" />
+    <circle cx="414" cy="423" r="22" />
+    <circle cx="457" cy="380" r="22" />
+
+    <!-- Lower diagonal leg -->
+    <circle cx="371" cy="509" r="22" />
+    <circle cx="414" cy="509" r="22" />
+    <circle cx="414" cy="552" r="22" />
+    <circle cx="457" cy="552" r="22" />
+    <circle cx="457" cy="595" r="22" />
+  </g>
+
+  <!-- Forward Slash (/) -->
+  <g class="accent">
+    <circle cx="543" cy="595" r="22" />
+    <circle cx="543" cy="552" r="22" />
+    <circle cx="586" cy="552" r="22" />
+    <circle cx="586" cy="509" r="22" />
+    <circle cx="629" cy="509" r="22" />
+    <circle cx="629" cy="466" r="22" />
+    <circle cx="672" cy="466" r="22" />
+    <circle cx="672" cy="423" r="22" />
+    <circle cx="715" cy="423" r="22" />
+    <circle cx="715" cy="380" r="22" />
+  </g>
+
+  <!-- Right Arrow (&gt;) -->
+  <g class="accent">
+    <circle cx="830" cy="420" r="22" />
+    <circle cx="870" cy="462" r="22" />
+    <circle cx="905" cy="504" r="22" />
+    <circle cx="870" cy="546" r="22" />
+    <circle cx="830" cy="588" r="22" />
+  </g>
+</svg>
