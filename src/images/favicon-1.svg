@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="263 358 474 259" width="32" height="32">
+  <style>
+    /* Default rules optimized for light browser themes */
+    .main-text { fill: #6900D1; }
+
+    /* Automatically overrides colors when the browser is set to dark mode */
+    @media (prefers-color-scheme: dark) {
+      .main-text { fill: #CF9FFF; }
+    }
+  </style>
+
+  <!-- Letter K -->
+  <g class="main-text">
+    <!-- Vertical Bar -->
+    <circle cx="285" cy="380" r="22" />
+    <circle cx="285" cy="423" r="22" />
+    <circle cx="285" cy="466" r="22" />
+    <circle cx="285" cy="509" r="22" />
+    <circle cx="285" cy="552" r="22" />
+    <circle cx="285" cy="595" r="22" />
+
+    <circle cx="328" cy="380" r="22" />
+    <circle cx="328" cy="423" r="22" />
+    <circle cx="328" cy="466" r="22" />
+    <circle cx="328" cy="509" r="22" />
+    <circle cx="328" cy="552" r="22" />
+    <circle cx="328" cy="595" r="22" />
+
+    <!-- Upper diagonal leg -->
+    <circle cx="371" cy="466" r="22" />
+    <circle cx="414" cy="423" r="22" />
+    <circle cx="457" cy="380" r="22" />
+
+    <!-- Lower diagonal leg -->
+    <circle cx="371" cy="509" r="22" />
+    <circle cx="414" cy="509" r="22" />
+    <circle cx="414" cy="552" r="22" />
+    <circle cx="457" cy="552" r="22" />
+    <circle cx="457" cy="595" r="22" />
+  </g>
+
+  <!-- Letter O -->
+  <g class="main-text">
+    <!-- Left Circle -->
+    <circle cx="543" cy="552" r="22" />
+    <circle cx="543" cy="509" r="22" />
+    <circle cx="543" cy="466" r="22" />
+    <circle cx="543" cy="423" r="22" />
+    <circle cx="586" cy="552" r="22" />
+    <circle cx="586" cy="509" r="22" />
+    <circle cx="586" cy="466" r="22" />
+    <circle cx="586" cy="423" r="22" />
+
+    <!-- Top Circle -->
+    <circle cx="586" cy="380" r="22" />
+    <circle cx="629" cy="380" r="22" />
+    <circle cx="672" cy="380" r="22" />
+
+    <!-- Bottom Circle -->
+    <circle cx="586" cy="595" r="22" />
+    <circle cx="629" cy="595" r="22" />
+    <circle cx="672" cy="595" r="22" />
+
+    <!-- Right Circle -->
+    <circle cx="672" cy="423" r="22" />
+    <circle cx="715" cy="423" r="22" />
+    <circle cx="715" cy="466" r="22" />
+    <circle cx="715" cy="509" r="22" />
+    <circle cx="715" cy="552" r="22" />
+  </g>
+</svg>
